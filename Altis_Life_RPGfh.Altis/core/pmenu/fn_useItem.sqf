@@ -25,8 +25,8 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			life_thirst = 100;
-			life_hunger = 100;
+			life_thirst = 30;
+			life_hunger = 30;
 			player setFatigue 0;
 		};
 	};
