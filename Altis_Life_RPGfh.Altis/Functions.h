@@ -294,6 +294,7 @@ class Life_Client_Core
 		class loadGear {};
 		class block {};
 		class stripDownPlayer {};
+		class updateTexture {};
 		class bankTrigger {};
 		class prioritySelect {};
 	};
@@ -310,7 +311,6 @@ class Life_Client_Core
 		class soundDevice {};
 		class setFuel {};
 		class setTexture {};
-		class updateTexture {};
 		class say3D {};
 	};
 	
