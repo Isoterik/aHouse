@@ -88,7 +88,7 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
-		_ret pushBack ["H_Cap_blk",nil,25]];
+		_ret pushBack ["H_Cap_blk",nil,25];
 		if(__GETC__(life_coplevel) == 6) then
 		{
 			_ret pushBack ["H_HelmetB_plain_blk","Bund",117];
