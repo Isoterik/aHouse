@@ -3210,6 +3210,482 @@
 			<Italian>Striscia Chiodata</Italian>
 			<Portuguese>Spike Strip</Portuguese>
 		</Key>
+		<Key ID="STR_Item_GoldenDonat">
+			<Original>Golden Donut</Original>
+			<German>Goldener Donut</German>
+			<French>or Donut</French>
+			<Italian>oro Donut</Italian>
+			<Portuguese>ouro Donut</Portuguese>
+		</Key>
+		<Key ID="STR_Item_FrogEat">
+			<Original>Frog Legs</Original>
+			<German>Froschschenkel</German>
+			<French>Cuisses De Grenouilles</French>
+			<Italian>Cosce Di Rana</Italian>
+			<Portuguese>Pernas De Rã</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Honeycomb">
+			<Original>Honeycomb</Original>
+			<German>Honigwabe</German>
+			<French>Rayon de miel</French>
+			<Italian>Favo</Italian>
+			<Portuguese>Favo de mel</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Honey">
+			<Original>Honey</Original>
+			<German>Honig</German>
+			<French>Miel</French>
+			<Italian>Miele</Italian>
+			<Portuguese>Mel</Portuguese>
+		</Key>
+		<Key ID="STR_Item_1kgCheese">
+			<Original>1kg Cheese</Original>
+			<German>1kg Kaese</German>
+			<French>1 kg de fromage</French>
+			<Italian>Formaggio 1kg</Italian>
+			<Portuguese>1 kg de queijo</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Cheese">
+			<Original>Cheese</Original>
+			<German>Kaese</German>
+			<French>Fromage</French>
+			<Italian>Formaggio</Italian>
+			<Portuguese>Queijo</Portuguese>
+		</Key>
+		<Key ID="STR_Item_10Buns">
+			<Original>10 buns</Original>
+			<German>10 Broetchen</German>
+			<French>10 petits pains</French>
+			<Italian>10 panini</Italian>
+			<Portuguese>10 pãezinhos</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Bun">
+			<Original>Bun</Original>
+			<German>Broetchen</German>
+			<French>Chignon</French>
+			<Italian>Ciambella</Italian>
+			<Portuguese>Coque</Portuguese>
+		</Key>
+		<Key ID="STR_Item_10CheeseSticks">
+			<Original>10 Cheese Bars</Original>
+			<German>10 Kaesestangen</German>
+			<French>10 Bars de fromage</French>
+			<Italian>10 formaggio Bars</Italian>
+			<Portuguese>10 Queijo Bars</Portuguese>
+		</Key>
+		<Key ID="STR_Item_CheeseStick">
+			<Original>Cheese bar</Original>
+			<German>Kaesestange</German>
+			<French>Cheese Bar</French>
+			<Italian>bar Formaggio</Italian>
+			<Portuguese>Queijo Bar</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Sausage">
+			<Original>Sausage</Original>
+			<German>Bratwurst</German>
+			<French>Saucisse</French>
+			<Italian>Salsiccia</Italian>
+			<Portuguese>Linguiça</Portuguese>
+		</Key>
+		<Key ID="STR_Item_JailMeal">
+			<Original>Jail meal</Original>
+			<German>Knastmahlzeit</German>
+			<French>Prison repas</French>
+			<Italian>Pasto carcere</Italian>
+			<Portuguese>Prisão refeição</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Beer">
+			<Original>Beer</Original>
+			<German>Bier</German>
+			<French>Bière</French>
+			<Italian>Birra</Italian>
+			<Portuguese>Cerveja</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Applewine">
+			<Original>Applewine</Original>
+			<German>Apfelmost</German>
+			<French>Cidre</French>
+			<Italian>Sidro</Italian>
+			<Portuguese>Sidra</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Vodka">
+			<Original>Vodka</Original>
+			<German>Wodka</German>
+			<French>Vodka</French>
+			<Italian>Vodka</Italian>
+			<Portuguese>Vodka</Portuguese>
+		</Key>
+		<Key ID="STR_Item_ProteinShake">
+			<Original>Protein Shake</Original>
+			<German>Protein Shake</German>
+			<French>Protein Shake</French>
+			<Italian>Protein Shake</Italian>
+			<Portuguese>Shake de proteína</Portuguese>
+		</Key>
+		<Key ID="STR_Item_FreshMilk">
+			<Original>Fresh milk</Original>
+			<German>Frische Milch</German>
+			<French>Le lait frais</French>
+			<Italian>Latte fresco</Italian>
+			<Portuguese>O leite fresco</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Milk">
+			<Original>Milk</Original>
+			<German>Milch</German>
+			<French>Lait</French>
+			<Italian>Latte</Italian>
+			<Portuguese>Leite</Portuguese>
+		</Key>
+		<Key ID="STR_Item_5lMilk">
+			<Original>5l milk</Original>
+			<German>5l Milch</German>
+			<French>Lait 5l</French>
+			<Italian>Latte 5l</Italian>
+			<Portuguese>Leite 5l</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Peachbooze">
+			<Original>Peachbooze</Original>
+			<German>Pfirsichschnaps</German>
+			<French>Schnaps aux pêches</French>
+			<Italian>Grappe pesca</Italian>
+			<Portuguese>Licor de pêssego</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Pearbooze">
+			<Original>Pearbooze</Original>
+			<German>Birnenschnaps</German>
+			<French>Poire</French>
+			<Italian>Pear grappa</Italian>
+			<Portuguese>Pear brandy</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Grape">
+			<Original>Grape</Original>
+			<German>Weintraube</German>
+			<French>Grain de raisin</French>
+			<Italian>Uva</Italian>
+			<Portuguese>Uva</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Wine">
+			<Original>Wine</Original>
+			<German>Wein</German>
+			<French>Du Vin</French>
+			<Italian>Vino</Italian>
+			<Portuguese>Vinho</Portuguese>
+		</Key>
+		<Key ID="STR_Item_SilverOre">
+			<Original>silver ore</Original>
+			<German>Silbererz</German>
+			<French>Le minerai d'argent</French>
+			<Italian>Ore argento</Italian>
+			<Portuguese>Minério de prata</Portuguese>
+		</Key>
+		<Key ID="STR_Item_SilverIngot">
+			<Original>Silver ingot</Original>
+			<German>Silberbarren</German>
+			<French>Lingot d'argent</French>
+			<Italian>Argento lingotto</Italian>
+			<Portuguese>Lingote de prata</Portuguese>
+		</Key>
+		<Key ID="STR_Item_GoldTailings">
+			<Original>Gold tailings</Original>
+			<German>Gold Abraum</German>
+			<French>Résidus d'or</French>
+			<Italian>Sterili Oro</Italian>
+			<Portuguese>Rejeitos de ouro</Portuguese>
+		</Key>
+		<Key ID="STR_Item_UntreatedWood">
+			<Original>Untreated wood</Original>
+			<German>Unbehandeltes Holz</German>
+			<French>Le bois non traité</French>
+			<Italian>Il legno non trattato</Italian>
+			<Portuguese>Madeira não tratada</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Wood">
+			<Original>Wood</Original>
+			<German>Holz</German>
+			<French>Bois</French>
+			<Italian>Di legno</Italian>
+			<Portuguese>Madeira</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Cereals">
+			<Original>Cereals</Original>
+			<German>Getreide</German>
+			<French>Céréales</French>
+			<Italian>Cereali</Italian>
+			<Portuguese>Cereais</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Frog">
+			<Original>Frog</Original>
+			<German>Frosch</German>
+			<French>Grenouille</French>
+			<Italian>Rana</Italian>
+			<Portuguese>Rã</Portuguese>
+		</Key>
+		<Key ID="STR_Item_EyeDrops">
+			<Original>Eye drops</Original>
+			<German>Augentropfen</German>
+			<French>Gouttes pour les yeux</French>
+			<Italian>Colliri</Italian>
+			<Portuguese>Colírio</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Pseudo">
+			<Original>Pseudo</Original>
+			<German>Pseudo</German>
+			<French>Pseudo</French>
+			<Italian>Pseudo</Italian>
+			<Portuguese>Pseudo</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Herbs500g">
+			<Original>Herbs 500g</Original>
+			<German>500g Kraeuter</German>
+			<French>Herbes 500g</French>
+			<Italian>Erbe 500g</Italian>
+			<Portuguese>Ervas 500g</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Herbs">
+			<Original>Herbs</Original>
+			<German>Kraeuter</German>
+			<French>Herbes</French>
+			<Italian>Erbe</Italian>
+			<Portuguese>Ervas</Portuguese>
+		</Key>
+		<Key ID="STR_Item_10Eggs">
+			<Original>10 eggs</Original>
+			<German>10 Eier</German>
+			<French>10 œufs</French>
+			<Italian>10 uova</Italian>
+			<Portuguese>10 ovos</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Egg">
+			<Original>Egg</Original>
+			<German>Ei</German>
+			<French>œuf</French>
+			<Italian>Uovo</Italian>
+			<Portuguese>Ovo</Portuguese>
+		</Key>
+		<Key ID="STR_Item_1kgButter">
+			<Original>1kg butter</Original>
+			<German>1kg Butter</German>
+			<French>1 kg de beurre</French>
+			<Italian>burro 1kg</Italian>
+			<Portuguese>1 kg de manteiga</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Butter">
+			<Original>Butter</Original>
+			<German>Butter</German>
+			<French>Beurre</French>
+			<Italian>Burro</Italian>
+			<Portuguese>Manteiga</Portuguese>
+		</Key>
+		<Key ID="STR_Item_3kgFlour">
+			<Original>3kg flour</Original>
+			<German>3kg Mehl</German>
+			<French>3 kg de farine</French>
+			<Italian>Farina 3kg</Italian>
+			<Portuguese>3 kg de farinha</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Flour">
+			<Original>flour</Original>
+			<German>Mehl</German>
+			<French>Farine</French>
+			<Italian>Farina</Italian>
+			<Portuguese>Farinha</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Hops">
+			<Original>Hops</Original>
+			<German>Hopfen</German>
+			<French>Houblon</French>
+			<Italian>Luppolo</Italian>
+			<Portuguese>Hops</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Malt">
+			<Original>Malt</Original>
+			<German>Malz</German>
+			<French>Malt</French>
+			<Italian>Malto</Italian>
+			<Portuguese>Malte</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Potato">
+			<Original>Potato</Original>
+			<German>Kartoffel</German>
+			<French>Pomme De Terre</French>
+			<Italian>Patata</Italian>
+			<Portuguese>Batata</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Pear">
+			<Original>Pear</Original>
+			<German>Birne</German>
+			<French>Poire</French>
+			<Italian>Pera</Italian>
+			<Portuguese>Pera</Portuguese>
+		</Key>
+		<Key ID="STR_Item_TobaccoLeaf">
+			<Original>Tobacco leaf</Original>
+			<German>Tabakblaetter</German>
+			<French>Les feuilles de tabac</French>
+			<Italian>Foglia di tabacco</Italian>
+			<Portuguese>Fumo</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Tobacco">
+			<Original>Tobacco</Original>
+			<German>Tabak</German>
+			<French>Tabac</French>
+			<Italian>Tabacco</Italian>
+			<Portuguese>Tabaco</Portuguese>
+		</Key>
+		<Key ID="STR_Item_4TobaccoLeaf">
+			<Original>4 tobacco leaf</Original>
+			<German>4 Tabakblaetter</German>
+			<French>4 feuilles de tabac</French>
+			<Italian>foglia 4 tabacco</Italian>
+			<Portuguese>folha 4 tabaco</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Cigar">
+			<Original>Cigar</Original>
+			<German>Zigarre</German>
+			<French>Cigare</French>
+			<Italian>Sigaro</Italian>
+			<Portuguese>Charuto</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Caoutchouc">
+			<Original>Caoutchouc</Original>
+			<German>Kautschuk</German>
+			<French>Caoutchouc</French>
+			<Italian>Caoutchouc</Italian>
+			<Portuguese>Caoutchouc</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Rubber">
+			<Original>Rubber</Original>
+			<German>Gummi</German>
+			<French>Gomme</French>
+			<Italian>Gomma</Italian>
+			<Portuguese>Borracha</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Tyre">
+			<Original>Tyre</Original>
+			<German>Reifen</German>
+			<French>Pneu</French>
+			<Italian>Pneumatico</Italian>
+			<Portuguese>Pneu</Portuguese>
+		</Key>
+		<Key ID="STR_Item_ElectronicCables">
+			<Original>Electronic Cables</Original>
+			<German>Elektronikkabel</German>
+			<French>Câbles électroniques</French>
+			<Italian>Cavi elettronici</Italian>
+			<Portuguese>Cabos eletrônicos</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Metalwork">
+			<Original>Metalwork</Original>
+			<German>Metallteile</German>
+			<French>Ferronnerie</French>
+			<Italian>Metalwork</Italian>
+			<Portuguese>e encurtar</Portuguese>
+		</Key>
+		<Key ID="STR_Item_BodyPart">
+			<Original>Body part</Original>
+			<German>Karosserieteil</German>
+			<French>Partie du corps</French>
+			<Italian>Parte del corpo</Italian>
+			<Portuguese>Parte do corpo</Portuguese>
+		</Key>
+		<Key ID="STR_Item_2kgBeef">
+			<Original>2kg beef</Original>
+			<German>2kg Rindfleisch</German>
+			<French>2 kg de boeuf</French>
+			<Italian>2kg di manzo</Italian>
+			<Portuguese>2 kg de carne</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Cowhide">
+			<Original>Cowhide</Original>
+			<German>Kuhhaut</German>
+			<French>Peau de vache</French>
+			<Italian>Vacchetta</Italian>
+			<Portuguese>Chicotear</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Leather">
+			<Original>Leather</Original>
+			<German>Leder</German>
+			<French>Cuir</French>
+			<Italian>Pelle</Italian>
+			<Portuguese>Couro</Portuguese>
+		</Key>
+		<Key ID="STR_Item_InteriorDecoration">
+			<Original>Interior decoration</Original>
+			<German>Innenausstattung</German>
+			<French>Décoration d'intérieurs</French>
+			<Italian>Arredamento</Italian>
+			<Portuguese>Decoração interior</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Antiques">
+			<Original>Antiques</Original>
+			<German>Antiquitaeten</German>
+			<French>Antiquités</French>
+			<Italian>Antiquariato</Italian>
+			<Portuguese>Antiques</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Jewelry">
+			<Original>Jewelry</Original>
+			<German>Schmuck</German>
+			<French>Bijoux</French>
+			<Italian>Gioielli</Italian>
+			<Portuguese>Jóias</Portuguese>
+		</Key>
+		<Key ID="STR_Item_MedicalMarijuana">
+			<Original>Medical Marijuana</Original>
+			<German>Medizinisches Marijuana</German>
+			<French>Marijuana médicale</French>
+			<Italian>Marijuana Medical</Italian>
+			<Portuguese>Maconha medicinal</Portuguese>
+		</Key>
+		<Key ID="STR_Item_StretchedCocaine">
+			<Original>Stretched cocaine</Original>
+			<German>Gestrecktes Kokain</German>
+			<French>La cocaïne tendu</French>
+			<Italian>Cocaina Stretched</Italian>
+			<Portuguese>Cocaína esticada</Portuguese>
+		</Key>
+		<Key ID="STR_Item_FreudenhausLSD">
+			<Original>LSD</Original>
+			<German>LSD</German>
+			<French>LSD</French>
+			<Italian>LSD</Italian>
+			<Portuguese>LSD</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Crocodile">
+			<Original>Crocodile</Original>
+			<German>Krokodil</German>
+			<French>Crocodile</French>
+			<Italian>Coccodrillo</Italian>
+			<Portuguese>Crocodilo</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Meth">
+			<Original>Meth</Original>
+			<German>Meth</German>
+			<French>Meth</French>
+			<Italian>Meth</Italian>
+			<Portuguese>Meth</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Chemicals">
+			<Original>Chemicals</Original>
+			<German>Chemikalien</German>
+			<French>Produits chimiques</French>
+			<Italian>Sostanze chimiche</Italian>
+			<Portuguese>Chemicals</Portuguese>
+		</Key>
+		<Key ID="STR_Item_CableTies">
+			<Original>Cable Ties</Original>
+			<German>Kabelbinder</German>
+			<French>Cable Ties</French>
+			<Italian>Fascette</Italian>
+			<Portuguese>Abraçadeiras</Portuguese>
+		</Key>
+		<Key ID="STR_Item_BankGoldBars">
+			<Original>Bank gold bars</Original>
+			<German>Bank Goldbarren</German>
+			<French>Banque lingots d'or</French>
+			<Italian>Lingotti d'oro della Banca</Italian>
+			<Portuguese>Banco barras de ouro</Portuguese>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">
@@ -3351,6 +3827,230 @@
 			<French>Droit de Propriété</French>
 			<Italian>Licenza possesso Casa</Italian>
 			<Portuguese>Licença de Casas</Portuguese>
+		</Key>
+		<Key ID="STR_License_Gold">
+			<Original>Gold Processing</Original>
+			<German>Goldverarbeitung</German>
+			<French>Traitement d'or</French>
+			<Italian>Oro Processing</Italian>
+			<Portuguese>Processamento de ouro</Portuguese>
+		</Key>
+		<Key ID="STR_License_Silver">
+			<Original>Silver Processing</Original>
+			<German>Silberverarbeitung</German>
+			<French>traitement argent</French>
+			<Italian>Processing argento</Italian>
+			<Portuguese>Processamento de prata</Portuguese>
+		</Key>
+		<Key ID="STR_License_Forestry">
+			<Original>Forestry</Original>
+			<German>Forstwirtschaft</German>
+			<French>Sylviculture</French>
+			<Italian>Silvicoltura</Italian>
+			<Portuguese>Silvicultura</Portuguese>
+		</Key>
+		<Key ID="STR_License_FrogProcessing">
+			<Original>Frog Processing</Original>
+			<German>Frosch Verarbeitung</German>
+			<French>traitement Grenouille</French>
+			<Italian>Rana lavorazione</Italian>
+			<Portuguese>Processing Sapo</Portuguese>
+		</Key>
+		<Key ID="STR_License_MedicalMarijuanaProcessing">
+			<Original>medical marijuana processing</Original>
+			<German>medizinisches Marihuana Verarbeitung</German>
+			<French>traitement de la marijuana médicale</French>
+			<Italian>trasformazione marijuana medica</Italian>
+			<Portuguese>processamento de maconha medicinal</Portuguese>
+		</Key>
+		<Key ID="STR_License_HoneyProcessing">
+			<Original>Honey processing</Original>
+			<German>Honigverarbeitung</German>
+			<French>traitement du miel</French>
+			<Italian>lavorazione del miele</Italian>
+			<Portuguese>processamento de mel</Portuguese>
+		</Key>
+		<Key ID="STR_License_MilkProcessing">
+			<Original>Milk processing</Original>
+			<German>Milchverarbeitung</German>
+			<French>la transformation du lait</French>
+			<Italian>lavorazione del latte</Italian>
+			<Portuguese>processamento de leite</Portuguese>
+		</Key>
+		<Key ID="STR_License_CerealsProcessing">
+			<Original>cereals processing</Original>
+			<German>Getreideverarbeitung</German>
+			<French>le traitement des céréales</French>
+			<Italian>trasformazione cereali</Italian>
+			<Portuguese>processamento de cereais</Portuguese>
+		</Key>
+		<Key ID="STR_License_BeerLicense">
+			<Original>Beer license</Original>
+			<German>Bier Lizenz</German>
+			<French>licence de la bière</French>
+			<Italian>licenza birra</Italian>
+			<Portuguese>licença de cerveja</Portuguese>
+		</Key>
+		<Key ID="STR_License_VodkaLicense">
+			<Original>Vodka license</Original>
+			<German>Wodka Lizenz</German>
+			<French>licence de la vodka</French>
+			<Italian>licenza vodka</Italian>
+			<Portuguese>licença de vodka</Portuguese>
+		</Key>
+		<Key ID="STR_License_PeachBoozeLicense">
+			<Original>Peach booze License</Original>
+			<German>Pfirsichschnaps Lizenz</German>
+			<French>pêche alcool licence</French>
+			<Italian>peach alcol License</Italian>
+			<Portuguese>pêssego bebida License</Portuguese>
+		</Key>
+		<Key ID="STR_License_PearBoozeLicense">
+			<Original>Pear booze License</Original>
+			<German>Birnenschnaps Lizenz</German>
+			<French>poire alcool licence</French>
+			<Italian>pera alcol License</Italian>
+			<Portuguese>pêra bebida License</Portuguese>
+		</Key>
+		<Key ID="STR_License_CiderLicense">
+			<Original>Cider license</Original>
+			<German>Apfelmost Lizenz</German>
+			<French>Licence de cidre</French>
+			<Italian>licenza Cider</Italian>
+			<Portuguese>licença Cider</Portuguese>
+		</Key>
+		<Key ID="STR_License_WineLicense">
+			<Original>Wine license</Original>
+			<German>Wein Lizenz</German>
+			<French>licence de vin</French>
+			<Italian>licenza vino</Italian>
+			<Portuguese>licença de vinho</Portuguese>
+		</Key>
+		<Key ID="STR_License_TobaccoProcessing">
+			<Original>Tobacco processing</Original>
+			<German>Tabak verarbeitung</German>
+			<French>transformation du tabac</French>
+			<Italian>lavorazione del tabacco</Italian>
+			<Portuguese>processamento de tabaco</Portuguese>
+		</Key>
+		<Key ID="STR_License_RubberProcessing">
+			<Original>Rubber processing</Original>
+			<German>Gummi verarbeitung</German>
+			<French>transformation du caoutchouc</French>
+			<Italian>lavorazione della gomma</Italian>
+			<Portuguese>processamento de borracha</Portuguese>
+		</Key>
+		<Key ID="STR_License_TireManufacturing">
+			<Original>Tire Manufacturing</Original>
+			<German>Reifenherstellung</German>
+			<French>Fabrication de pneus</French>
+			<Italian>Produzione di pneumatici</Italian>
+			<Portuguese>pneu Manufacturing</Portuguese>
+		</Key>
+		<Key ID="STR_License_CableManufacturing">
+			<Original>cable Manufacturing</Original>
+			<German>Kabelherstellung</German>
+			<French>Fabrication de câble</French>
+			<Italian>cavo Manufacturing</Italian>
+			<Portuguese>cabo Manufacturing</Portuguese>
+		</Key>
+		<Key ID="STR_License_Coachbuilder">
+			<Original>Coachbuilder</Original>
+			<German>Karosseriebauer</German>
+			<French>carrossier</French>
+			<Italian>carrozziere</Italian>
+			<Portuguese>coachbuilder</Portuguese>
+		</Key>
+		<Key ID="STR_License_LeatherProcessing">
+			<Original>Leather processing</Original>
+			<German>Lederverarbeitung</German>
+			<French>le traitement du cuir</French>
+			<Italian>lavorazione della pelle</Italian>
+			<Portuguese>processamento de couro</Portuguese>
+		</Key>
+		<Key ID="STR_License_Upholsterer">
+			<Original>Upholsterer</Original>
+			<German>Polsterer</German>
+			<French>tapissier</French>
+			<Italian>tappezziere</Italian>
+			<Portuguese>estofador</Portuguese>
+		</Key>
+		<Key ID="STR_License_Jeweler">
+			<Original>Jeweler</Original>
+			<German>Juwelier</German>
+			<French>bijoutier</French>
+			<Italian>gioielliere</Italian>
+			<Portuguese>joalheiro</Portuguese>
+		</Key>
+		<Key ID="STR_License_CheeseProcessing">
+			<Original>Cheese processing</Original>
+			<German>Kaeseverarbeitung</German>
+			<French>la transformation fromagère</French>
+			<Italian>lavorazione del formaggio</Italian>
+			<Portuguese>processamento de queijo</Portuguese>
+		</Key>
+		<Key ID="STR_License_ButterProcessing">
+			<Original>Butter processing</Original>
+			<German>Butterverarbeitung</German>
+			<French>traitement de beurre</French>
+			<Italian>trasformazione di burro</Italian>
+			<Portuguese>processamento de manteiga</Portuguese>
+		</Key>
+		<Key ID="STR_License_CigarsProcessing">
+			<Original>Cigars processing</Original>
+			<German>Zigarrenverarbeitung</German>
+			<French>traitement de cigares</French>
+			<Italian>trasformazione sigari</Italian>
+			<Portuguese>processamento de charutos</Portuguese>
+		</Key>
+		<Key ID="STR_License_Butcher">
+			<Original>Butcher</Original>
+			<German>Metzger</German>
+			<French>boucher</French>
+			<Italian>macellaio</Italian>
+			<Portuguese>açougueiro</Portuguese>
+		</Key>
+		<Key ID="STR_License_Baker">
+			<Original>Baker</Original>
+			<German>Baecker</German>
+			<French>boulanger</French>
+			<Italian>panettiere</Italian>
+			<Portuguese>padeiro</Portuguese>
+		</Key>
+		<Key ID="STR_License_Factorio">
+			<Original>Factorio</Original>
+			<German>Factorio</German>
+			<French>Factorio</French>
+			<Italian>Factorio</Italian>
+			<Portuguese>Factorio</Portuguese>
+		</Key>
+		<Key ID="STR_License_LSDprocessing">
+			<Original>LSD processing</Original>
+			<German>LSD-Verarbeitung</German>
+			<French>traitement de LSD</French>
+			<Italian>trasformazione LSD</Italian>
+			<Portuguese>processamento de LSD</Portuguese>
+		</Key>
+		<Key ID="STR_License_CrocodileProcessing">
+			<Original>Crocodile processing</Original>
+			<German>Krokodilverarbeitung</German>
+			<French>Traitement de Crocodile</French>
+			<Italian>trasformazione Crocodile</Italian>
+			<Portuguese>processamento Crocodile</Portuguese>
+		</Key>
+		<Key ID="STR_License_MethProcessing">
+			<Original>Meth processing</Original>
+			<German>Methverarbeitung</German>
+			<French>traitement de meth</French>
+			<Italian>trasformazione meth</Italian>
+			<Portuguese>processamento meth</Portuguese>
+		</Key>
+		<Key ID="STR_License_GangLicense">
+			<Original>Gang-license</Original>
+			<German>Gang-Lizenz</German>
+			<French>Gang-licence</French>
+			<Italian>Gang-licenza</Italian>
+			<Portuguese>Gang-licença</Portuguese>
 		</Key>
 	</Package>
 	<Package name="More_Item_Strings">
