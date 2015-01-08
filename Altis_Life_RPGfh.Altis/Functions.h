@@ -98,7 +98,7 @@ class Life_Client_Core
 		class registerToRace {};
 		class prepareRace {};
 		class initializeRace {};
-	}
+	};
 	
 	class Admin
 	{
@@ -219,8 +219,7 @@ class Life_Client_Core
 	class ADAC
 	{
 		file = "core\adac";
-		class adacFetchGear {};
-		class adacLoadGear {};
+		class adacLoadout {};;
 		class adacLights {};
 		class adacSirenLights {};
 		class adacRequest {};
