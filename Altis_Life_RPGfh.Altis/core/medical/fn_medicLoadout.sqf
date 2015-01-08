@@ -9,16 +9,17 @@ private["_handle"];
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
-player addUniform "U_Rangemaster";
-player addItem "FirstAidKit";
-player addItem "FirstAidKit";
+//Load player with default medic gear.
+player addUniform "U_IG_Guerilla2_3";
+player setObjectTextureGlobal [0,"textures\clothing\med\notarzt.paa"];
+player addBackpack "B_Bergen_Base";
 player addItem "ItemMap";
 player assignItem "ItemMap";
 player addItem "ItemCompass";
 player assignItem "ItemCompass";
+player addItem "ItemGPS";
+player assignItem "ItemGPS";
 player addItem "ItemWatch";
 player assignItem "ItemWatch";
-
-[[player,0,"textures\medic_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 
 [] call life_fnc_saveGear;

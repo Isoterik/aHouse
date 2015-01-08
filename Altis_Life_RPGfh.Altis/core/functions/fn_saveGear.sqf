@@ -170,7 +170,19 @@ if(count (handGunItems player) > 0) then
     ["life_inv_spikeStrip", life_inv_spikeStrip],
     ["life_inv_defusekit", life_inv_defusekit],
     ["life_inv_storagesmall", life_inv_storagesmall],
-    ["life_inv_storagebig", life_inv_storagebig]
+    ["life_inv_storagebig", life_inv_storagebig],
+    ["life_inv_beer",life_inv_beer],
+    ["life_inv_applewine",life_inv_applewine],
+    ["life_inv_wodka",life_inv_wodka],
+    ["life_inv_proteinshake",life_inv_proteinshake],
+    ["live_inv_ziptie",life_inv_ziptie],
+    ["life_inv_bunp",life_inv_bunp],
+    ["life_inv_cheesestickp",life_inv_cheesestickp],
+    ["life_inv_sausage",life_inv_sausage],
+    ["life_inv_honeyp",life_inv_honeyp],
+    ["life_inv_grape",life_inv_grape],
+    ["life_inv_pear",life_inv_pear],
+    ["life_inv_goldendonat",life_inv_goldendonat]
 ];
 
 _return pushBack _uItems;
