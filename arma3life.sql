@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `houses` (
   `containers` text,
   `owned` tinyint(4) DEFAULT '0',
   PRIMARY KEY (`id`,`pid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 -- --------------------------------------------------------
 
@@ -131,7 +131,8 @@ CREATE TABLE IF NOT EXISTS `wantedlist` (
   `crimes` text NOT NULL,
   `bounty` int(10) NOT NULL default '0',
   PRIMARY KEY  (`ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
 -- --------------------------------------------------------
 
 --
@@ -149,8 +150,7 @@ CREATE TABLE IF NOT EXISTS `gangs` (
   `active` tinyint(4) DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name_UNIQUE` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
--- --------------------------------------------------------
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
