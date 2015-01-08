@@ -131,7 +131,7 @@ CREATE TABLE IF NOT EXISTS `wantedlist` (
   `crimes` text NOT NULL,
   `bounty` int(10) NOT NULL default '0',
   PRIMARY KEY  (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 -- --------------------------------------------------------
 

@@ -207,6 +207,7 @@ class Life_Client_Core
 		class weaponShopCfg {};
 		class vehicleWeightCfg {};
 		class houseConfig {};
+		class wantedListCfg {};
 		
 		//Clothing Store Configs
 		class clothing_cop {};
