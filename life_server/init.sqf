@@ -89,12 +89,15 @@ Read out safed WantedList from DB
 */
 life_wanted_list = [];
 
+/*
 private["_query","_queryResult","_ret"];
 _query = format ["SELECT id, name, playerid, crime, val FROM wantedlist"];
 waitUntil{sleep (random 0.3); !DB_Async_Active};
 _tickTime = diag_tickTime;
 _queryResult = [_query,2,true] call DB_fnc_asyncCall;
+*/
 
+/* aender mit nem extra script, dass die daten laedt, nicht son crapkram hier
 diag_log "------------- Get WantedList Request -------------";
 diag_log format["QUERY: %1",_query];
 diag_log format["Time to complete: %1 (in seconds)",(diag_tickTime - _tickTime)];
@@ -111,6 +114,10 @@ if(!isNil {(_queryResult select 0)}) then
 	life_wanted_list set[count life_wanted_list,[_name, _uid, _crime, _val]];
 	} foreach _queryResult;
 };
+*/
+
+//next line added by preller. get all data from the WantedList
+[] spawn life_fnc_wantedListQuery;
 
 client_session_list = [];
 
