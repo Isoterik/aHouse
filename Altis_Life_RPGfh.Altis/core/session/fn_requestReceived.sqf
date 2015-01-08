@@ -23,9 +23,9 @@ if((_this select 0) == "Error") exitWith {[] call SOCK_fnc_insertPlayerInfo;};
 if((getPlayerUID player) != _this select 0) exitWith {[] call SOCK_fnc_dataQuery;};
 
 //Lets make sure some vars are not set before hand.. If they are get rid of them, hopefully the engine purges past variables but meh who cares.
-if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "life_donator")) exitWith {
+if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "life_donator" OR !isNil "life_mediclevel" !isNil "life_adaclevel")) exitWith {
 	[[profileName,getPlayerUID player,"VariablesAlreadySet"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
-	[[profileName,format["Variables set before client initialization...\nlife_adminlevel: %1\nlife_coplevel: %2\nlife_donator: %3",life_adminlevel,life_coplevel,life_donator]],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
+	[[profileName,format["Variables set before client initialization...\nlife_adminlevel: %1\nlife_coplevel: %2\nlife_donator: %3\nlife_mediclevel: %4\nlife_adaclevel: %5",life_adminlevel,life_coplevel,life_donator,life_mediclevel,life_adaclevel]],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
 	sleep 0.9;
 	["SpyGlass",false,false] execVM "\a3\functions_f\Misc\fn_endMission.sqf";
 };
@@ -48,16 +48,16 @@ life_gear = _this select 8;
 switch(playerSide) do {
 	case west: {
 		__CONST__(life_coplevel, parseNumber(_this select 7));
-		__CONST__(life_medicLevel,0);
-		__CONST__(life_adacLevel,0);
+		__CONST__(life_mediclevel,0);
+		__CONST__(life_adaclevel,0);
 		life_blacklisted = _this select 9;
 	};
 	
 	case civilian: {
 		life_is_arrested = _this select 7;
 		__CONST__(life_coplevel, 0);
-		__CONST__(life_medicLevel, 0);
-		__CONST__(life_adacLevel,0);
+		__CONST__(life_mediclevel, 0);
+		__CONST__(life_adaclevel,0);
 		life_houses = _this select 9;
 		speeding_points = parseNumber(_this select 11);
 		{
@@ -73,16 +73,16 @@ switch(playerSide) do {
 	};
 	
 	case independent: {
-		__CONST__(life_medicLevel, parseNumber(_this select 7));
+		__CONST__(life_mediclevel, parseNumber(_this select 7));
 		__CONST__(life_coplevel,0);
-		__CONST__(life_adacLevel,0);
+		__CONST__(life_adaclevel,0);
 	};
 };
 
 	case east: {
-		__CONST__(life_adacLevel, parseNumber(_this select 7));
-		__CONST__(life_copLevel,0);
-		__CONST__(life_medicLevel,0);
+		__CONST__(life_adaclevel, parseNumber(_this select 7));
+		__CONST__(life_coplevel,0);
+		__CONST__(life_mediclevel,0);
 	};
 
 if(count (_this select 12) > 0) then {
