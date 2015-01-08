@@ -23,7 +23,7 @@ if((_this select 0) == "Error") exitWith {[] call SOCK_fnc_insertPlayerInfo;};
 if((getPlayerUID player) != _this select 0) exitWith {[] call SOCK_fnc_dataQuery;};
 
 //Lets make sure some vars are not set before hand.. If they are get rid of them, hopefully the engine purges past variables but meh who cares.
-if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "life_donator" OR !isNil "life_mediclevel" !isNil "life_adaclevel")) exitWith {
+if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "life_donator" OR !isNil "life_mediclevel" OR !isNil "life_adaclevel")) exitWith {
 	[[profileName,getPlayerUID player,"VariablesAlreadySet"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
 	[[profileName,format["Variables set before client initialization...\nlife_adminlevel: %1\nlife_coplevel: %2\nlife_donator: %3\nlife_mediclevel: %4\nlife_adaclevel: %5",life_adminlevel,life_coplevel,life_donator,life_mediclevel,life_adaclevel]],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
 	sleep 0.9;
@@ -58,14 +58,15 @@ switch(playerSide) do {
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_mediclevel, 0);
 		__CONST__(life_adaclevel,0);
-		life_houses = _this select 9;
-		speeding_points = parseNumber(_this select 11);
+		life_blacklisted = _this select 10;
+		life_houses = _this select 12;
+		speeding_points = _this select 11;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles pushBack _house;
 		} foreach life_houses;
 		
-		life_gangData = _This select 10;
+		life_gangData = _This select 13;
 		if(count life_gangData != 0) then {
 			[] spawn life_fnc_initGang;
 		};
@@ -76,6 +77,7 @@ switch(playerSide) do {
 		__CONST__(life_mediclevel, parseNumber(_this select 7));
 		__CONST__(life_coplevel,0);
 		__CONST__(life_adaclevel,0);
+		life_blacklisted = _this select 9;
 	};
 };
 
@@ -83,10 +85,11 @@ switch(playerSide) do {
 		__CONST__(life_adaclevel, parseNumber(_this select 7));
 		__CONST__(life_coplevel,0);
 		__CONST__(life_mediclevel,0);
+		life_blacklisted = _this select 9;
 	};
 
-if(count (_this select 12) > 0) then {
-	{life_vehicles pushBack _x;} foreach (_this select 12);
+if(count (_this select 14) > 0) then {
+	{life_vehicles pushBack _x;} foreach (_this select 14);
 };
 
 life_session_completed = true;

@@ -5,7 +5,7 @@
 	Description:
 	Ain't got time to describe it, READ THE FILE NAME!
 */
-private["_uid","_side","_cash","_bank","_licenses","_gear","_name","_query","_thread"];
+private["_uid","_side","_cash","_bank","_licenses","_gear","_name","_query","_thread","_speeding_points"];
 _uid = [_this,0,"",[""]] call BIS_fnc_param;
 _name = [_this,1,"",[""]] call BIS_fnc_param;
 _side = [_this,2,sideUnknown,[civilian]] call BIS_fnc_param;
@@ -13,6 +13,7 @@ _cash = [_this,3,0,[0]] call BIS_fnc_param;
 _bank = [_this,4,5000,[0]] call BIS_fnc_param;
 _licenses = [_this,5,[],[[]]] call BIS_fnc_param;
 _gear = [_this,6,[],[[]]] call BIS_fnc_param;
+_speeding_points = [_this,8,[],[[]]] call BIS_fnc_param;
 
 //Get to those error checks.
 if((_uid == "") OR (_name == "")) exitWith {};
@@ -22,6 +23,7 @@ _name = [_name] call DB_fnc_mresString;
 _gear = [_gear] call DB_fnc_mresArray;
 _cash = [_cash] call DB_fnc_numberSafe;
 _bank = [_bank] call DB_fnc_numberSafe;
+_speeding_points = [_speeding_points] call DB_fnc_numberSafe; 
 
 //Does something license related but I can't remember I only know it's important?
 for "_i" from 0 to count(_licenses)-1 do {
