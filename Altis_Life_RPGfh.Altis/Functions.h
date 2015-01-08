@@ -367,7 +367,6 @@ class Life_Client_Core
 		class questionDealer {};
 		class copInteractionMenu {};
 		class sirenLights {};
-		class copSirenLights {};
 		class licenseCheck {};
 		class licensesRead {};
 		class repairDoor {};
