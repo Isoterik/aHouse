@@ -79,5 +79,35 @@ class life_admin_menu {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+		
+		class TeleportToHim : Life_RscButtonMenu {
+			idc = 2030;
+			text = "Zu Ihm";
+			onButtonClick = "[] call life_fnc_admintp;";
+			x = 0.26 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.88 - (1 / 25);
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+
+		class MapTeleport : Life_RscButtonMenu {
+			idc = 2070;
+			text = "Map Tele";
+			onButtonClick = "[] spawn life_fnc_admintpmap;closeDialog 0;";
+			x = 0.58 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.88 - (1 / 25);
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+
+		class TeleportToMe : Life_RscButtonMenu {
+			idc = 2060;
+			text = "Zu Mir";
+			onButtonClick = "[] spawn life_fnc_admintptome;";
+			x = 0.42 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.88 - (1 / 25);
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
 	};
 };

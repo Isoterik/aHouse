@@ -51,7 +51,7 @@
 		_bp = backpack player;
 		
 		// New Backpack Carryweight from configuration file
-		_ind = [_bp,(call life_backpack_carryWeights)] call fnc_index;		
+		_ind = [_bp,(call life_backpack_carryWeights)] call TON_fnc_index;		
 		if(_ind != -1) then 
 		{
 			_load = ((call life_backpack_carryWeights) select _ind) select 1;

@@ -348,7 +348,6 @@ compileFinal "
 			{
 				_msg = format[""%1 hat plötzlich über 1 Million $ mehr! CHEATER!!!"",name player,_check];
 				[[_msg,""NSA & BND"",2],""clientMessage"",true,false] spawn life_fnc_MP;
-				[] spawn life_fnc_block;
 				[[getplayeruid player,true],""TON_fnc_blackList"",false,false] spawn life_fnc_MP;
 			};
 		};

@@ -292,7 +292,6 @@ class Life_Client_Core
 		class autoSave {};
 		class saveGear {};
 		class loadGear {};
-		class block {};
 		class stripDownPlayer {};
 		class updateTexture {};
 		class bankTrigger {};

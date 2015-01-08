@@ -32,8 +32,8 @@ life_removeWanted = false;
 life_action_gathering = false;
 
 //Persistent Saving
-__CONST__(life_save_civ,FALSE); //Save weapons for civs?
-__CONST__(life_save_yinv,FALSE); //Save Y-Inventory for players?
+__CONST__(life_save_civ,TRUE); //Save weapons for civs?
+__CONST__(life_save_yinv,TRUE); //Save Y-Inventory for players?
 
 //Blacklist.
 life_blacklisted = 0;
@@ -309,6 +309,9 @@ life_inv_items =
 	"life_inv_spikeStrip",
 	"life_inv_fuelE",
 	"life_inv_fuelF",
+	"life_inv_blastingcharge",
+	"life_inv_boltcutter",
+	"life_inv_defusekit",
 	"life_inv_storagesmall",
 	"life_inv_storagebig",
 	"life_inv_ziptie",
