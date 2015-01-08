@@ -80,9 +80,11 @@ switch (_side) do {
 	
 	case civilian: {
 		_queryResult set[7,([_queryResult select 7,1] call DB_fnc_bool)];
+
 		//SpeedingPoints
-		_tmp = _queryResult select 10;
-		_queryResult set[10,[_tmp] call DB_fnc_numberSafe];
+		//_tmp = _queryResult select 11;
+		//_queryResult set[11,[_tmp] call DB_fnc_numberSafe];
+
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
 		waitUntil {scriptDone _houseData};
 		_queryResult pushBack (missionNamespace getVariable[format["houses_%1",_uid],[]]);
