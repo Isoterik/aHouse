@@ -39,20 +39,20 @@ _units = _units - [player];
 			_text = switch (true) do {
 				case (_x in (units grpPlayer) && playerSide == civilian): {format["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
 				case (!isNil {(_x getVariable "rank")}): {format["<t color='#336699'>%1</t> %2",switch ((_x getVariable "rank")) do {
-					case 2: {"Polizeianwärter %1"}; 
-					case 3: {"Polizeimeister %1"};
-					case 4: {"Polizeikommissar %1"};
-					case 5: {"Stellv. Einsatzleiter Polizei %1"};
-					case 6: {"Einsatzleiter Polizei %1"};
-					case 7: {"Bundespolizei %1"};
-					case 8: {"Stellv. Einsatzleiter Bundespolizei %1"};
-					case 9: {"Einsatzleiter Bundespolizei %1"};
-					case 10: {"SEK Beamter %1"};
-					case 11: {"Stellv. Einsatzleiter SEK %1"};
-					case 12: {"Einsatzleiter SEK %1"};
-					case 13: {"Stellv. Polizeipräsident %1"};
-					case 14: {"Polizeipräsident %1"};
-					default {"Polizist %1"};
+					case 1: {"Polizeianwaerter"}; 
+					case 2: {"Polizeimeister"};
+					case 3: {"Polizeikommissar"};
+					case 4: {"Stellv. Einsatzleiter Polizei"};
+					case 5: {"Einsatzleiter Polizei"};
+					case 6: {"Bundespolizei"};
+					case 7: {"Stellv. Einsatzleiter Bundespolizei"};
+					case 8: {"Einsatzleiter Bundespolizei"};
+					case 9: {"SEK Beamter"};
+					case 10: {"Stellv. Einsatzleiter SEK"};
+					case 11: {"Einsatzleiter SEK"};
+					case 12: {"Stellv. Polizeipräsident"};
+					case 13: {"Polizeipräsident"};
+					default {"Polizist"};
 					},_x getVariable ["realname",name _x]]};
 
 				case ((!isNil {_x getVariable "name"} && playerSide == independent)): {format["<t color='#FF0000'>Notarzt %1</t>",_x getVariable ["name","Unknown Player"]]};
