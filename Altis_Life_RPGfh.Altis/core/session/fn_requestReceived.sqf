@@ -34,7 +34,7 @@ if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "l
 life_cash = parseNumber (_this select 2);
 life_atmcash = parseNumber (_this select 3);
 __CONST__(life_adminlevel,parseNumber(_this select 4));
-__CONST__(life_donator,0);
+__CONST__(life_donator,parseNumber(_this select 5));
 
 //Loop through licenses
 if(count (_this select 6) > 0) then {
@@ -58,15 +58,15 @@ switch(playerSide) do {
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_mediclevel, 0);
 		__CONST__(life_adaclevel,0);
-		life_blacklisted = _this select 10;
-		life_houses = _this select 12;
-		speeding_points = _this select 11;
+		life_blacklisted = _this select 9;
+		life_houses = _this select 11;
+		speeding_points = _this select 10;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles pushBack _house;
 		} foreach life_houses;
 		
-		life_gangData = _This select 13;
+		life_gangData = _This select 12;
 		if(count life_gangData != 0) then {
 			[] spawn life_fnc_initGang;
 		};
@@ -79,7 +79,7 @@ switch(playerSide) do {
 		__CONST__(life_adaclevel,0);
 		life_blacklisted = _this select 9;
 	};
-};
+
 
 	case east: {
 		__CONST__(life_adaclevel, parseNumber(_this select 7));
@@ -87,6 +87,7 @@ switch(playerSide) do {
 		__CONST__(life_mediclevel,0);
 		life_blacklisted = _this select 9;
 	};
+};
 
 if(count (_this select 14) > 0) then {
 	{life_vehicles pushBack _x;} foreach (_this select 14);

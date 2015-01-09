@@ -53,8 +53,9 @@ if (!_extDB) exitWith {
 ["CALL deleteOldGangs",1] spawn DB_fnc_asyncCall; //Maybe delete old gangs
 
 life_adminlevel = 0;
-life_medicLevel = 0;
+life_mediclevel = 0;
 life_coplevel = 0;
+life_adaclevel = 0;
 
 //next lines added by preller for the racing system
 race_competitors = [];

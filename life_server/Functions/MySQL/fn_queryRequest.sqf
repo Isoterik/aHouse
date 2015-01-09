@@ -79,10 +79,11 @@ switch (_side) do {
 	};
 	
 	case civilian: {
-		_queryResult set[10,([_queryResult select 10,1] call DB_fnc_bool)];
+		_queryResult set[7,([_queryResult select 7,1] call DB_fnc_bool)];
+		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
 
 		//SpeedingPoints
-        _queryResult set[11,([_queryResult select 11,1] call DB_fnc_bool)];
+        _queryResult set[10,([_queryResult select 10,1] call DB_fnc_bool)];
 
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
 		waitUntil {scriptDone _houseData};
