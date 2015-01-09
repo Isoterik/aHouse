@@ -38,54 +38,44 @@ _units = _units - [player];
 		if(count _sPos > 1 && {_distance < 15}) then {
 			_text = switch (true) do {
 				case (_x in (units grpPlayer) && playerSide == civilian): {format["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
-					case west: 
-					{
-						switch(_x getVariable["coplevel",0])do
-						{
-							case 1 : {_name = format["Polizeianwärter %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "0" >> "texture");};//Test
-							case 2 : {_name = format["Polizeimeister %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "1" >> "texture");};//Test
-							case 3 : {_name = format["Polizeikommissar %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "2" >> "texture");};
-							case 4 : {_name = format["Stellv. Einsatzleiter Polizei %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "3" >> "texture");};
-							case 5 : {_name = format["Einsatzleiter Polizei %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "3" >> "texture");};
-							case 6 : {_name = format["Bundespolizei %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "4" >> "texture");};
-							case 7 : {_name = format["Stellv. Einsatzleiter Bundespolizei %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "5" >> "texture");};
-							case 8 : {_name = format["Einsatzleiter Bundespolizei %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "5" >> "texture");};
-							case 9 : {_name = format["SEK Beamter %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "5" >> "texture");};
-							case 10 : {_name = format["Stellv. Einsatzleiter SEK %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "6" >> "texture");};
-							case 11 : {_name = format["Einsatzleiter SEK %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "6" >> "texture");};
-							case 12 : {_name = format["Stellv. Polizeipräsident %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "7" >> "texture");};
-							case 13 : {_name = format["Polizeipräsident %1", _x getVariable["realname",name _x]];_icon = getText (configfile >> "CfgRanks" >> "7" >> "texture");};
-							default {_name = format["Polizist %1", _x getVariable["realname",name _x]]; _icon = getText (configfile >> "CfgRanks" >> "0" >> "texture");};
-						};
-					
-						_position = visiblePosition _x;
-						_position set[2,(getPosATL _x select 2) + 2.2];
-						drawIcon3D [_icon,[1,1,1,1],_position,0,0,0,_name,0,0.04];
-					};
-					case independent:
-					{
-						_name = format["Notarzt %1", _x getVariable["realname",name _x]];
-						_position = visiblePosition _x;
-						_position set[2,(getPosATL _x select 2) + 2.2];
-						drawIcon3D ["",[1,1,1,1],_position,0,0,0,_name,0,0.04];
-					};
-					case east:
-					{
-						_name = format["ATAC %1", _x getVariable["realname",name _x]];
-						_position = visiblePosition _x;
-						_position set[2,(getPosATL _x select 2) + 2.2];
-						drawIcon3D ["",[1,1,1,1],_position,0,0,0,_name,0,0.04];
+				case (!isNil {(_x getVariable "rank")}): {format["<t color='#336699'>%1</t> %2",switch ((_x getVariable "rank")) do {
+					case 2: {"Polizeianwärter %1"}; 
+					case 3: {"Polizeimeister %1"};
+					case 4: {"Polizeikommissar %1"};
+					case 5: {"Stellv. Einsatzleiter Polizei %1"};
+					case 6: {"Einsatzleiter Polizei %1"};
+					case 7: {"Bundespolizei %1"};
+					case 8: {"Stellv. Einsatzleiter Bundespolizei %1"};
+					case 9: {"Einsatzleiter Bundespolizei %1"};
+					case 10: {"SEK Beamter %1"};
+					case 11: {"Stellv. Einsatzleiter SEK %1"};
+					case 12: {"Einsatzleiter SEK %1"};
+					case 13: {"Stellv. Polizeipräsident %1"};
+					case 14: {"Polizeipräsident %1"};
+					default {"Polizist %1"};
+					},_x getVariable ["realname",name _x]]};
+
+				case ((!isNil {_x getVariable "name"} && playerSide == independent)): {format["<t color='#FF0000'>Notarzt %1</t>",_x getVariable ["name","Unknown Player"]]};
+
+				case ((!isNil {_x getVariable "name"} && playerSide == east)): {format["<t color='#FFCC00'>ATAC %1</t>",_x getVariable ["name","Unknown Player"]]};
+				default {
+					if(!isNil {(group _x) getVariable "gang_name"}) then {
+						format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x getVariable ["realname",name _x],(group _x) getVariable ["gang_name",""]];
+					} else {
+						_x getVariable ["realname",name _x];
 					};
 				};
 			};
-
 			
-		_idc ctrlSetStructuredText parseText _text;
-		_idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];
-		_idc ctrlSetScale scale;
-		_idc ctrlSetFade 0;
-		_idc ctrlCommit 0;
-		_idc ctrlShow true;
+			_idc ctrlSetStructuredText parseText _text;
+			_idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];
+			_idc ctrlSetScale scale;
+			_idc ctrlSetFade 0;
+			_idc ctrlCommit 0;
+			_idc ctrlShow true;
+		} else {
+			_idc ctrlShow false;
+		};
 	} else {
 		_idc ctrlShow false;
 	};
