@@ -19,7 +19,7 @@ switch (_var) do
 	case "life_inv_peach": {(localize "STR_Item_Peach")};
 	case "life_inv_donuts": {(localize "STR_Item_Donuts")};
 	case "life_inv_goldendonat": {(localize "STR_Item_GoldenDonat")};
-	case "life_inv_rabbit": {(localize "STR_Item_RabbitMeat")};
+	case "life_inv_rabbit": {(localize "STR_Item_Rabbit")};
 	case "life_inv_tbacon": {(localize "STR_Item_TBacon")};
 	case "life_inv_frogeat": {(localize "STR_Item_FrogEat")};
 	case "life_inv_mackerel": {(localize "STR_Item_MackerelMeat")};
@@ -111,7 +111,7 @@ switch (_var) do
 	case "life_inv_medmarijuana": {(localize "STR_Item_MedicalMarijuana")};
 	
 	//illegal
-	case "life_inv_turtle": {(localize "STR_Item_TurtleMeat")};
+	case "life_inv_turtle": {(localize "STR_Item_Turtle")};
 	case "life_inv_turtlesoup": {(localize "STR_Item_TurtleSoup")};
 	case "life_inv_heroinu": {(localize "STR_Item_HeroinU")};
 	case "life_inv_heroinp": {(localize "STR_Item_HeroinP")};
