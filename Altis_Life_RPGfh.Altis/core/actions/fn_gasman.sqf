@@ -120,7 +120,7 @@ switch(true) do
 	{
 		hint format["Du hast erfolgreich %1€ gestohlen.", _robberycash];
 		life_cash = life_cash + _robberycash;
-		[[getPlayerUID player,profileName,"205"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		[[getPlayerUID _civ,_civ getVariable["realname",name _civ],"205"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		_gasstation setVariable["robProgress",true,true];
 		_gasstation setVariable["gaswait",true,true];
 		deleteMarker "Marker200";
