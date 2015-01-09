@@ -10,9 +10,6 @@
 *
 */
 
-//test commit
-
-// asdasd
 private ["_points"];
 
 if (isServer) exitWith {};
