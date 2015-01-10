@@ -13,7 +13,7 @@ waitUntil {scriptDone _handle};
 
 //Load player with default cop gear.
 
-case (!isNil {(_x getVariable "rank")}): switch ((_x getVariable "rank")) do {
+switch (getVariable "rank") do {
 
 	case 1:
 	{
