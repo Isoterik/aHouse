@@ -19,19 +19,6 @@ if(_isVehicle && _curTarget in life_vehicles) exitWith {hint localize "STR_ISTR_
 if(!_isVehicle && !isPlayer _curTarget) exitWith {};
 if(!_isVehicle && !(_curTarget getVariable["restrained",false])) exitWith {};
 
-//next lines added by preller for adac
-_copIsNear = false;
-if (side player == east) then {
-	//check if a cop is nearby
-	_nearTargets = player nearTargets 15;
-	{
-		_target = _x select 4;
-		if (side _target == west) then {_copIsNear = true};
-	} forEach _nearTargets;
-};	
-
-if ((side player == east) && (!_copIsNear)) exitWith {titleText["Es ist kein Polizist in der Nähe.","PLAIN"];};
-
 _title = format[localize "STR_ISTR_Lock_Process",if(!_isVehicle) then {"Handcuffs"} else {getText(configFile >> "CfgVehicles" >> (typeOf _curTarget) >> "displayName")}];
 life_action_inUse = true; //Lock out other actions
 
@@ -79,35 +66,19 @@ if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse 
 
 life_action_inUse = false;
 
-//next line added by preller. "old code" only for non adac players
-if (side player != east) then {
-	if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
-	life_action_inUse = false;
-
-	if(!_isVehicle) then {
-		_curTarget setVariable["restrained",false,true];
-		_curTarget setVariable["Escorting",false,true];
-		_curTarget setVariable["transporting",false,true];
+if(!_isVehicle) then {
+	_curTarget setVariable["restrained",false,true];
+	_curTarget setVariable["Escorting",false,true];
+	_curTarget setVariable["transporting",false,true];
+} else {
+	_dice = random(100);
+	if(_dice < 30) then {
+		titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
+		life_vehicles pushBack _curTarget;
+		[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	} else {
-		_dice = random(100);
-		if(_dice < 30) then {
-			titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
-			life_vehicles pushBack _curTarget;
-			[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-		} else {
-			[[getPlayerUID player,profileName,"210"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-			[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
-			titleText[localize "STR_ISTR_Lock_Failed","PLAIN"];
-		};
-	};
-};
-
-//next lines added by preller for adac
-if (side player == east) then {
-	life_action_inUse = false;
-
-	if (_isVehicle)	then {
-			titleText["Du hast jetzt den Schlüssel zu diesem Fahrzeug.","PLAIN"];
-			life_vehicles set[count life_vehicles,_curTarget];
+		[[getPlayerUID player,profileName,"210"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		titleText[localize "STR_ISTR_Lock_Failed","PLAIN"];
 	};
 };
