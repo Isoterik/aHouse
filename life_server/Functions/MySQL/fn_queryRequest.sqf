@@ -103,6 +103,6 @@ switch (_side) do {
 };
 
 _keyArr = missionNamespace getVariable [format["%1_KEYS_%2",_uid,_side],[]];
-_queryResult pushBack (_keyArr);
+_queryResult set[13,_keyArr];
 
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;
