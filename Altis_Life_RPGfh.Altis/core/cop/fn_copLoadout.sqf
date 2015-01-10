@@ -12,72 +12,73 @@ _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
 //Load player with default cop gear.
-switch(__GETC__(life_coplevel)) do 
-{
+
+case (!isNil {(_x getVariable "rank")}): switch ((_x getVariable "rank")) do {
+
 	case 1:
 	{
 		player addUniform "U_Rangemaster";
-        player setObjectTextureGlobal [0,"textures\clothing\cop\polizeianwaerter.paa"];
+		player setObjectTextureGlobal [0,"textures\clothing\cop\polizeianwaerter.paa"];
 	};
-	
+
 	case 2:
 	{
 		player addUniform "U_Rangemaster";
-        player setObjectTextureGlobal [0,"textures\clothing\cop\polizeimeister.paa"];
+		player setObjectTextureGlobal [0,"textures\clothing\cop\polizeimeister.paa"];
 	};
 		
 	case 3:
 	{
 		player addUniform "U_Rangemaster";
-        player setObjectTextureGlobal [0,"textures\clothing\cop\polizeikommissar.paa"];
+		player setObjectTextureGlobal [0,"textures\clothing\cop\polizeikommissar.paa"];
 	};
 
 	case 4:
 	{
 		player addUniform "U_Rangemaster";
-        player setObjectTextureGlobal [0,"textures\clothing\cop\polizeistellv.paa"];
+		player setObjectTextureGlobal [0,"textures\clothing\cop\polizeistellv.paa"];
 	};
 
 	case 5:
 	{
 		player addUniform "U_Rangemaster";
-        player setObjectTextureGlobal [0,"textures\clothing\cop\polizeileiter.paa"];
+		player setObjectTextureGlobal [0,"textures\clothing\cop\polizeileiter.paa"];
 	};	
 		
 	case 6:
 	{
 		player addUniform "U_I_CombatUniform_tshirt";
-        player setObjectTextureGlobal [0,"textures\clothing\cop\bunduniform.paa"];
+		player setObjectTextureGlobal [0,"textures\clothing\cop\bunduniform.paa"];
 	};
 
 	case 7:
 	{
 		player addUniform "U_I_CombatUniform_tshirt";
-        player setObjectTextureGlobal [0,"textures\clothing\cop\bpstellv.paa"];
+		player setObjectTextureGlobal [0,"textures\clothing\cop\bpstellv.paa"];
 	};
 
 	case 8:
 	{
 		player addUniform "U_I_CombatUniform_tshirt";
-        player setObjectTextureGlobal [0,"textures\clothing\cop\bpleiter.paa"];
+		player setObjectTextureGlobal [0,"textures\clothing\cop\bpleiter.paa"];
 	};
 		
 	case 9:
 	{
 		player addUniform "U_I_G_resistanceLeader_F";
-        player setObjectTextureGlobal [0,"textures\clothing\cop\sekuniform.paa"];
+		player setObjectTextureGlobal [0,"textures\clothing\cop\sekuniform.paa"];
 	};
 	
 	case 10:
 	{
 		player addUniform "U_B_CombatUniform_mcam_vest";
-        player setObjectTextureGlobal [0,"textures\clothing\cop\sekstellv.paa"];
+		player setObjectTextureGlobal [0,"textures\clothing\cop\sekstellv.paa"];
 	};
 
 	case 11:
 	{
 		player addUniform "U_B_CombatUniform_mcam_vest";
-        player setObjectTextureGlobal [0,"textures\clothing\cop\sekleiter.paa"];
+		player setObjectTextureGlobal [0,"textures\clothing\cop\sekleiter.paa"];
 	};
 
 	case 12:
@@ -92,6 +93,7 @@ switch(__GETC__(life_coplevel)) do
 		player setObjectTextureGlobal [0,"textures\clothing\cop\praesident.paa"];
 	};
 };
+
 player addItem "ItemMap";
 player assignItem "ItemMap";
 player addItem "ItemCompass";
