@@ -83,7 +83,7 @@ switch (_side) do {
 		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
 
 		//SpeedingPoints
-        _queryResult set[10,([_queryResult select 10,1] call DB_fnc_bool)];
+        _queryResult set[10,[_queryResult select 10] call DB_fnc_numberSafe];
 
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
 		waitUntil {scriptDone _houseData};

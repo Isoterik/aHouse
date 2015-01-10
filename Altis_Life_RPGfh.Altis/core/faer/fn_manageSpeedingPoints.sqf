@@ -27,7 +27,7 @@ if (speeding_points >= _POINTS_PUNISHED) then {
 	license_civ_truck = false;
 
 	//wanted add
-	[[getPlayerUID player,profileName,"907"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+	[[getPlayerUID _civ,_civ getVariable["realname",name _civ],"907"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 
 	hint format["Deine Führerscheine wurden eingezogen. Du stehst zudem auf der Fahndungsliste. Melde dich bei der Polizei und zahle deine Strafe."];
 

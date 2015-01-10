@@ -25,7 +25,9 @@ switch(_crimeID) do
 	case "205": {_type = ["Tankstellenüberfall",7500]};
 	case "207": {_type = ["Banküberfall",15000]};
 	case "210": {_type = ["Versuchter Fahrzeugdiebstahl",2500]};
+	case "213": {_type = ["Illegaler Sprengstoff gebrauch",25000]};
 	case "215": {_type = ["Fahrzeugdiebstahl",5000]};
+	case "220": {_type = ["Einbruch",15000]};
 	case "300": {_type = ["Geringer Drogenbesitz",1000]};
 	case "301": {_type = ["Drogenbesitz",2000]};
 	case "302": {_type = ["Schwerer Drogenbesitz",3000]};
@@ -35,7 +37,7 @@ switch(_crimeID) do
 	case "315": {_type = ["Schwerer Drogenschmuggel",20000]};
 	case "317": {_type = ["Professioneller Drogenschmuggel",40000]};
 	case "400": {_type = ["Illegaler Waffenbesitz",5000]};
-	case "800": {_type = ["Gefängnisausbruch",25000]};
+	case "800": {_type = ["Gefängnisausbruch",100000]};
 	case "907": {_type = ["Führerscheinentzug",2000]};
 	case "910": {_type = ["Geiselnahme",2500]};
 	default {_type = []};

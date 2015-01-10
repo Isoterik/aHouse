@@ -22,6 +22,7 @@ if(!(str(player) in ["medic_1"])) then {
 	};
 };
 
+player setVariable["rank",(__GETC__(life_medicLevel)),true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
