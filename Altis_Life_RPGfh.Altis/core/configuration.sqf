@@ -494,7 +494,7 @@ sell_array =
 	["pickaxe",162],
 	["spikeStrip",32],
 	["ziptie",65],
-	["fuelE",65],
+	["fuelE",27],
 	["fuelF",65],
 	["storagesmall",14219],
 	["storagebig",28437]	
