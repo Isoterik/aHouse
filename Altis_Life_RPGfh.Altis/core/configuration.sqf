@@ -436,7 +436,7 @@ sell_array =
 	//trinken
 	["water",6],
 	["coffee",6],
-	["redgull",260],
+	["redgull",185],
 	["beer",46],
 	["applewine",37],
 	["wodka",40],
@@ -475,6 +475,7 @@ sell_array =
 	["antiques",46],
 	["trinket",2535],
 	["medmarijuana",62],
+	["goldbank",100000],
 
 	//illegal
 	["turtle",475],
