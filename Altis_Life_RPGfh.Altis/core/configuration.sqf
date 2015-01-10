@@ -571,6 +571,9 @@ buy_array =
 	["ziptie",1000],
 	["fuelE",55],
 	["fuelF",100],
+	["blastingcharge",3500],
+	["boltcutter",750],
+	["defusekit",250],
 	["spikeStrip",50],
 	["storagesmall",21876],
 	["storagebig",43750]
