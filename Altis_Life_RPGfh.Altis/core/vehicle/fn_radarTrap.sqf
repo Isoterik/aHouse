@@ -67,13 +67,18 @@ while {true} do {
 					//handle speeding
 					_tmpTime = time;
 					
+					if (_DEBUG_MODE) then {
 					diag_log "Displaying Radar Flash";
+					};
+				
 					{
 						//flash, flash, bling, bling
 						[[],"life_fnc_radarFlashnSound",_x,false] spawn life_fnc_MP;
 					} forEach (crew _x);
 					
+					if (_DEBUG_MODE) then {
 					diag_log "Radar Flash finished";
+					};
 					
 					[[1],"life_fnc_addSpeedingPoints",_driver,false] spawn life_fnc_MP;
 
