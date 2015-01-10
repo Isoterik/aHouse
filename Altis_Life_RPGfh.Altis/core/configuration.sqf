@@ -130,7 +130,7 @@ switch (playerSide) do
 		} else {
 			life_atmcash = 2500; //Starting Bank Money
 		};
-		life_paycheck = 300; //Paycheck Amount
+		life_paycheck = 400; //Paycheck Amount
 	};
 
 	case east:
@@ -141,8 +141,8 @@ switch (playerSide) do
 		} else {
 			life_atmcash = 2500; //Starting Bank Money
 		};
-		life_paycheck = 300; //Paycheck Amount
-	}
+		life_paycheck = 400; //Paycheck Amount
+	};
 };
 
 /*
