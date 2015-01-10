@@ -21,7 +21,6 @@ switch (playerSide) do {
 	case civilian: {
 		_packet pushBack life_is_arrested;
 		_packet pushBack speeding_points;
-		_packet pushBack life_blacklisted;
 	};
 };
 
