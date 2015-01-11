@@ -17,7 +17,7 @@ switch (true) do
 	case (player distance (getMarkerPos "oil_1") < 40) : {_mine = "oilu"; _val = 1;};
 	case (player distance (getMarkerPos "silver_1") < 30) : {_mine = "silverore"; _val = 2;};
 	case (player distance (getMarkerPos "gold_1") < 30) : {_mine = "goldore"; _val = 2;};
-	case (player distance (getMarkerPos "rock_1") < 50): {_mine = "rock"; _val = 2;};
+	case (player distance (getMarkerPos "rock_1") < 50): {_mine = "rock"; _val = 3;};
 	case (player distance (getMarkerPos "antiques_1") < 50): {_mine = "antiques"; _val = [[[0,7],[1,3]]] call life_fnc_prioritySelect;};
 	default {_mine = "";};
 };
