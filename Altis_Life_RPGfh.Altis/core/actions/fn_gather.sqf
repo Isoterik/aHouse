@@ -59,7 +59,7 @@ switch(true) do {
 	case (_zone in ["silver_1"]): {_gather = "silverore"; _val = 2; _pickaxeNeeded = true};
 	case (_zone in ["gold_1"]): {_gather = "goldore"; _val = 2; _pickaxeNeeded = true};
 	case (_zone in ["rock_1"]): {_gather = "rock"; _val = 3; _pickaxeNeeded = true};
-	case (_zone in ["antiques_1"]): {_gather = "antiques"; _val = 2; _val = [[[0,7],[1,3]]] call life_fnc_prioritySelect; _pickaxeNeeded = true;};
+	case (_zone in ["antiques_1"]): {_gather = "antiques"; _val = [[[0,7],[1,3]]] call life_fnc_prioritySelect; _pickaxeNeeded = true;};
 
 	default {""};
 };
