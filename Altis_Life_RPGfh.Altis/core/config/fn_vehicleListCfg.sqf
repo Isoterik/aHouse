@@ -132,7 +132,7 @@ switch (_shop) do
 		
 		if(license_civ_rebel) then
 		{
-			_ret pushBack ["B_G_Offroad_01_armed_F",180000];
+			_return pushBack ["B_G_Offroad_01_armed_F",180000];
 		};
 	};
 		
@@ -144,25 +144,25 @@ switch (_shop) do
 	
 	case "cop_car":
 	{
-		_ret pushBack ["C_Offroad_01_F",600];
+		_return pushBack ["C_Offroad_01_F",600];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["C_SUV_01_F",900];
+			_return pushBack ["C_SUV_01_F",900];
 		};
 		
 		if(__GETC__(life_coplevel) > 5) then
 		{
-			_ret pushBack ["B_MRAP_01_F",10000];
+			_return pushBack ["B_MRAP_01_F",10000];
 		};
 		
 		if(__GETC__(life_coplevel) > 8) then
 		{ 
-			_ret pushBack ["I_MRAP_03_F",15000];
+			_return pushBack ["I_MRAP_03_F",15000];
 		};
 		
 		if(__GETC__(life_coplevel) > 9) then
 		{
-		    _ret pushBack ["B_MRAP_01_hmg_F",22500];
+		    _return pushBack ["B_MRAP_01_hmg_F",22500];
 		};
 	};
 
@@ -170,35 +170,35 @@ switch (_shop) do
 	{
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["B_Heli_Light_01_F",11000];
+			_return pushBack ["B_Heli_Light_01_F",11000];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
-			_ret pushBack ["I_Heli_light_03_unarmed_F",16893];
+			_return pushBack ["I_Heli_light_03_unarmed_F",16893];
 		};
 		if(__GETC__(life_coplevel) > 8) then
 		{
-			_ret pushBack ["O_Heli_Light_02_unarmed_F",18333];
+			_return pushBack ["O_Heli_Light_02_unarmed_F",18333];
 		};		
 		if(__GETC__(life_coplevel) > 9) then
 		{
-	        _ret pushBack ["B_Heli_Transport_01_F",39417];
+	        _return pushBack ["B_Heli_Transport_01_F",39417];
 		};
 	};
 				
 	case "cop_ship":
 	{
-		_ret pushBack ["B_Boat_Transport_01_F",1275];
+		_return pushBack ["B_Boat_Transport_01_F",1275];
 		
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["C_Boat_Civil_01_police_F",2925];
+			_return pushBack ["C_Boat_Civil_01_police_F",2925];
 		};
 		
 		if(__GETC__(life_coplevel) > 9) then
 		{
-			_ret pushBack ["B_Boat_Armed_01_minigun_F",9750];
-			_ret pushBack ["B_SDV_01_F",12187];
+			_return pushBack ["B_Boat_Armed_01_minigun_F",9750];
+			_return pushBack ["B_SDV_01_F",12187];
 		};
 	};
 };

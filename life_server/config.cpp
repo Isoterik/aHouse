@@ -68,6 +68,15 @@ class CfgFunctions
 			class wantedAdd {};
 			class wantedPunish {};
 		};
+
+		class Wanted_DB 
+		{
+			file = "\life_server\Functions\WantedSystem\mySQL";
+			class wantedListInsert {};
+			class wantedListUpdate {};
+			class wantedListQuery {};
+			class wantedListDelete {};
+		};
 		
 		class Jail_Sys
 		{

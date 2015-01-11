@@ -83,7 +83,8 @@ switch (_side) do {
 		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
 
 		//SpeedingPoints
-        _queryResult set[10,[_queryResult select 10] call DB_fnc_numberSafe];
+		_tmp = _queryResult select 10;
+		_queryResult set[10,[_tmp] call DB_fnc_numberSafe];
 
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
 		waitUntil {scriptDone _houseData};
@@ -103,6 +104,6 @@ switch (_side) do {
 };
 
 _keyArr = missionNamespace getVariable [format["%1_KEYS_%2",_uid,_side],[]];
-_queryResult pushBack (_keyArr);
+_queryResult set[13,_keyArr];
 
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;

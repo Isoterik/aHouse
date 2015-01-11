@@ -1,22 +1,20 @@
-1	Polizeianwärter (Whitelisted)						cop_1 - cop_6		B_medic_F
-2	Polizeimeister (Whitelisted)						cop_7 - cop_12		B_medic_F
-3	Polizeikommissar (Whitelisted)						cop_13 - cop_18		B_medic_F
-4	Stellv. Einsatzleiter Polizei (Whitelisted)			cop_19				B_medic_F
-5	Einsatzleiter Polizei (Whitelisted)					cop_20				B_medic_F
-6	Bundespolizei (Whitelisted)							cop_21 - cop_26		I_G_medic_F
-7	Stellv. Einsatzleiter Bundespolizei (Whitelisted)	cop_27				I_G_medic_F
-8	Einsatzleiter Bundespolizei (Whitelisted)			cop_28				I_G_medic_F
-9	SEK (Whitelisted)									cop_29 - cop_34		B_G_medic_F
-10	Stellv. Einsatzleiter SEK (Whitelisted)				cop_35				B_medic_F
-11	Einsatzleiter SEK (Whitelisted)						cop_36				B_medic_F
-12	Stellv. Polizeipräsident (Whitelisted)				cop_37				B_medic_F
-13	Polizeipräsident (Whitelisted)						cop_38				B_medic_F
+1	Polizeianwärter (Whitelisted)				cop_1  - cop_6		B_medic_F
+2	Polizeimeister (Whitelisted)				cop_7  - cop_12		B_medic_F
+3	Polizeikommissar (Whitelisted)				cop_13 - cop_18		B_medic_F
+4	Stellv. Einsatzleiter Polizei (Whitelisted)		cop_19			B_medic_F
+5	Einsatzleiter Polizei (Whitelisted)			cop_20			B_medic_F
+6	Bundespolizei (Whitelisted)				cop_21 - cop_26		I_G_medic_F
+7	Stellv. Einsatzleiter Bundespolizei (Whitelisted)	cop_27			I_G_medic_F
+8	Einsatzleiter Bundespolizei (Whitelisted)		cop_28			I_G_medic_F
+9	SEK (Whitelisted)					cop_29 - cop_34		B_G_medic_F
+10	Stellv. Einsatzleiter SEK (Whitelisted)			cop_35			B_medic_F
+11	Einsatzleiter SEK (Whitelisted)				cop_36			B_medic_F
+12	Stellv. Polizeipräsident (Whitelisted)			cop_37			B_medic_F
+13	Polizeipräsident (Whitelisted)				cop_38			B_medic_F
 
 
-removeBackpack this; removeAllWeapons this;
+medic:  I_G_medic_F
 
-
-medic:   	I_G_medic_F
 
 adac: 	C_man_w_worker_F  U_C_WorkerCoveralls
 

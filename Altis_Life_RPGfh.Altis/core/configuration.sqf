@@ -130,7 +130,7 @@ switch (playerSide) do
 		} else {
 			life_atmcash = 2500; //Starting Bank Money
 		};
-		life_paycheck = 300; //Paycheck Amount
+		life_paycheck = 400; //Paycheck Amount
 	};
 
 	case east:
@@ -141,8 +141,8 @@ switch (playerSide) do
 		} else {
 			life_atmcash = 2500; //Starting Bank Money
 		};
-		life_paycheck = 300; //Paycheck Amount
-	}
+		life_paycheck = 400; //Paycheck Amount
+	};
 };
 
 /*
@@ -436,7 +436,7 @@ sell_array =
 	//trinken
 	["water",6],
 	["coffee",6],
-	["redgull",260],
+	["redgull",185],
 	["beer",46],
 	["applewine",37],
 	["wodka",40],
@@ -475,6 +475,7 @@ sell_array =
 	["antiques",46],
 	["trinket",2535],
 	["medmarijuana",62],
+	["goldbank",100000],
 
 	//illegal
 	["turtle",475],
@@ -571,6 +572,9 @@ buy_array =
 	["ziptie",1000],
 	["fuelE",55],
 	["fuelF",100],
+	["blastingcharge",3500],
+	["boltcutter",750],
+	["defusekit",50],
 	["spikeStrip",50],
 	["storagesmall",21876],
 	["storagebig",43750]

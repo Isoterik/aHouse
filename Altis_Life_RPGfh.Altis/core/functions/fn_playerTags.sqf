@@ -51,7 +51,7 @@ _units = _units - [player];
 					case 10: {"Stellv. Einsatzleiter SEK"};
 					case 11: {"Einsatzleiter SEK"};
 					case 12: {"Stellv. Polizeipräsident"};
-					case 13: {"Polizeipräsident"};
+					case 13: {"Polizeipraesident"};
 					default {"Polizist"};
 					},_x getVariable ["realname",name _x]]};
 

@@ -28,4 +28,5 @@ if(life_cevlar)then{
 _health ctrlSetText format["(%1)", round((1 - (damage player)) * 100)];
 }else{
 _health ctrlSetText format["%1", round((1 - (damage player)) * 100)];
+};
 _health ctrlCommit 0;

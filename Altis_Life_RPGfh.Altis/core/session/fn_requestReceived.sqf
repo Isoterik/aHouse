@@ -59,8 +59,8 @@ switch(playerSide) do {
 		__CONST__(life_mediclevel, 0);
 		__CONST__(life_adaclevel,0);
 		life_blacklisted = _this select 9;
+		speeding_points = parseNumber(_this select 10);
 		life_houses = _this select 11;
-		speeding_points = _this select 10;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles pushBack _house;
@@ -89,8 +89,8 @@ switch(playerSide) do {
 	};
 };
 
-if(count (_this select 14) > 0) then {
-	{life_vehicles pushBack _x;} foreach (_this select 14);
+if(count (_this select 13) > 0) then {
+	{life_vehicles pushBack _x;} foreach (_this select 13);
 };
 
 life_session_completed = true;

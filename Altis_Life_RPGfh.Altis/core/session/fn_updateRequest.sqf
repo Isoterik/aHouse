@@ -17,8 +17,10 @@ _packet pushBack _array;
 [] call life_fnc_saveGear;
 _packet pushBack life_gear;
 switch (playerSide) do {
+
 	case civilian: {
 		_packet pushBack life_is_arrested;
+		_packet pushBack speeding_points;
 	};
 };
 

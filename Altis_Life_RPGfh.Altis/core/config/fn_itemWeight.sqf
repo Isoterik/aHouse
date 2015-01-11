@@ -128,6 +128,9 @@ switch (_item) do
     case "spikeStrip": {3};
     case "fuelE": {2};
     case "fuelF": {4};
+	case "blastingcharge": {15};
+	case "boltcutter": {5};
+	case "defusekit": {2};
     case "storagesmall": {15};
     case "storagebig": {30};
     case "money": {0};
