@@ -18,6 +18,5 @@ if(_block)then
 	_query = format["UPDATE players SET blacklist='0' WHERE playerid='%1'",_uid];
 };
 
-waitUntil {sleep (random 0.3); !DB_Async_Active};
-[_query,0] call DB_fnc_asyncCall;
-
+waitUntil {!DB_Async_Active};
+[_query,1] call DB_fnc_asyncCall;
