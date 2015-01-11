@@ -59,7 +59,7 @@ switch(playerSide) do {
 		__CONST__(life_mediclevel, 0);
 		__CONST__(life_adaclevel,0);
 		life_blacklisted = _this select 9;
-		speeding_points = _this select 10;
+		speeding_points = parseNumber(_this select 10);
 		life_houses = _this select 11;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);

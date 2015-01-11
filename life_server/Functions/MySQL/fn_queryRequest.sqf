@@ -53,8 +53,6 @@ _tmp = _queryResult select 2;
 _queryResult set[2,[_tmp] call DB_fnc_numberSafe];
 _tmp = _queryResult select 3;
 _queryResult set[3,[_tmp] call DB_fnc_numberSafe];
-_tmp = _queryResult select 10;
-_queryResult set[10,[_tmp] call DB_fnc_numberSafe];
 
 //Parse licenses (Always index 6)
 _new = [(_queryResult select 6)] call DB_fnc_mresToArray;
@@ -85,7 +83,8 @@ switch (_side) do {
 		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
 
 		//SpeedingPoints
-        _queryResult set[10,[_queryResult select 10] call DB_fnc_numberSafe];
+		_tmp = _queryResult select 10;
+		_queryResult set[10,[_tmp] call DB_fnc_numberSafe];
 
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
 		waitUntil {scriptDone _houseData};
