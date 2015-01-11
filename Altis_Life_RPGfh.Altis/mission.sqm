@@ -2818,7 +2818,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Verarbeite Kokaine"",life_fnc_processMultipleItems,""cocaine""]; this addAction[format[""%1 ($%2)"",[""license_civ_cocaine""] call life_fnc_varToStr,[([""cocaine""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cocaine"",0,false,false,"""",' !license_civ_cocaine && playerSide == civilian ']; this addAction[""Koks strecken"",life_fnc_processMultipleItems,""cocaines""]; ";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Verarbeite Kokaine"",life_fnc_processMultipleItems,""cocaine""]; this addAction[format[""%1 ($%2)"",[""license_civ_coke""] call life_fnc_varToStr,[([""cocaine""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cocaine"",0,false,false,"""",' !license_civ_coke && playerSide == civilian ']; this addAction[""Koks strecken"",life_fnc_processMultipleItems,""cocaines""];";
 				};
 				class Item87
 				{
@@ -3832,7 +3832,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Käserei"",life_fnc_virt_menu,""cheese""]; this addAction[""Käse herstellen"",life_fnc_processAction,""cheese"",0,false,false,"""",' life_inv_milks > 0 && !life_is_processing']; this addAction[""Butter herstellen"",life_fnc_processAction,""butter"",0,false,false,"""",' life_inv_milks > 0 && !life_is_processing'];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Käserei"",life_fnc_virt_menu,""cheese""]; this addAction[""Käse herstellen"",life_fnc_processMultipleItems,""cheese""]; this addAction[""Butter herstellen"",life_fnc_processMultipleItems,""butter""];";
 				};
 				class Item28
 				{
@@ -3879,7 +3879,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Zigarrenmanufaktur"",life_fnc_virt_menu,""cigar""]; this addAction[""Tabakbklaetter verarbeiten"",life_fnc_processMultipleItems,""tabacco""]; this addAction[format[""%1 ($%2)"",[""license_civ_tabacco""] call life_fnc_varToStr,[([""tabacco""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""tabacco"",0,false,false,"""",' !license_civ_tabacco && playerSide == civilian ']; this addAction[""Zigarren drehen"",life_fnc_processMultipleItems,""cigar""]; this addAction[format[""%1 ($%2)"",[""license_civ_cigar""] call life_fnc_varToStr,[([""cigar""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cigar"",0,false,false,"""",' !license_civ_cigar && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Zigarrenmanufaktur"",life_fnc_virt_menu,""cigar""]; this addAction[""Tabakbklaetter verarbeiten"",life_fnc_processMultipleItems,""tabacco""]; this addAction[format[""%1 ($%2)"",[""license_civ_tabacco""] call life_fnc_varToStr,[([""tabacco""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""tabacco"",0,false,false,"""",' !license_civ_tabacco && playerSide == civilian ']; this addAction[""Zigarren drehen"",life_fnc_processMultipleItems,""cigar""];";
 				};
 				class Item32
 				{
@@ -4316,14 +4316,14 @@ class Mission
 				class Item6
 				{
 					position[]={15612.162,18.489407,17210.131};
-					azimut=268.94061;
+					azimut=268.94101;
 					offsetY=0.20999999;
 					special="NONE";
 					id=300;
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.60000002;
-					init="removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeVest this; removeAllContainers this; this addUniform ""U_IG_Guerilla2_3""; this enableSimulation false;  this allowDamage false; this addAction[""Anmeldung"",life_fnc_healHospital]; this addAction[""Medizinisches Marijuana herstellen"",life_fnc_processAction,""medmarijuana"",0,false,false,"""",' life_inv_cannabis > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_medmarijuana""] call life_fnc_varToStr,[([""medmarijuana""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""medmarijuana"",0,false,false,"""",' !license_civ_medmarijuana && playerSide == civilian ']; this setObjectTexture [0,""textures\clothing\med\notarzt.paa""];";
+					init="removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeVest this; removeAllContainers this; this addUniform ""U_IG_Guerilla2_3""; this enableSimulation false;  this allowDamage false; this addAction[""Anmeldung"",life_fnc_healHospital]; this addAction[""Medizinisches Marijuana herstellen"",life_fnc_processMultipleItems,""medmarijuana""]; this addAction[format[""%1 ($%2)"",[""license_civ_medmarijuana""] call life_fnc_varToStr,[([""medmarijuana""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""medmarijuana"",0,false,false,"""",' !license_civ_medmarijuana && playerSide == civilian ']; this setObjectTexture [0,""textures\clothing\med\notarzt.paa""];";
 				};
 				class Item7
 				{
@@ -4335,7 +4335,7 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.60000002;
-					init="removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeVest this; removeAllContainers this; this addUniform ""U_IG_Guerilla2_3""; this enableSimulation false;  this allowDamage false; this addAction[""Anmeldung"",life_fnc_healHospital]; this addAction[""Medizinisches Marijuana herstellen"",life_fnc_processAction,""medmarijuana"",0,false,false,"""",' life_inv_cannabis > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_medmarijuana""] call life_fnc_varToStr,[([""medmarijuana""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""medmarijuana"",0,false,false,"""",' !license_civ_medmarijuana && playerSide == civilian ']; this setObjectTexture [0,""textures\clothing\med\notarzt.paa""]; ";
+					init="removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeVest this; removeAllContainers this; this addUniform ""U_IG_Guerilla2_3""; this enableSimulation false;  this allowDamage false; this addAction[""Anmeldung"",life_fnc_healHospital]; this addAction[""Medizinisches Marijuana herstellen"",life_fnc_processMultipleItems,""medmarijuana""]; this addAction[format[""%1 ($%2)"",[""license_civ_medmarijuana""] call life_fnc_varToStr,[([""medmarijuana""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""medmarijuana"",0,false,false,"""",' !license_civ_medmarijuana && playerSide == civilian ']; this setObjectTexture [0,""textures\clothing\med\notarzt.paa""]; ";
 				};
 			};
 		};
@@ -33822,14 +33822,14 @@ class Mission
 		class Item2731
 		{
 			position[]={18399.424,27.031666,15246.949};
-			azimut=169.62016;
+			azimut=169.62;
 			offsetY=3.7370801;
 			id=3046;
 			side="EMPTY";
 			vehicle="Land_Sink_F";
 			skill=0.60000002;
 			text="heroin_processor";
-			init="this allowDamage false; this enableSimulation false; this addAction[""Process Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_heroinu > 0 && !life_is_processing && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian ']; this setVariable[""realname"",""Heroin Processing""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Verarbeite Kokaine"",life_fnc_processMultipleItems,""cocaine"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian '];";
 		};
 		class Item2732
 		{
@@ -34161,7 +34161,7 @@ class Mission
 			vehicle="Land_Sink_F";
 			skill=0.60000002;
 			text="mari_processor";
-			init="this allowDamage false; this enableSimulation false; this addAction[""Process Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); life_inv_cannabis > 0 && !life_is_processing && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian ']; this setVariable[""realname"",""Marijuana Processing""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Verarbeite Heroin"",life_fnc_processMultipleItems,""heroin"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian '];";
 		};
 		class Item2762
 		{
@@ -34492,7 +34492,7 @@ class Mission
 			vehicle="Land_Sink_F";
 			skill=0.60000002;
 			text="coke_processor";
-			init="this allowDamage false; this enableSimulation false; this addAction[""Process Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_coke > 0 && !life_is_processing && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian ']; this setVariable[""realname"",""Cocaine Processing""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Verarbeite Marijuana"",life_fnc_processMultipleItems,""marijuana"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian '];";
 		};
 		class Item2792
 		{
@@ -35896,7 +35896,7 @@ class Mission
 		};
 		class Item118
 		{
-			position[]={8319.4785,50.27853,20769};
+			position[]={8427.2412,162.98984,17854.268};
 			name="heroin_1";
 			text="Heroinfeld";
 			type="loc_Tree";
@@ -36522,7 +36522,7 @@ class Mission
 		};
 		class Item199
 		{
-			position[]={9993.4268,12.979073,12285.65};
+			position[]={6452.0308,111.20734,12805.848};
 			name="weed_1";
 			text="Hanffeld";
 			type="loc_Tree";
@@ -37633,16 +37633,16 @@ class Mission
 		{
 			position[]={18384.732,27.097902,15249.475};
 			name="gang_area_3";
-			text="Gang-Versteck";
+			text="Gang-Versteck-K";
 			type="hd_warning";
 			colorName="ColorRed";
-			angle=1.869175;
+			angle=1.86917;
 		};
 		class Item333
 		{
 			position[]={11693.522,37.652031,15914.5};
 			name="gang_area_1";
-			text="Gang-Versteck";
+			text="Gang-Versteck-H";
 			type="hd_warning";
 			colorName="ColorRed";
 		};
@@ -37650,7 +37650,7 @@ class Mission
 		{
 			position[]={4885.9287,17.05901,14418.147};
 			name="gang_area_2";
-			text="Gang-Versteck";
+			text="Gang-Versteck-M";
 			type="hd_warning";
 			colorName="ColorRed";
 			angle=-358.09299;

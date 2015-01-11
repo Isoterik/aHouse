@@ -29,8 +29,9 @@ _productionInfo = switch (_type) do
 {
 	//legal
 	case "oil": {[["oilu"],[1],"oilp",1,"oil",38];};
-	case "diamond": {[["diamond"],[1],"diamondc",1,"diamond",35];};  
+	case "diamond": {[["diamond"],[1],"diamondr",1,"diamond",35];};  
 	case "gold": {[["goldore"],[1],"goldbar",1,"gold",33];}; 
+	case "silver": {[["silverore"],[1],"silverbar",1,"silver",30];};
 	case "copper": {[["copperore"],[1],"copper_r",1,"copper",23];};  
 	case "iron": {[["ironore"],[1],"iron_r",1,"iron",25];}; 
 	case "sand": {[["sand"],[1],"glass",1,"sand",28];}; 

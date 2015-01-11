@@ -65,7 +65,7 @@ switch (_item) do
     case "goldore": {4};
     case "goldbar": {2};
     case "diamond": {4};
-    case "diamondc": {2};
+    case "diamondr": {2};
     case "sand": {4};
     case "glass": {2};
     case "salt": {4};
