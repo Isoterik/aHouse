@@ -144,8 +144,13 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-		_ret pushBack ["V_Rangemaster_belt","Beinholster",250];
 		_ret pushBack ["V_RebreatherB",nil,500];
+		
+		if ((__GETC__(life_coplevel) > 0 ) && (__GETC__(life_coplevel) < 6 )) then
+		{
+			_ret pushBack ["V_Rangemaster_belt","Beinholster",150];
+			//_ret pushBack ["V_Press_F","Schutzweste",250];	
+		};
 		
 		if(__GETC__(life_coplevel) == 6) then
 		{

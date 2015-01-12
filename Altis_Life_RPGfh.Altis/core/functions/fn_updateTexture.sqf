@@ -2,14 +2,22 @@
 /*
 	No Author Needed; it's a few default lines of code
 */
+
+
 if(playerSide == civilian) exitWith {};
 
 if(playerSide == west) then 
 {
 
-	if ((__GETC__(life_coplevel) > 1) && (Backpack player == "B_Bergen_Base")) then {
+	if ((__GETC__(life_coplevel) > 0) && (Backpack player == "B_Bergen_Base")) then {
 		(unitBackpack player) setObjectTextureGlobal[0,"textures\clothing\cop\polizeirucksack.paa"];
 	};
+
+	/*
+	if ((__GETC__(life_coplevel) > 0) && ( == "V_Press_F")) then {
+		 setObjectTextureGlobal[0,"textures\clothing\cop\pweste.paa"];
+	};
+	*/
 
 	if ((__GETC__(life_coplevel) == 1) && (uniform player == "U_Rangemaster")) then {
 		player setObjectTextureGlobal[0,"textures\clothing\cop\polizeianwaerter.paa"];
