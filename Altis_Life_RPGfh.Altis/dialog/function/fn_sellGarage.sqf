@@ -17,8 +17,32 @@ _unit = player;
 
 if(isNil "_vehicle") exitWith {hint localize "STR_Garage_Selection_Error"};
 
-_price = [_vehicle,__GETC__(life_garage_sell)] call TON_fnc_index;
-if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_sell) select _price) select 1;};
+switch (side player) do
+{
+	case civilian:
+	{
+		_price = [_vehicle,__GETC__(life_garage_sell_civ)] call TON_fnc_index;
+		_price = if(_price == -1) then {100} else {(__GETC__(life_garage_sell_civ) select _price) select 1;};
+	};
+
+	case west:
+	{
+		_price = [_vehicle,__GETC__(life_garage_sell_cop)] call TON_fnc_index;
+		_price = if(_price == -1) then {100} else {(__GETC__(life_garage_sell_cop) select _price) select 1;};
+	};
+	
+	case independent:
+	{
+		_price = [_vehicle,__GETC__(life_garage_sell_med)] call TON_fnc_index;
+		_price = if(_price == -1) then {100} else {(__GETC__(life_garage_sell_med) select _price) select 1;};
+	};
+	
+	case east:
+	{
+		_price = [_vehicle,__GETC__(life_garage_sell_adac)] call TON_fnc_index;
+		_price = if(_price == -1) then {100} else {(__GETC__(life_garage_sell_adac) select _price) select 1;};
+	};
+};
 
 [[_vid,_pid,_price,player,life_garage_type],"TON_fnc_vehicleDelete",false,false] spawn life_fnc_MP;
 hint format[localize "STR_Garage_SoldCar",[_price] call life_fnc_numberText];

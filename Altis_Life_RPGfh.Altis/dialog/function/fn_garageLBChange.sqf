@@ -18,10 +18,41 @@ _vehicleColor = [_className,_dataArr select 1] call life_fnc_vehicleColorStr;
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 
-_retrievePrice = [_className,__GETC__(life_garage_prices)] call TON_fnc_index;
-_sellPrice = [_className,__GETC__(life_garage_sell)] call TON_fnc_index;
-_retrievePrice = if(_retrievePrice == -1) then {1000} else {(__GETC__(life_garage_prices) select _retrievePrice) select 1;};
-_sellPrice = if(_sellPrice == -1) then {1000} else {(__GETC__(life_garage_sell) select _sellPrice) select 1;};
+//Neu : Preiseinteilung in Fraktionen.
+switch (side player) do
+{
+	case civilian:
+	{
+		_retrievePrice = [_className,__GETC__(life_garage_prices_civ)] call TON_fnc_index;
+		_sellPrice = [_className,__GETC__(life_garage_sell_civ)] call TON_fnc_index;
+		_retrievePrice = if(_retrievePrice == -1) then {100} else {(__GETC__(life_garage_prices_civ) select _retrievePrice) select 1;};
+		_sellPrice = if(_sellPrice == -1) then {100} else {(__GETC__(life_garage_sell_civ) select _sellPrice) select 1;};
+	};
+	
+	case west:
+	{
+		_retrievePrice = [_className,__GETC__(life_garage_prices_cop)] call TON_fnc_index;
+		_sellPrice = [_className,__GETC__(life_garage_sell_cop)] call TON_fnc_index;
+		_retrievePrice = if(_retrievePrice == -1) then {100} else {(__GETC__(life_garage_prices_cop) select _retrievePrice) select 1;};
+		_sellPrice = if(_sellPrice == -1) then {100} else {(__GETC__(life_garage_sell_cop) select _sellPrice) select 1;};
+	};
+	
+	case independent:
+	{
+		_retrievePrice = [_className,__GETC__(life_garage_prices_med)] call TON_fnc_index;
+		_sellPrice = [_className,__GETC__(life_garage_sell_med)] call TON_fnc_index;
+		_retrievePrice = if(_retrievePrice == -1) then {100} else {(__GETC__(life_garage_prices_med) select _retrievePrice) select 1;};
+		_sellPrice = if(_sellPrice == -1) then {100} else {(__GETC__(life_garage_sell_med) select _sellPrice) select 1;};
+	};
+	
+	case east:
+	{
+		_retrievePrice = [_className,__GETC__(life_garage_prices_adac)] call TON_fnc_index;
+		_sellPrice = [_className,__GETC__(life_garage_sell_adac)] call TON_fnc_index;
+		_retrievePrice = if(_retrievePrice == -1) then {100} else {(__GETC__(life_garage_prices_adac) select _retrievePrice) select 1;};
+		_sellPrice = if(_sellPrice == -1) then {100} else {(__GETC__(life_garage_sell_adac) select _sellPrice) select 1;};
+	};
+};
 
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[
 	(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>$%1</t><br/>

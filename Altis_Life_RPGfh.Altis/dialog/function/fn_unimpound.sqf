@@ -17,8 +17,34 @@ _unit = player;
 
 if(isNil "_vehicle") exitWith {hint localize "STR_Garage_Selection_Error"};
 
-_price = [_vehicle,__GETC__(life_garage_prices)] call TON_fnc_index;
-if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_prices) select _price) select 1;};
+//Neu : Preiseinteilung in Fraktionen.
+switch (side player) do
+{
+	case civilian:
+	{
+		_price = [_vehicle,__GETC__(life_garage_prices_civ)] call TON_fnc_index;
+		if(_price == -1) then {_price = 100;} else {_price = (__GETC__(life_garage_prices_civ) select _price) select 1;};
+	};
+	
+	case west:
+	{
+		_price = [_vehicle,__GETC__(life_garage_prices_cop)] call TON_fnc_index;
+		if(_price == -1) then {_price = 100;} else {_price = (__GETC__(life_garage_prices_cop) select _price) select 1;};
+	};
+	
+	case independent:
+	{
+		_price = [_vehicle,__GETC__(life_garage_prices_med)] call TON_fnc_index;
+		if(_price == -1) then {_price = 100;} else {_price = (__GETC__(life_garage_prices_med) select _price) select 1;};
+	};
+	
+	case east:
+	{
+		_price = [_vehicle,__GETC__(life_garage_prices_adac)] call TON_fnc_index;
+		if(_price == -1) then {_price = 100;} else {_price = (__GETC__(life_garage_prices_adac) select _price) select 1;};
+	};
+};
+
 if(life_atmcash < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
 
 if(typeName life_garage_sp == "ARRAY") then {
