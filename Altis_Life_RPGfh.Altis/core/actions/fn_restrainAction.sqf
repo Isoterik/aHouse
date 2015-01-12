@@ -27,7 +27,7 @@ if ((_ziptie < 1) && (side player != west)) exitWith {
 
 if (side player != west) then {
 	[false,"ziptie",1] call life_fnc_handleInv;
-	["life_fnc_MP_packet",[[getPlayerUID _civ,_civ getVariable["realname",name _civ],"910"],"life_fnc_wantedAdd",false,false]] spawn life_fnc_MP;
+	["life_fnc_MP_packet",[[getPlayerUID player,profileName,"910"],"life_fnc_wantedAdd",false,false]] spawn life_fnc_MP;
 };
 //Broadcast!
 _unit setVariable["restrained",true,true];

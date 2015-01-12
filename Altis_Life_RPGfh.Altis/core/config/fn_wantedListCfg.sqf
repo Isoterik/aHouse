@@ -39,7 +39,7 @@ switch(_crimeID) do
 	case "400": {_type = ["Illegaler Waffenbesitz",5000]};
 	case "800": {_type = ["Gefängnisausbruch",100000]};
 	case "907": {_type = ["Führerscheinentzug",2000]};
-	case "910": {_type = ["Geiselnahme",2500]};
+	case "910": {_type = ["Geiselnahme",25000]};
 	default {_type = []};
 };
 
