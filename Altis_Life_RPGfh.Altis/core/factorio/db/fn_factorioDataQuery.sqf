@@ -12,4 +12,4 @@ _sender = player;
 _uid = getPlayerUID _sender;
 _side = playerSide;
 
-[[_uid,_side,_sender],"FH_fnc_factorioQueryRequest",false,false] call life_fnc_MP;
+[[_uid,_side,_sender],"life_fnc_factorioQueryRequest",false,false] call life_fnc_MP;

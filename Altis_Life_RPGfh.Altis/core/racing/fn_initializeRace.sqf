@@ -14,7 +14,7 @@ _adminLevel = call life_adminlevel;
 
 if (_adminLevel > 0) then {
 	hint "Du hast die Rennvorbereitungen gestartet";
-	[[_rounds],"FH_fnc_initializeRace",false,false] spawn life_fnc_MP;
+	[[_rounds],"life_fnc_initializeRace",false,false] spawn life_fnc_MP;
 } else {
 	hint "Aktuell kann das Rennen nur von einem Admin gestartet werden. Solltest du ein Rennen organisieren wollen, wende dich an einen Admin.";
 };

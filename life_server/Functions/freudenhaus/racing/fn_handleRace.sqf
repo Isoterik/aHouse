@@ -37,7 +37,7 @@ if (_round_time < _fastest_round_time) then {
 if ((!race_isWinninground) && {_round == race_max_rounds}) then {
 	race_isWinninground = true;
 	[[0,format["Wir haben einen Gewinner! Diese Runde geht an %1! ",name _player],true],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-	[_player] spawn FH_fnc_stopRace;
+	[_player] spawn life_fnc_stopRace;
 };
 
 if (_round == race_max_rounds) then {

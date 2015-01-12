@@ -14,4 +14,4 @@ switch (playerSide) do {
 };
 diag_log format["client: updaterequest: %1",_packet];
 
-[_packet,"FH_fnc_factorioUpdateRequest",false,false] spawn life_fnc_MP;
+[_packet,"life_fnc_factorioUpdateRequest",false,false] spawn life_fnc_MP;
