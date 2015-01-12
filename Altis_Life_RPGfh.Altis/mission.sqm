@@ -2637,7 +2637,7 @@ class Mission
 				};
 				class Item71
 				{
-					position[]={16553.43,11.060506,12793.982};
+					position[]={16550.568,11.039192,12790.596};
 					azimut=477.38199;
 					offsetY=0.050000001;
 					special="NONE";
@@ -3776,7 +3776,7 @@ class Mission
 					vehicle="C_Marshal_F";
 					skill=0.60000002;
 					text="racing_manager";
-					init="this enableSimulation false; this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this; removeGoggles this; removeHeadgear this; removeAllContainers this; this addUniform ""U_Marshal""; this addAction[""Zum Rennen anmelden"",life_fnc_registerToRace]; this addAction[""PKW Händler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""car_g_Race"",""civ"",""Altis PKW-Händler""]]; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_Race""; life_garage_type = ""Car"";}];  this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""Rennen starten: 2 Runden"",life_fnc_initializeRace,2,0,false,false];";
+					init="this enableSimulation false; this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this; removeGoggles this; removeHeadgear this; removeAllContainers this; this addUniform ""U_Marshal""; this addAction[""Zum Rennen anmelden"",life_fnc_registerToRace]; this addAction[""PKW Händler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""car_g_Race"",""civ"",""Altis PKW-Händler""]]; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_Race""; life_garage_type = ""Car"";}];  this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""Rennen starten: 2 Runden"",life_fnc_initializeRace,2,0,false,false]; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu];";
 				};
 				class Item23
 				{
@@ -4552,7 +4552,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=2837;
+		items=2847;
 		class Item0
 		{
 			position[]={8456.1416,49.214363,12762.685};
@@ -5568,8 +5568,8 @@ class Mission
 		};
 		class Item99
 		{
-			position[]={23524.314,13.167698,19907.742};
-			azimut=-127.072;
+			position[]={23533.678,13.254742,19907.197};
+			azimut=-218.10564;
 			id=414;
 			side="EMPTY";
 			vehicle="Land_Cargo_House_V1_F";
@@ -33821,7 +33821,7 @@ class Mission
 		};
 		class Item2731
 		{
-			position[]={18399.424,27.031666,15246.949};
+			position[]={18399.527,27.027027,15246.671};
 			azimut=169.62;
 			offsetY=3.7370801;
 			id=3046;
@@ -33844,7 +33844,7 @@ class Mission
 		};
 		class Item2733
 		{
-			position[]={18396.174,27.030945,15245.322};
+			position[]={18396.277,27.027048,15245.044};
 			azimut=439.29578;
 			offsetY=3.7525699;
 			id=3048;
@@ -33866,7 +33866,7 @@ class Mission
 		};
 		class Item2735
 		{
-			position[]={18399.27,27.006821,15245.081};
+			position[]={18399.373,27.002659,15244.803};
 			azimut=529.08655;
 			offsetY=4.7951598;
 			id=3050;
@@ -33877,7 +33877,7 @@ class Mission
 		};
 		class Item2736
 		{
-			position[]={18396.41,27.020565,15244.563};
+			position[]={18396.514,27.016682,15244.285};
 			azimut=527.93359;
 			offsetY=4.7707901;
 			id=3051;
@@ -33888,7 +33888,7 @@ class Mission
 		};
 		class Item2737
 		{
-			position[]={18398.48,27.011276,15244.927};
+			position[]={18398.584,27.007101,15244.648};
 			azimut=528.54956;
 			offsetY=4.7756;
 			id=3052;
@@ -33910,7 +33910,7 @@ class Mission
 		};
 		class Item2739
 		{
-			position[]={18400.582,27.03146,15247.356};
+			position[]={18400.686,27.026831,15247.078};
 			azimut=439.67078;
 			offsetY=4.6560998;
 			id=3054;
@@ -33932,7 +33932,7 @@ class Mission
 		};
 		class Item2741
 		{
-			position[]={18395.527,27.023251,15244.394};
+			position[]={18395.631,27.019356,15244.115};
 			azimut=171.54903;
 			offsetY=4.82166;
 			id=3056;
@@ -33954,7 +33954,7 @@ class Mission
 		};
 		class Item2743
 		{
-			position[]={18400.207,27.013132,15245.971};
+			position[]={18400.311,27.008503,15245.692};
 			azimut=447.85178;
 			offsetY=3.72158;
 			id=3058;
@@ -33976,7 +33976,7 @@ class Mission
 		};
 		class Item2745
 		{
-			position[]={18394.512,27.034903,15244.914};
+			position[]={18394.615,27.031015,15244.636};
 			azimut=376.7088;
 			offsetY=3.7511599;
 			id=3060;
@@ -33987,7 +33987,7 @@ class Mission
 		};
 		class Item2746
 		{
-			position[]={18399.865,27.041096,15248.428};
+			position[]={18399.969,27.039425,15248.149};
 			azimut=405.19781;
 			offsetY=3.75085;
 			id=3061;
@@ -33998,7 +33998,7 @@ class Mission
 		};
 		class Item2747
 		{
-			position[]={18394.451,27.040144,15245.323};
+			position[]={18394.555,27.036247,15245.045};
 			azimut=373.65179;
 			offsetY=3.76085;
 			id=3062;
@@ -34009,7 +34009,7 @@ class Mission
 		};
 		class Item2748
 		{
-			position[]={18395.613,27.031549,15245.123};
+			position[]={18395.717,27.027653,15244.845};
 			azimut=439.35077;
 			offsetY=4.6174798;
 			id=3063;
@@ -34053,7 +34053,7 @@ class Mission
 		};
 		class Item2752
 		{
-			position[]={18396.449,27.025219,15244.968};
+			position[]={18396.553,27.021332,15244.689};
 			azimut=174.32266;
 			offsetY=4.61727;
 			id=3067;
@@ -34064,7 +34064,7 @@ class Mission
 		};
 		class Item2753
 		{
-			position[]={18396.85,27.022793,15244.943};
+			position[]={18396.953,27.018896,15244.665};
 			azimut=199.33958;
 			offsetY=4.6173301;
 			id=3068;
@@ -34075,7 +34075,7 @@ class Mission
 		};
 		class Item2754
 		{
-			position[]={18396.248,27.031906,15245.436};
+			position[]={18396.352,27.028019,15245.157};
 			azimut=450.85577;
 			offsetY=4.61731;
 			id=3069;
@@ -34086,7 +34086,7 @@ class Mission
 		};
 		class Item2755
 		{
-			position[]={18395.947,27.026741,15244.872};
+			position[]={18396.051,27.022854,15244.594};
 			azimut=176.10625;
 			offsetY=4.61724;
 			id=3070;
@@ -34970,6 +34970,126 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
 			init="this enableSimulation false;";
+		};
+		class Item2837
+		{
+			position[]={3274.8591,2.2020292,12973.056};
+			azimut=539.04498;
+			offsetY=4.9200001;
+			id=3152;
+			side="EMPTY";
+			vehicle="Land_Laptop_unfolded_F";
+			skill=0.60000002;
+			text="hq_lt_1";
+			init="this enableSimulation false; this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,""jail""];";
+		};
+		class Item2838
+		{
+			position[]={3274.8235,2.2017875,12973.13};
+			azimut=539.04498;
+			offsetY=4.0999999;
+			id=3153;
+			side="EMPTY";
+			vehicle="Land_TableDesk_F";
+			skill=0.60000002;
+			text="hq_desk_1";
+			init="this enableSimulation false;  this allowDamage false;    this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];";
+		};
+		class Item2839
+		{
+			position[]={13838.677,20.588634,18960.223};
+			azimut=317.25;
+			offsetY=1.4299999;
+			id=3154;
+			side="EMPTY";
+			vehicle="Land_Laptop_unfolded_F";
+			skill=0.60000002;
+			text="hq_lt_1_1";
+			init="this enableSimulation false; this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,""jail""];";
+		};
+		class Item2840
+		{
+			position[]={13838.644,20.589052,18960.234};
+			azimut=677.58502;
+			offsetY=0.60000002;
+			id=3155;
+			side="EMPTY";
+			vehicle="Land_TableDesk_F";
+			skill=0.60000002;
+			text="hq_desk_1_1";
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item2841
+		{
+			position[]={15209.557,17.965782,17323.162};
+			azimut=406.41101;
+			offsetY=1.33;
+			id=3156;
+			side="EMPTY";
+			vehicle="Land_Laptop_unfolded_F";
+			skill=0.60000002;
+			text="hq_lt_1_2";
+			init="this enableSimulation false; this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,""jail""];";
+		};
+		class Item2842
+		{
+			position[]={15209.556,17.965788,17323.17};
+			azimut=406.4379;
+			offsetY=0.5;
+			id=3157;
+			side="EMPTY";
+			vehicle="Land_TableDesk_F";
+			skill=0.60000002;
+			text="hq_desk_1_2";
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item2843
+		{
+			position[]={16547.672,11.080456,12793.361};
+			azimut=480.84799;
+			offsetY=5.02;
+			id=3158;
+			side="EMPTY";
+			vehicle="Land_Laptop_unfolded_F";
+			skill=0.60000002;
+			text="hq_lt_1_3";
+			init="this enableSimulation false; this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,""jail""];";
+		};
+		class Item2844
+		{
+			position[]={16547.605,11.08091,12793.371};
+			azimut=480.84799;
+			offsetY=4.1999998;
+			id=3159;
+			side="EMPTY";
+			vehicle="Land_TableDesk_F";
+			skill=0.60000002;
+			text="hq_desk_1_3";
+			init="this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,""side"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,""back"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,""jail"","""",0,false,false,"""",'playerSide == west'];";
+		};
+		class Item2845
+		{
+			position[]={23535.244,13.271475,19905.307};
+			azimut=320.47;
+			offsetY=1.4299999;
+			id=3160;
+			side="EMPTY";
+			vehicle="Land_Laptop_unfolded_F";
+			skill=0.60000002;
+			text="hq_lt_1_1_1";
+			init="this enableSimulation false; this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,""jail""];";
+		};
+		class Item2846
+		{
+			position[]={23535.217,13.271406,19905.309};
+			azimut=680.80444;
+			offsetY=0.60000002;
+			id=3161;
+			side="EMPTY";
+			vehicle="Land_TableDesk_F";
+			skill=0.60000002;
+			text="hq_desk_1_1_1";
+			init="this enableSimulation false; this allowDamage false;";
 		};
 	};
 	class Markers

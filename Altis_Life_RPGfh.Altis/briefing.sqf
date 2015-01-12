@@ -40,9 +40,11 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 			"Custom Change Log",
 				"
 					- NEU<br/>
-					- Version 3.1.4 ist aktuell. <br/>
+					- Update auf v3.1.4.8 <br/>
+					- Bekannter Bug: Factorio geht atm nicht <br/>
 					
 					- ALT<br/>
+					- Version 3.1.4 ist aktuell. <br/>
 					- fixed bug: illegale waffen werden nicht mehr im rucksack gespeichert<br/>
 					- crocodile fix<br/>
 					- Wantedliste überarbeitet.<br/>
