@@ -442,6 +442,7 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 
 				Polizeirangfolge höchste zuerst:<br/>
 				Polizeipräsident<br/>
+				Stellv. Polizeipräsident einfügen<br/>
 				Einsatzleiter / stellv. Einsatzleiter<br/>
 				SEK-Beamte<br/>
 				Bundespolizei<br/>
