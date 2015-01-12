@@ -24,3 +24,5 @@
 #include "vehicleShop.h"
 #include "settings.h"
 #include "federalReserve.h"
+#include "factorioInv.hpp"
+#include "factorioItemDialog.hpp"
