@@ -1,374 +1,95 @@
 #include <macro.h>
 /*
-	File: fn_updateTexture.sqf
-	Author: Stone 
-	
-	Description:
-	Sets custom Texture to Uniform and Backpack.
+	No Author Needed; it's a few default lines of code
 */
 
-private["_uniform","_backpack","_playerside","_coplevel","_runOnce"];
-_uniform = uniform player;
-_backpack = unitBackpack player;
-_playerside = side player;
-_coplevel = __GETC__(life_coplevel);
-_runOnce = [_this, 0, false] call BIS_fnc_param;
 
+if(playerSide == civilian) exitWith {};
 
-if (!(_runonce)) then
+if(playerSide == west) then 
 {
-	if(_playerside == west) then
-	{
-		// Function to Retexture the Cops Backpack every time it is needed to.
-		[] spawn 
-		{
-			while {true} do
-			{
-				waitUntil {typeOf (unitBackpack player) == "B_Bergen_Base"};
-				[[unitBackpack player,"textures\clothing\cop\polizeirucksack.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				waitUntil {typeOf (unitBackpack player) != "B_Bergen_Base"};
-			};
-		};
 
-		// Function to Retexture the Cops Outfit every time it is needed to.
-		switch(_coplevel) do 
-		{
-			case 1:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_Rangemaster"};
-						[[player,"textures\clothing\cop\polizeianwaerter.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_Rangemaster"};
-					};
-				};
-			};
-		
-			case 2:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_Rangemaster"};
-						[[player,"textures\clothing\cop\polizeimeister.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_Rangemaster"};
-					};
-				};
-			};
-			
-			case 3:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_Rangemaster"};
-						[[player,"textures\clothing\cop\polizeikommissar.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_Rangemaster"};
-					};
-				};
-			};
-
-			case 4:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_Rangemaster"};
-						[[player,"textures\clothing\cop\polizeistellv.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_Rangemaster"};
-					};
-				};
-			};
-
-			case 5:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_Rangemaster"};
-						[[player,"textures\clothing\cop\polizeileiter.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_Rangemaster"};
-					};
-				};
-			};		
-			
-			case 6:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_I_CombatUniform_tshirt"};
-						[[player,"textures\clothing\cop\bunduniform.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_I_CombatUniform_tshirt"};
-					};
-				};
-			};
-
-			case 7:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_I_CombatUniform_tshirt"};
-						[[player,"textures\clothing\cop\bpstellv.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_I_CombatUniform_tshirt"};
-					};
-				};
-			};
-
-			case 8:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_I_CombatUniform_tshirt"};
-						[[player,"textures\clothing\cop\bpleiter.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_I_CombatUniform_tshirt"};
-					};
-				};
-			};
-			
-			case 9:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_I_G_resistanceLeader_F"};
-						[[player,"textures\clothing\cop\sekuniform.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_I_G_resistanceLeader_F"};
-					};
-				};
-			};
-			
-			case 10:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_B_CombatUniform_mcam_vest"};
-						[[player,"textures\clothing\cop\sekstellv.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_B_CombatUniform_mcam_vest"};
-					};
-				};
-			};
-
-			case 11:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_B_CombatUniform_mcam_vest"};
-						[[player,"textures\clothing\cop\sekleiter.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_B_CombatUniform_mcam_vest"};
-					};
-				};
-			};
-			
-			case 12:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_B_CombatUniform_mcam"};
-						[[player,"textures\clothing\cop\praesistellv.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_B_CombatUniform_mcam"};
-					};
-				};
-			};
-
-			case 13:
-			{
-				[] spawn 
-				{
-					while {true} do
-					{
-						waitUntil {Uniform player == "U_B_CombatUniform_mcam"};
-						[[player,"textures\clothing\cop\praesident.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-						waitUntil {Uniform player != "U_B_CombatUniform_mcam"};
-					};
-				};
-			};
-		};
-	};
-	
-	if(_playerside == independent) then
-	{
-		// Function to Retexture the Medics Outfit every time it is needed to.
-		[]spawn
-		{
-			while {true} do
-			{
-				waitUntil {Uniform player == "U_IG_Guerilla2_3"};
-				[[player,"textures\clothing\med\notarzt.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				waitUntil {Uniform player != "U_IG_Guerilla2_3"};
-			};
-		};
-		// Function to Retexture the Medics Backpack every time it is needed to.
-		[]spawn
-		{
-			while {true} do
-			{
-				waitUntil {typeOf (unitBackpack player) == "B_Bergen_Base"};
-				[[unitBackpack player,"textures\clothing\med\arztrucksack.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				waitUntil {typeOf (unitBackpack player) != "B_Bergen_Base"};
-			};
-		};
-	};
-	
-	if(_playerside == east) then
-	{
-		// Function to Retexture the adac Outfit every time it is needed to.
-		[]spawn
-		{
-			while {true} do
-			{
-				waitUntil {Uniform player == "U_C_WorkerCoveralls"};
-				[[player,"textures\clothing\adac\adacoverall.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				waitUntil {Uniform player != "U_C_WorkerCoveralls"};
-			};
-		};
-		
-		// Function to Retexture the adac Backpack every time it is needed to.
-		[]spawn
-		{
-			while {true} do
-			{
-				waitUntil {typeOf (unitBackpack player) == "B_Bergen_Base"};
-				[[unitBackpack player,"textures\clothing\adac\adacrucksack.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				waitUntil {typeOf (unitBackpack player) != "B_Bergen_Base"};
-			};
-		};
+	if ((__GETC__(life_coplevel) > 0) && (Backpack player == "B_Bergen_Base")) then {
+		(unitBackpack player) setObjectTextureGlobal[0,"textures\clothing\cop\polizeirucksack.paa"];
 	};
 
-} else {
+	/*
+	if ((__GETC__(life_coplevel) > 0) && ( == "V_Press_F")) then {
+		 setObjectTextureGlobal[0,"textures\clothing\cop\pweste.paa"];
+	};
+	*/
 
-	if(_playerside == west) then
-	{
-		// Function to Retexture the Cops Backpack every time it is needed to.
-		if(typeOf (unitBackpack player) == "B_Bergen_Base") then
-		{
-			[[unitBackpack player,"textures\clothing\cop\polizeirucksack.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-		};
-		
-		// Function to Retexture the Cops Outfit every time it is needed to.
-		switch(_coplevel) do 
-		{
-			case 1:
-			{
-				if (Uniform player == "U_Rangemaster") then
-				{
-					[[player,"textures\clothing\cop\polizeianwaerter.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
-		
-			case 2:
-			{
-				if (Uniform player == "U_Rangemaster") then
-				{
-					[[player,"textures\clothing\cop\polizeimeister.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
+	if ((__GETC__(life_coplevel) == 1) && (uniform player == "U_Rangemaster")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\polizeianwaerter.paa"];
+	};
 
-			case 3:
-			{
-				if (Uniform player == "U_Rangemaster") then
-				{
-					[[player,"textures\clothing\cop\polizeikommissar.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
+	if ((__GETC__(life_coplevel) == 2) && (uniform player == "U_Rangemaster")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\polizeimeister.paa"];
+	};
 
-			case 4:
-			{
-				if (Uniform player == "U_Rangemaster") then
-				{
-					[[player,"textures\clothing\cop\polizeistellv.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
+	if ((__GETC__(life_coplevel) == 3) && (uniform player == "U_Rangemaster")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\polizeikommissar.paa"];
+	};
 
-			case 5:
-			{
-				if (Uniform player == "U_Rangemaster") then
-				{
-					[[player,"textures\clothing\cop\polizeileiter.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
+	if ((__GETC__(life_coplevel) == 4) && (uniform player == "U_Rangemaster")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\polizeistellv.paa"];
+	};
 
-			case 6:
-			{
-				if (Uniform player == "U_I_CombatUniform_tshirt") then
-				{
-					[[player,"textures\clothing\cop\bunduniform.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
+	if ((__GETC__(life_coplevel) == 5) && (uniform player == "U_Rangemaster")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\polizeileiter.paa"];
+	};
 
-			case 7:
-			{
-				if (Uniform player == "U_I_CombatUniform_tshirt") then
-				{
-					[[player,"textures\clothing\cop\bpstellv.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
+	if ((__GETC__(life_coplevel) == 6) && (uniform player == "U_I_CombatUniform_tshirt")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\bunduniform.paa"];
+	};
 
-			case 8:
-			{
-				if (Uniform player == "U_I_CombatUniform_tshirt") then
-				{
-					[[player,"textures\clothing\cop\bpleiter.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
+	if ((__GETC__(life_coplevel) == 7) && (uniform player == "U_I_CombatUniform_tshirt")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\bpstellv.paa"];
+	};
 
-			case 9:
-			{
-				if (Uniform player == "U_I_G_resistanceLeader_F") then
-				{
-					[[player,"textures\clothing\cop\sekuniform.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
+	if ((__GETC__(life_coplevel) == 8) && (uniform player == "U_I_CombatUniform_tshirt")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\bpleiter.paa"];
+	};
 
-			case 10:
-			{
-				if (Uniform player == "U_B_CombatUniform_mcam_vest") then
-				{
-					[[player,"textures\clothing\cop\sekstellv.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
+	if ((__GETC__(life_coplevel) == 9) && (uniform player == "U_I_G_resistanceLeader_F")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\sekuniform.paa"];
+	};
 
-			case 11:
-			{
-				if (Uniform player == "U_B_CombatUniform_mcam_vest") then
-				{
-					[[player,"textures\clothing\cop\sekleiter.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
+	if ((__GETC__(life_coplevel) == 10) && (uniform player == "U_B_CombatUniform_mcam_vest")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\sekstellv.paa"];
+	};
 
-			case 12:
-			{
-				if (Uniform player == "U_B_CombatUniform_mcam") then
-				{
-					[[player,"textures\clothing\cop\praesistellv.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
-			
-			case 13:
-			{
-				if (Uniform player == "U_B_CombatUniform_mcam") then
-				{
-					[[player,"textures\clothing\cop\praesident.paa"], "life_fnc_setTexture", true, true] spawn life_fnc_MP;
-				};
-			};
-		};
+	if ((__GETC__(life_coplevel) == 11) && (uniform player == "U_B_CombatUniform_mcam_vest")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\sekleiter.paa"];
+	};
+
+	if ((__GETC__(life_coplevel) == 12) && (uniform player == "U_B_CombatUniform_mcam")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\praesistellv.paa"];
+	};
+
+	if ((__GETC__(life_coplevel) == 13) && (uniform player == "U_B_CombatUniform_mcam")) then {
+		player setObjectTextureGlobal[0,"textures\clothing\cop\praesident.paa"];
+	};
+};
+
+if(playerSide == independent) then
+{
+	if (Backpack player == "B_Bergen_Base") then {
+		(unitBackpack player) setObjectTextureGlobal[0,"textures\clothing\med\arztrucksack.paa"];
+	};
+
+	if (uniform player == "U_IG_Guerilla2_3") then {
+		player setObjectTextureGlobal[0,"textures\clothing\med\notarzt.paa"];
+	};
+};
+
+if(playerSide == east) then
+{
+	if (Backpack player == "B_Bergen_Base") then {
+		(unitBackpack player) setObjectTextureGlobal[0,"textures\clothing\adac\adacrucksack.paa"];
+	};
+
+	if (uniform player == "U_C_WorkerCoveralls") then {
+		player setObjectTextureGlobal[0,"textures\clothing\adac\adacoverall.paa"];
 	};
 };

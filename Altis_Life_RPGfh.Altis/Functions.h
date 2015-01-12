@@ -148,7 +148,6 @@ class Life_Client_Core
 		class dropFishingNet {};
 		class getDPMission {};
 		class postBail {};
-		class processAction {};
 		class arrestAction {};
 		class escortAction {};
 		class impoundAction {};

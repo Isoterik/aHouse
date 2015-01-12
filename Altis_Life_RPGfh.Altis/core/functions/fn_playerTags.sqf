@@ -50,14 +50,14 @@ _units = _units - [player];
 					case 9: {"SEK Beamter"};
 					case 10: {"Stellv. Einsatzleiter SEK"};
 					case 11: {"Einsatzleiter SEK"};
-					case 12: {"Stellv. Polizeipräsident"};
+					case 12: {"Stellv. Polizeipraesident"};
 					case 13: {"Polizeipraesident"};
 					default {"Polizist"};
 					},_x getVariable ["realname",name _x]]};
 
-				case ((!isNil {_x getVariable "name"} && playerSide == independent)): {format["<t color='#FF0000'>Notarzt %1</t>",_x getVariable ["name","Unknown Player"]]};
+				case (playerSide == independent): {format["<t color='#FF0000'>Notarzt %1</t>",_x getVariable ["name","Unknown Player"]]};
 
-				case ((!isNil {_x getVariable "name"} && playerSide == east)): {format["<t color='#FFCC00'>ATAC %1</t>",_x getVariable ["name","Unknown Player"]]};
+				case (playerSide == east): {format["<t color='#FFCC00'>ATAC %1</t>",_x getVariable ["name","Unknown Player"]]};
 				default {
 					if(!isNil {(group _x) getVariable "gang_name"}) then {
 						format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x getVariable ["realname",name _x],(group _x) getVariable ["gang_name",""]];

@@ -40,9 +40,11 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 			"Custom Change Log",
 				"
 					- NEU<br/>
-					- Version 3.1.4 ist aktuell. <br/>
+					- Update auf v3.1.4.8 <br/>
+					- Bekannter Bug: Factorio geht atm nicht <br/>
 					
 					- ALT<br/>
+					- Version 3.1.4 ist aktuell. <br/>
 					- fixed bug: illegale waffen werden nicht mehr im rucksack gespeichert<br/>
 					- crocodile fix<br/>
 					- Wantedliste überarbeitet.<br/>
@@ -146,24 +148,9 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				"
 				Die Folgenden Taten koennen zu einem Bann führen, im Ermessen der Admins.<br/><br/>
 				
-				1. Zivilisten koennen verhaftet werden, wenn sie in die Rucksaecke oder Dienstfahrzeuge von Beamten schauen. Wenn dies wiederholt vorkommt kann es zu einem Bann führen.<br/>
-				2. Zivilisten koennen verhaftet werden wenn sie Cops im Spiel folgen um ihre Position an andere Spieler zu verraten.<br/>
-				3. Zivilisten welche ohne RP Hintergrund Cops umbringen. (siehe dazu Abschnitt RDM)<br/>
-				4. Das Folgen und Belaestigen von Cops über einen beliebingen Zeitraum wird durch einen Bann geahndet.<br/>
-				5. Das aktive Blockieren von Cops kann zur Verhaftung führen. Bei wiederholtem Blockieren kann es zu einem Bann führen<br/><br/>
-			"
-		]
-	];
-	
-	player createDiaryRecord ["serverrules",
-		[
-			"Boote", 
-				"
-				Die Folgenden Taten koennen zu einem Bann führen, abhaengig von der Sicht der Admins.<br/><br/>
-				
-				1. Das wiederholte Pushen von Booten ohne Erlaubnis.<br/>
-				2. Das Pushen von Booten mit der Absicht jemanden zu verletzen oder jemanden zu toeten.<br/>
-				3. Das absichtliche überfahren von Schwimmern oder Tauchern.<br/><br/>
+				1. Zivilisten koennen verhaftet werden wenn sie Cops im Spiel folgen um ihre Position an andere Spieler zu verraten.<br/>
+				2. Das Folgen und Belaestigen von Cops über einen beliebingen Zeitraum wird durch einen Bann geahndet.<br/>
+				3. Das aktive Blockieren von Cops kann zur Verhaftung führen. Bei wiederholtem Blockieren kann es zu einem Bann führen<br/><br/>
 			"
 		]
 	];
@@ -197,21 +184,7 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 			"
 		]
 	];
-	
-	player createDiaryRecord ["serverrules",
-		[
-			"Kommunikationsregeln", 
-				"
-				Die folgenden Taten koennen zu einem Bann führen, abhaengig von der Sicht der Admins.<br/><br/>
-				
-				1. Der Sidechat darf nur für schriftliche Kommunikation benutzt werden.<br/>
-				2. Das Spammen von einem beliebigen Chat Kanal resultiert in einem 24H Bann.<br/>
-				3. Teamspeak Kanäle sind mit einem Grund da, Cops müssen sich jederzeit in einem Cop Kanal aufhalten.<br/>
-				4. Zivilisten haben in Cop Kanaelen nichts zu suchen! Jeder Zivilist welcher einem Cop Kanal joint wird sofort aus dem Kanal entfernt. Wiederholungstaeter koennen gebannt werden.<br/><br/>
-			"
-		]
-	];
-	
+		
 	player createDiaryRecord ["serverrules",
 		[
 			"Random Deathmatching (RDM)", 
@@ -221,8 +194,7 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				1. Das Toeten eines Mitspielers ohne Roleplay Grund.<br/>
 				2. Cops und Zivilisten dürfen nur in Verbindung mit einem begangenen Verbrechen auf einander Schiessen.<br/>
 				3. Wenn du im Kreuzfeuer eines Gefechts erschossen wirst zaehlt dies nicht als RDM.<br/>
-				4. Jemanden mit dem Zweck sich selbst zu schützen zu toeten zaehlt nicht als RDM (Notwehr).<br/>
-				5. Einen Spieler zu erschiessen ohne ihm genügend Zeit zu geben deinen Anweisungen zu folgen zaehlt als RDM.<br/><br/>
+				4. Einen Spieler zu erschiessen ohne ihm genügend Zeit zu geben deinen Anweisungen zu folgen zaehlt als RDM.<br/><br/>
 				
 				Jeder Fall wird von einem oder mehreren Admins beurteilt.<br/><br/>
 			"
@@ -252,8 +224,6 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				"
 				Benimm dich und halte dich an die grundlegenden Regeln von Rollenspielen.<br/>
 				Trolling, Belaestigung, das Unterbrechen von Roleplay usw. wird strengstens bestraft!<br/>
-				Sei einfach kein Bob, okay?<br/>
-				
 			"
 		]
 	];
@@ -284,10 +254,9 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				4.  Die eingeteilten Polizisten sollten sich sofort zur Zentralbank begeben, kleine Verbrechen koennen in diesem Fall ignoriert werden.<br/>
 				5.  Waffeneinsatz ist gestattet, allerdings sollte jede Moeglichkeit sie lebend gefangen zu nehmen zuerst versucht werden.<br/>
 				6.  Die Polizei darf nicht blind in die Bank feuern.<br/>
-				7.  Die Polizei sollte Zivilisten in der Bank evakuieren.<br/>
-				8.  Jeder Zivilist, der sich in unmittelbarer Umgebung des Bankgelaendes aufhaellt, gilt wahrend eins Banküberfalls als potentieller Komplize der Bankraeuber.<br/>
-				9.  Im Rahmen eines Banküberfalls gilt die Respawnregel nicht für die Polizei.<br/>
-				10. Cops dürfen, sollten sie bei einem Banküberfall sterben, EIN MAL respawnen und erneut am Banküberfall teilnehmen.<br/><br/>
+				7.  Jeder Zivilist, der sich in unmittelbarer Umgebung des Bankgelaendes aufhaellt, gilt wahrend eins Banküberfalls als potentieller Komplize der Bankraeuber.<br/>
+				8.  Im Rahmen eines Banküberfalls gilt die Respawnregel nicht für die Polizei.<br/>
+				9. Cops dürfen, sollten sie bei einem Banküberfall sterben, EIN MAL respawnen und erneut am Banküberfall teilnehmen.<br/><br/>
 			"
 		]
 	];
@@ -318,7 +287,7 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				1. Das Rebellengebiet wird nicht als Illegales Gebiet angesehen, sondern als ausserhalb der Zustaendigkeit der Polizei. Diese kann dort nach eigenem Ermessen eingreifen.<br/>
 				2. Cops dürfen illegale Gebiete nicht ohne einen Raid betreten. (Abschnitt Raiding/Camping) und nur mit Genehmigung des diensthabenden Einsatzleiters patroullieren.<br/>
 				3. Einem Polizist ist es unter keinen Umstaenden erlaubt ein illegales Gebiet zu becampen. (Ausnahme Grenzposten am Rebellengebiet)<br/>
-				4. Polizisten dürfen mobile Checkpoints nicht naeher als 1200 Meter an einem illegalen Ort (Drugfields, Drugprocessings) aufbaün.<br/><br/>
+				4. Polizisten duerfen mobile Checkpoints nicht naeher als 1200 Meter an einem illegalen Ort (z.B. Kokainfeld / Verarbeiter) aufbauen.<br/><br/>
 			"
 		]
 	];
@@ -327,9 +296,9 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 		[
 			"Strassensperren", 
 				"
-				Cops koennen an einer beliebigen Strasse eine Strassensperre aufbaün um illegale Aktivitaeten zu verhindern.<br/><br/>
+				Cops koennen an einer beliebigen Strasse eine Strassensperre aufbauen um illegale Aktivitaeten zu verhindern.<br/><br/>
 				
-				1. Eine Strassensperre muss aus mindestens 3 Polizisten und 2 Fahrzeugen bestehen, wobei ein ATV hier nicht als Fahrzeug gilt.<br/><br/>
+				1. Eine Strassensperre muss aus mindestens 3 Polizisten und 2 Fahrzeugen bestehen.<br/><br/>
 
 				Richtiges Verhalten an Strassensperren:<br/>
 				1. Zivilisten haben sich grundlegend an die Anweisungen der Polizei zu halten.<br/>
@@ -347,10 +316,9 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 			"Fahrzeuge", 
 				"
 				1. Fahrzeuge, welche verlassen, zerstoert, oder ohne Fahrer sind koennen beschlagnahmt werden.<br/>
-				2. Fahrzeuge welche verlassen, zerstoert oder ohne Fahrer sind koennen beschlagnahmt werden.<br/>
-				3. Bote sollte ordentlich an der Küste geparkt werden.<br/>
-				4. Jedes Fahrzeug welches sich über einen laengeren Zeitraum nicht bewegt kann beschlagnahmt werden.<br/>
-				5. Das Beschlagnahmen von Fahrzeugen ist ein wichtiger job. Er hilft dabei, den Server sauber und weniger laggend zu halten.<br/>
+				2. Boote sollte ordentlich an der Küste geparkt werden.<br/>
+				3. Jedes Fahrzeug welches sich über einen laengeren Zeitraum nicht bewegt kann beschlagnahmt werden.<br/>
+				4. Das Beschlagnahmen von Fahrzeugen ist ein wichtiger job. Er hilft dabei, den Server sauber und weniger laggend zu halten.<br/>
 			"
 		]
 	];
@@ -401,7 +369,7 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				3. Wenn ein Zivilist sich weigert einen Strafzettel zu zahlen ist es ein Grund ihn zu verhaften.<br/>
 				4. Einem Zivilisten einen unangebracht hohen Strafzettel auszustellen ist nicht erlaubt und führt zur Degradierung/Suspendierung nach ermessen der Polizei-Chefs.<br/><br/>
 				
-				Eine Liste aller Verbrechen und der zugehoerigen Bestrafung wird waehrend der Ausbildung ausgehaendigt. Wenn Zweifel bestehen frage einen ranghoeheren Polizisten um Rat.<br/><br/>
+				Eine Liste aller Verbrechen und der zugehoerigen Bestrafung wird waehrend der Ausbildung ausgehaendigt. Wenn Zweifel bestehen frage einen stellv. Einsatzleiter oder hoeher um Rat.<br/><br/>
 				
 				
 			"
@@ -448,14 +416,14 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				"
 				Raiding bezeichnet das eindringen mehrerer Polizisten in ein illegales Gebiet um kriminelle Vorgaenge zu stoppen.<br/><br/>
 
-				1. Um ein Gebiet zu raiden benoetigt es mindestens 4 Polizisten, einer davon Officer oder hoeher.<br/>
+				1. Um ein Gebiet zu raiden benoetigt es mindestens 4 Polizisten, einer davon stellv. Einsatzleiter oder hoeher.<br/>
 				2. Alle Zivilisten in einem Raid Gebiet werden verhaftet und durchsucht, wird nichts gefunden sind sie unverzüglich freizulassen.<br/>
 				3. Werden bei einer Durchsuchung illegale Objekte gefunden wird die Person verhaftet und normal bestraft.<br/>
 				5. Toedliche gewalt ist nur anzuwenden wie unter 'Toedliche Gewalt' beschrieben.<br/>
 				6. Nachdem das Gebiet sicher ist, müssen die Polizisten das Gebiet umgehend verlassen.<br/>
 				7. Nach einem Raid kann ein Gebiet 30 min lang nicht mehr geraided werden.<br/>
 				8. Wenn der Raid fehlschlaegt (alle Polizisten sterben) zaehlt 7. dennoch.<br/>
-				9. Es kann Vertaerkung gerufen werden, diese darf allerdings nicht aus gefallenen Polizisten bestehen.<br/><br/>
+				9. Es kann Verstaerkung gerufen werden, diese darf allerdings nicht aus gefallenen Polizisten bestehen.<br/><br/>
 
 				Camping bezeichnet den laengeren Aufenthalt eines Polizisten in einem Gebiet.<br/><br/>
 
@@ -474,7 +442,7 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 
 				Polizeirangfolge höchste zuerst:<br/>
 				Polizeipräsident<br/>
-				Gruppenführer<br/>
+				Einsatzleiter / stellv. Einsatzleiter<br/>
 				SEK-Beamte<br/>
 				Bundespolizei<br/>
 				Polizeikommissar<br/>
@@ -512,13 +480,13 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 			"Rebellenregeln",
 				"
 				Rebellen bezeichnet eine Gruppierung von Zivilisten, welche sich gegen die Polizei auflehnen wollen.<br/>
-				1. Rebellen koennen in ihrem Terrain jederzeit das Feüer auf Polizisten eroeffnen.<br/>
+				1. Rebellen koennen in ihrem Terrain jederzeit das Feuer auf Polizisten eroeffnen.<br/>
 				2. Rebellen gelten grundsaetzlich als verdaechtig und dürfen von der Polizei durchsucht werden.<br/>
 				3. Cops koennen im Falle eines Angriffs jederzeit das Feuer mit scharfer Munition auf Rebellen erwiedern.<br/>
-				4. Rebellen sind Feinde der Cops, nicht der Zivilisten. Rebellen dürfen niemals ohne RP Hintergrund das Feuer auf Zivilisten eroeffnen, auch nit in ihrem Gebiet.<br/>
+				4. Rebellen sind Feinde der Cops, nicht der Zivilisten. Rebellen dürfen niemals ohne RP Hintergrund das Feuer auf Zivilisten eroeffnen, auch nicht in ihrem Gebiet.<br/>
 				5. Rebellen müssen sich, um als offizielle Rebellenorganisation anerkannt zu werden, mit einem ausführlichen Post im entsprechenden Forum vorstellen und dort ihre Mitglieder sowie Gründe ihrer Rebellion vortragen.<br/>
 				6. Eine Rebellenbande muss, um als diese erkannt zu werden, ihren Namens-Tag vor dem Ingame Namen tragen.<br/>
-				7. Der Ifrit und bewaffnete Fahrzeuge (Offroader) sind illegale Rebellenfahrzeuge. Ifrits und bewaffnete Fahrzeuge, welche ausserhalb vom Rebellengebiet von der Polizei gestoppt werden, dürfen von von Der Polizei für den aktuellen Restart-Zyklus beschlagnahmt und genutzt werden.<br/>
+				7. Der Ifrit und bewaffnete Fahrzeuge (Offroader) sind illegale Rebellenfahrzeuge. Ifrits und bewaffnete Fahrzeuge, welche ausserhalb vom Rebellengebiet von der Polizei gestoppt werden, dürfen von Der Polizei für den aktuellen Restart-Zyklus beschlagnahmt und genutzt werden.<br/>
 				8. Illegale Waffen sind verboten. Wenn Rebellen mit ihnen erwischt werden, darf die Polizei die illegalen Waffen, zusätzlich zu dem Bussgeld beschlagnahmen<br/><br/>
 			"
 		]
@@ -613,7 +581,7 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				2. Sollte keine Geschwindigkeitsbegrenzung ausgeschildert sein, so gilt innerots eine Begrenzung von 50km/h und außerorts von 100km/h, sowie auf der Autobahn 130km/h. Bei Übertretung gilt folgende Regelung:<br/>
 				10 – 15 km/h ergeben ein Verwarnungsgeld von 100 Altis Dollar.<br/>
 				15 – 25 km/h ergeben ein Verwarnungsgeld von 250 Altis Dollar.<br/>
-				25 – 50 km/h ergeben ein Bußgeld von 10.00 Altis Dollar.<br/>
+				25 – 50 km/h ergeben ein Bußgeld von 1000 Altis Dollar.<br/>
 				Bei einer Übertretung über 50 km/h wird ein Bußgeld von 1500 Altis Dollar ausgestellt sowie die Beschlagnahmung des Fahrzeugs wegen unsachgemäßer Gebrauch veranlasst.<br/>
 				3. Unsachgemäßes Fahren und Fahren mit Unfallfolge:<br/>
 				Bei unsachgemäßer Fahrzeugführung wird ein Bußgeld von 500 Altis Dollar fällig. Sollte dies zu einem Unfall führen wird ein Bußgeld von 2500 Alits Dollar fällig.<br/>

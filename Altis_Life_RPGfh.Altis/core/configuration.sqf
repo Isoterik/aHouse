@@ -46,8 +46,8 @@ __CONST__(life_revive_fee,500); //Fee for players to pay when revived.
 __CONST__(life_houseLimit,5); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
 
 //Gang related stuff?
-__CONST__(life_gangPrice,100000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
-__CONST__(life_gangUpgradeBase,25000); //MASDASDASD
+__CONST__(life_gangPrice,500000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
+__CONST__(life_gangUpgradeBase,50000); //MASDASDASD
 __CONST__(life_gangUpgradeMultipler,2.5); //BLAH
 
 __CONST__(life_enableFatigue,true); //Enable / Disable the ARMA 3 Fatigue System
@@ -124,24 +124,14 @@ switch (playerSide) do
 	
 	case independent:
 	{
-		if (__GETC__(life_medicLevel) > 0) then
-		{
-			life_atmcash = 5000; //Starting Bank Money
-		} else {
-			life_atmcash = 2500; //Starting Bank Money
-		};
-		life_paycheck = 400; //Paycheck Amount
+		life_atmcash = 2500; //Starting Bank Money
+		life_paycheck = 450; //Paycheck Amount
 	};
 
 	case east:
 	{
-		if (__GETC__(life_adaclevel) > 0) then
-		{
-			life_atmcash = 5000; //Starting Bank Money
-		} else {
-			life_atmcash = 2500; //Starting Bank Money
-		};
-		life_paycheck = 400; //Paycheck Amount
+		life_atmcash = 2500; //Starting Bank Money
+		life_paycheck = 450; //Paycheck Amount
 	};
 };
 
@@ -150,6 +140,7 @@ switch (playerSide) do
 ****** Custom Variables - FAER System *******
 *********************************************
 */
+
 speeding_points = 0;
 
 /*

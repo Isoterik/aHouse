@@ -17,83 +17,84 @@ switch (player getVariable "rank") do {
 
 	case 1:
 	{
-		player addUniform "U_Rangemaster";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\polizeianwaerter.paa"];
+		player AddUniform "U_Rangemaster";
+		[[player,0,"textures\clothing\cop\polizeianwaerter.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};
 
 	case 2:
 	{
-		player addUniform "U_Rangemaster";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\polizeimeister.paa"];
+		player AddUniform "U_Rangemaster";
+		[[player,0,"textures\clothing\cop\polizeimeister.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};
 		
 	case 3:
 	{
-		player addUniform "U_Rangemaster";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\polizeikommissar.paa"];
+		player AddUniform "U_Rangemaster";
+		[[player,0,"textures\clothing\cop\polizeikommissar.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};
 
 	case 4:
 	{
-		player addUniform "U_Rangemaster";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\polizeistellv.paa"];
+		player AddUniform "U_Rangemaster";
+		[[player,0,"textures\clothing\cop\polizeistellv.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};
 
 	case 5:
 	{
-		player addUniform "U_Rangemaster";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\polizeileiter.paa"];
+		player AddUniform "U_Rangemaster";
+		[[player,0,"textures\clothing\cop\polizeileiter.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};	
 		
 	case 6:
 	{
-		player addUniform "U_I_CombatUniform_tshirt";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\bunduniform.paa"];
+		player AddUniform "U_I_CombatUniform_tshirt";
+		[[player,0,"textures\clothing\cop\bunduniform.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};
 
 	case 7:
 	{
-		player addUniform "U_I_CombatUniform_tshirt";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\bpstellv.paa"];
+		player AddUniform "U_I_CombatUniform_tshirt";
+		[[player,0,"textures\clothing\cop\bpstellv.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};
 
 	case 8:
 	{
-		player addUniform "U_I_CombatUniform_tshirt";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\bpleiter.paa"];
+		player AddUniform "U_I_CombatUniform_tshirt";
+		[[player,0,"textures\clothing\cop\bpleiter.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};
 		
 	case 9:
 	{
-		player addUniform "U_I_G_resistanceLeader_F";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\sekuniform.paa"];
+		player AddUniform "U_I_G_resistanceLeader_F";
+		[[player,0,"textures\clothing\cop\sekuniform.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};
 	
 	case 10:
 	{
-		player addUniform "U_B_CombatUniform_mcam_vest";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\sekstellv.paa"];
+		player AddUniform "U_B_CombatUniform_mcam_vest";
+		[[player,0,"textures\clothing\cop\sekstellv.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};
 
 	case 11:
 	{
-		player addUniform "U_B_CombatUniform_mcam_vest";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\sekleiter.paa"];
+		player AddUniform "U_B_CombatUniform_mcam_vest";
+		[[player,0,"textures\clothing\cop\sekleiter.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};
 
 	case 12:
 	{
-		player addUniform "U_B_CombatUniform_mcam";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\praesistellv.paa"];
+		player AddUniform "U_B_CombatUniform_mcam";
+		[[player,0,"textures\clothing\cop\praesistellv.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};
 	
 	case 13:
 	{
-		player addUniform "U_B_CombatUniform_mcam";
-		player setObjectTextureGlobal [0,"textures\clothing\cop\praesident.paa"];
+		player AddUniform "U_B_CombatUniform_mcam";
+		[[player,0,"textures\clothing\cop\praesident.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 	};
 };
 
+/* ITEMS */
 player addItem "ItemMap";
 player assignItem "ItemMap";
 player addItem "ItemCompass";

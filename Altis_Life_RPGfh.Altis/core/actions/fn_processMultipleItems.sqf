@@ -27,15 +27,51 @@ if(vehicle player != player) exitwith {hint format["Du darfst nicht im Fahrzeug 
 //define your production line here
 _productionInfo = switch (_type) do
 {
-	//MoneyJobs
-	case "meth": {[["pseudo","methu"],[1,2],"methp",3,"meth",45];};
-	case "croco": {[["eyedrops","heroinp"],[1,2],"croco",3,"croco",38];};
-	case "cocaines": {[["cocainep","flourp"],[1,2],"cocaineps",3,"cocaine",45];};	
+	//legal
+	case "oil": {[["oilu"],[1],"oilp",1,"oil",38];};
+	case "diamond": {[["diamond"],[1],"diamondr",1,"diamond",35];};  
+	case "gold": {[["goldore"],[1],"goldbar",1,"gold",33];}; 
+	case "silver": {[["silverore"],[1],"silverbar",1,"silver",30];};
+	case "copper": {[["copperore"],[1],"copper_r",1,"copper",23];};  
+	case "iron": {[["ironore"],[1],"iron_r",1,"iron",25];}; 
+	case "sand": {[["sand"],[1],"glass",1,"sand",28];}; 
+	case "salt": {[["salt"],[1],"salt_r",1,"salt",30];}; 
+	case "cement": {[["rock"],[1],"cement",1,"cement",25];};
+	case "wood": {[["woodu"],[1],"woodp",1,"wood",30];};
+	case "frogeat": {[["frog"],[1],"frogeat",1,"frogeat",15];};
+	case "applewine": {[["apple"],[1],"applewine",1,"applewine",12];};
+	case "wodka": {[["potato"],[1],"wodka",1,"wodka",13];};
+	case "peachbooze": {[["peach"],[1],"peachbooze",1,"peachbooze",12];};
+	case "pearbooze": {[["pear"],[1],"pearbooze",1,"pearbooze",13];};
+	case "wine": {[["grape"],[1],"wine",1,"wine",13];};
+	case "honey": {[["honeyu"],[1],"honeyp",1,"honey",10];};
+	case "milk": {[["milku"],[1],"milkp",1,"milk",10];};
+	case "tabacco": {[["tabaccou"],[1],"tabaccop",1,"tabacco",20];};
+	case "tyre": {[["rubber"],[1],"tyre",1,"tyre",27];};
+	case "rubber": {[["caoutchouc"],[1],"rubber",1,"rubber",15];};
+	case "leather": {[["cowskin"],[1],"leather",1,"rubber",24];};
+	case "seats": {[["leather"],[1],"seats",1,"seats",40];};
+	case "metalparts": {[["iron_r"],[1],"metalparts",1,"metalparts",25];};
+	case "body": {[["metalparts"],[1],"body",1,"body",54];};
+	case "flour": {[["cereals"],[1],"flourp",1,"flour",12];};
+	case "medmarijuana": {[["cannabis"],[1],"medmarijuana",1,"medmarijuana",18];};       
 	case "beer": {[["hops","malt"],[1,1],"beer",1,"beer",14];};
 	case "trinket": {[["copper_r","silverbar","goldbar","diamondr"],[1,1,1,1],"trinket",1,"trinket",250];};
 	case "cable": {[["rubber","copper_r"],[4,1],"cable",1,"cable",53];};
+
+	//illegal
+	case "froglsd": {[["frog"],[1],"froglsd",1,"froglsd",30];};
+	case "marijuana": {[["cannabis"],[1],"marijuana",1,"marijuana",38];};
+	case "cocaine": {[["cocaine"],[1],"cocainep",1,"cocaine",33];};
+	case "heroin": {[["heroinu"],[1],"heroinp",1,"heroin",30];};
+	case "meth": {[["pseudo","methu"],[1,2],"methp",3,"meth",45];};
+	case "croco": {[["eyedrops","heroinp"],[1,2],"croco",3,"croco",38];};
+	case "cocaines": {[["cocainep","flourp"],[1,2],"cocaineps",3,"cocaine",45];};	
 	
 	//Stationary Jobs
+	case "cheese": {[["milks"],[1],"cheesep",1,"cheese",0];};
+	case "butter": {[["milks"],[1],"butterp",1,"butter",0];};
+	case "cigar": {[["tabaccos"],[1],"cigar",1,"cigar",0];};
 	case "beef": {[["beef","herps"],[2,1],"sausage",5,"butcher",0];};
 	case "buns": {[["milks","eggs","flours"],[2,3,2],"buns",3,"baker",0];};
 	case "cheesesticks": {[["milks","eggs","flours","cheeses"],[3,3,3,1],"cheesesticks",4,"baker",0];};
