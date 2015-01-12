@@ -43,7 +43,7 @@ class Life_Clothing {
 			idc = 3101;
 			text = "";
 			sizeEx = 0.035;
-			onLBSelChanged = "[_this] call life_fnc_changeClothes;";
+			onLBSelChanged = "[_this] call life_fnc_changeClothes; [] call life_fnc_updateTexture;";
 			
 			x = 0.01 + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.05;

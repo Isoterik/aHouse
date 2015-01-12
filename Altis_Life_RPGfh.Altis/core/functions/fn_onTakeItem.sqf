@@ -14,12 +14,14 @@ if(isNull _unit OR _item == "") exitWith {}; //Bad thingies?
 
 switch(playerSide) do
 {
-	case west: {}; //Blah
+	case west: {if(_item in ["U_Rangemaster","U_I_CombatUniform_tshirt","U_I_G_resistanceLeader_F","U_B_CombatUniform_mcam_vest","U_B_CombatUniform_mcam","B_Bergen_Base"]) {[] call life_fnc_updateTexture;};
 	case civilian: {
 		//Currently stoping the civilians from taking the indep clothing from medics.
-		if(_item in ["U_I_CombatUniform"]) then {
+		if(_item in ["U_Rangemaster","U_I_CombatUniform_tshirt","U_I_G_resistanceLeader_F","U_B_CombatUniform_mcam_vest","U_B_CombatUniform_mcam","B_Bergen_Base"]) then {
 			[_item,false,false,false,false] call life_fnc_handleItem;
 		};
 	};
-	case independent: {};
+	case independent: {{if(_item in ["U_IG_Guerilla2_3","B_Bergen_Base"]) {[] call life_fnc_updateTexture;};};
+
+	case east: {{if(_item in ["U_C_WorkerCoveralls","B_Bergen_Base"]) {[] call life_fnc_updateTexture;};};
 };

@@ -124,24 +124,14 @@ switch (playerSide) do
 	
 	case independent:
 	{
-		if (__GETC__(life_medicLevel) > 0) then
-		{
-			life_atmcash = 5000; //Starting Bank Money
-		} else {
-			life_atmcash = 2500; //Starting Bank Money
-		};
-		life_paycheck = 400; //Paycheck Amount
+		life_atmcash = 2500; //Starting Bank Money
+		life_paycheck = 450; //Paycheck Amount
 	};
 
 	case east:
 	{
-		if (__GETC__(life_adaclevel) > 0) then
-		{
-			life_atmcash = 5000; //Starting Bank Money
-		} else {
-			life_atmcash = 2500; //Starting Bank Money
-		};
-		life_paycheck = 400; //Paycheck Amount
+		life_atmcash = 2500; //Starting Bank Money
+		life_paycheck = 450; //Paycheck Amount
 	};
 };
 
@@ -150,6 +140,7 @@ switch (playerSide) do
 ****** Custom Variables - FAER System *******
 *********************************************
 */
+
 speeding_points = 0;
 
 /*

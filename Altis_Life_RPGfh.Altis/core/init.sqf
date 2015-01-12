@@ -126,9 +126,6 @@ life_fnc_garageRefund = compileFinal
 //spawn NSA and BND to observe the Players.
 [] spawn fnc_NSA_BND;
 
-//call updateTexture script
-[false] call life_fnc_updateTexture;
-
 [] execVM "core\init_survival.sqf";
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.

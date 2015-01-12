@@ -68,3 +68,7 @@ if(life_firstSpawn) then {
 	[] call life_fnc_welcomeNotification;
 };
 [] call life_fnc_hudSetup;
+
+if(playerSide != civilian) then { 
+	[] call life_fnc_updateTexture;
+};

@@ -47,3 +47,16 @@ if(_container isKindOf "Man" && !alive _container) exitWith {
 		closeDialog 0;
 	};
 };
+
+if((playerSide == west) && (uniform player == "U_Rangemaster") || (uniform player == "U_I_CombatUniform_tshirt") || (uniform player == "U_I_G_resistanceLeader_F") || (uniform player == "U_B_CombatUniform_mcam_vest") || (uniform player == "U_B_CombatUniform_mcam") || (Backpack player == "B_Bergen_Base")) then {
+[] call life_fnc_updateTexture;
+};
+
+if((playerSide == independent) && (uniform player == "U_IG_Guerilla2_3") || (Backpack player == "B_Bergen_Base")) then {
+[] call life_fnc_updateTexture;
+};
+
+if((playerSide == east) && (uniform player == "U_C_WorkerCoveralls") || (Backpack player == "B_Bergen_Base")) then {
+[] call life_fnc_updateTexture;
+};
+ 
