@@ -107,7 +107,7 @@ if(playerSide == west) then {
 				_Btn3 ctrlEnable true;
 			};
 		}else{
-			_Btn3 ctrlSetText localize "STR_vInAct_DevicePump";
+			_Btn3 ctrlSetText localize "STR_vInAct_DeviceMine";
 			_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_devicePump";
 			if(!isNil {(_curTarget getVariable "mining")} OR !local _curTarget && {_curTarget in life_vehicles}) then 
 			{
