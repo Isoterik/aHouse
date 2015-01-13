@@ -55,4 +55,4 @@ diag_log _tmp;
 _result set [0,_tmp];
 
 diag_log _result;
-[_result,"FHC_fnc_factorioRequestReceived",_ownerID,false] spawn life_fnc_MP;
+[_result,"life_fnc_factorioRequestReceived",_ownerID,false] spawn life_fnc_MP;
