@@ -27,7 +27,7 @@ while {race_started} do {
 		titleText [format["Du hast die %1. Runde beendet. Rundenzeit: %2m:%3s",racing_rounds,_minutes,_seconds], "PLAIN"];
 
 		//send round information to the server
-		[[player,racing_rounds,_round_time],"FH_fnc_handleRace",false,false] spawn life_fnc_MP;
+		[[player,racing_rounds,_round_time],"life_fnc_handleRace",false,false] spawn life_fnc_MP;
 
 		//new round
 		round_starttime = time;

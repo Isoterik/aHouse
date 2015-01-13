@@ -12,7 +12,7 @@ private [];
 if (isServer) exitWith {};
 
 if (!(player in race_competitors)) then {
-	[[player],"FH_fnc_registerPlayer",false,false] spawn life_fnc_MP;
+	[[player],"life_fnc_registerPlayer",false,false] spawn life_fnc_MP;
 	hint "Du bist nun für das Rennen angemeldet."	
 } else {
 

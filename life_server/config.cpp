@@ -88,6 +88,22 @@ class CfgFunctions
 		{
 			file = "\life_server\Functions\Client";
 		};
+
+	    class Racing
+	    {
+	        file = "\life_server\Functions\freudenhaus\racing";
+			class registerPlayer {};
+			class initializeRace {};
+			class handleRace {};
+			class stopRace {};
+	    };
+
+	    class Factorio
+	    {
+	        file = "\life_server\Functions\freudenhaus\factorio";
+			class factorioQueryRequest {};
+			class factorioUpdateRequest {};
+	    };	
 	};
 	
 	class TON_System
@@ -138,25 +154,6 @@ class CfgFunctions
 			class updateGang {};
 		};
 	};
-	class Freudenhaus {
-
-	    tag = "FH";       
-	    class Racing
-	    {
-	        file = "\life_server\Functions\freudenhaus\racing";
-			class registerPlayer {};
-			class initializeRace {};
-			class handleRace {};
-			class stopRace {};
-	    };
-
-	    class Factorio
-	    {
-	        file = "\life_server\Functions\freudenhaus\factorio";
-			class factorioQueryRequest {};
-			class factorioUpdateRequest {};
-	    };	 	    
-	};	
 };
 
 class CfgVehicles
