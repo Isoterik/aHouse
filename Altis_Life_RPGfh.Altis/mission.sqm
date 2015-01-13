@@ -1902,7 +1902,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Verarbeite Rohöl"",life_fnc_processMultipleItems,""oil""]; this addAction[format[""%1 ($%2)"",[""license_civ_oil""] call life_fnc_varToStr,[([""oil""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""oil"",0,false,false,"""",' !license_civ_oil && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Verarbeite Rohoel"",life_fnc_processMultipleItems,""oil""]; this addAction[format[""%1 ($%2)"",[""license_civ_oil""] call life_fnc_varToStr,[([""oil""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""oil"",0,false,false,"""",' !license_civ_oil && playerSide == civilian '];";
 				};
 				class Item9
 				{
@@ -2012,7 +2012,7 @@ class Mission
 					vehicle="C_man_p_shorts_1_F_afro";
 					skill=0.60000002;
 					text="carshop1_2";
-					init="this enableSimulation false;  this allowDamage false; this addAction[""LKW Händler"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,""civ_truck_1"",""civ"",""Altis LKW-Händler""]]; this addAction[""Tanklaster"",life_fnc_vehicleShopMenu,[""civ_fueltruck"",civilian,""civ_truck_1"",""civ"",""Altis LKW-Händler""]];";
+					init="this enableSimulation false;  this allowDamage false; this addAction[""LKW-Haendler"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,""civ_truck_1"",""civ"",""Altis LKW-Haendler""]]; this addAction[""Tanklaster"",life_fnc_vehicleShopMenu,[""civ_fueltruck"",civilian,""civ_truck_1"",""civ"",""Altis LKW-Haendler""]];";
 				};
 				class Item18
 				{
@@ -2047,7 +2047,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_w_worker_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; this addAction[""Hubschrauber Händler"",life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""civ_air_1"",""civ_air_1_2""],""civ"",""Altis Hubschrauber Händler""]];";
+					init="this enableSimulation false;  this allowDamage false; this addAction[""Hubschrauberhaendler"",life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""civ_air_1"",""civ_air_1_2""],""civ"",""Altis Hubschrauberhaendler""]];";
 				};
 				class Item21
 				{
@@ -2154,7 +2154,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_w_worker_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; this addAction[""Hubschrauber Händler"",life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""civ_air_2"",""civ_air_2_2""],""civ"",""Altis Hubschrauber Händler""]];";
+					init="this enableSimulation false;  this allowDamage false; this addAction[""Hubschrauberhaendler"",life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""civ_air_2"",""civ_air_2_2""],""civ"",""Altis Hubschrauberhaendler""]];";
 				};
 				class Item30
 				{
@@ -2236,7 +2236,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; this addAction[""PKW Händler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_2"",""civ"",""Altis PKW-Händler""]];";
+					init="this enableSimulation false;  this allowDamage false; this addAction[""PKW-Haendler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_2"",""civ"",""Altis PKW-Haendler""]];";
 				};
 				class Item37
 				{
@@ -2284,7 +2284,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Bootshändler"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_1"",""civ"",""Altis Bootshändler""]];  this addAction[""Anlegestelle"",  {   [[getPlayerUID player,playerSide,""Ship"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeug...""];   life_garage_sp = ""civ_ship_1""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Anlegen"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Bootshaendler"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_1"",""civ"",""Altis Bootshaendler""]];  this addAction[""Anlegestelle"",  {   [[getPlayerUID player,playerSide,""Ship"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeug...""];   life_garage_sp = ""civ_ship_1""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Anlegen"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item41
 				{
@@ -2320,7 +2320,7 @@ class Mission
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
 					text="carshop1";
-					init="this enableSimulation false;  this allowDamage false; this addAction[""PKW Händler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1""],""civ"",""Altis PKW-Händler""]];";
+					init="this enableSimulation false;  this allowDamage false; this addAction[""PKW-Haendler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1""],""civ"",""Altis PKW-Haendler""]];";
 				};
 				class Item44
 				{
@@ -2332,7 +2332,7 @@ class Mission
 					vehicle="C_man_polo_6_F_asia";
 					skill=0.60000002;
 					text="carshop1_3";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Ausrüstung"",life_fnc_weaponShopMenu,""genstore"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Ausruestung"",life_fnc_weaponShopMenu,""genstore"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian'];";
 				};
 				class Item45
 				{
@@ -2345,7 +2345,7 @@ class Mission
 					vehicle="B_diver_F";
 					skill=0.60000002;
 					ammo=0;
-					init="this enableSimulation false; this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this; removeGoggles this; removeHeadgear this; removeAllContainers this; this addUniform ""U_B_Wetsuit""; this addAction[""Steve's Tauchzubehör"",life_fnc_clothingMenu,""dive"",0,false,false,' license_civ_dive '];     this addAction[format[""%1 ($%2)"",[""license_civ_dive""] call life_fnc_varToStr,[([""dive""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide == civilian '];  ";
+					init="this enableSimulation false; this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this; removeGoggles this; removeHeadgear this; removeAllContainers this; this addUniform ""U_B_Wetsuit""; this addAction[""Steve's Tauchzubehoer"",life_fnc_clothingMenu,""dive"",0,false,false,' license_civ_dive '];     this addAction[format[""%1 ($%2)"",[""license_civ_dive""] call life_fnc_varToStr,[([""dive""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide == civilian '];  ";
 				};
 				class Item46
 				{
@@ -2415,7 +2415,7 @@ class Mission
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
 					text="carshop4";
-					init="this enableSimulation false;  this allowDamage false; this addAction[""PKW Händler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_4"",""civ"",""Altis PKW-Händler""]];";
+					init="this enableSimulation false;  this allowDamage false; this addAction[""PKW-Haendler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_4"",""civ"",""Altis PKW-Haendler""]];";
 				};
 				class Item52
 				{
@@ -2508,7 +2508,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_fugitive_F_asia";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Altis Ausrüstungsbedarf"",life_fnc_weaponShopMenu,""genstore""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Altis Ausruestungsbedarf"",life_fnc_weaponShopMenu,""genstore""];";
 				};
 				class Item60
 				{
@@ -2544,7 +2544,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_fugitive_F_asia";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Altis Ausrüstungsbedarf"",life_fnc_weaponShopMenu,""genstore""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Altis Ausruestungsbedarf"",life_fnc_weaponShopMenu,""genstore""];";
 				};
 				class Item63
 				{
@@ -2555,7 +2555,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Ölhändler"",life_fnc_virt_menu,""oil""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Oelhaendler"",life_fnc_virt_menu,""oil""];";
 				};
 				class Item64
 				{
@@ -2577,7 +2577,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Glashändler"",life_fnc_virt_menu,""glass""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Glashaendler"",life_fnc_virt_menu,""glass""];";
 				};
 				class Item66
 				{
@@ -2588,7 +2588,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Eisen- und Kupferhändler"",life_fnc_virt_menu,""iron""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Eisen- und Kupferhaendler"",life_fnc_virt_menu,""iron""];";
 				};
 				class Item67
 				{
@@ -2611,7 +2611,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Diamantenhändler"",life_fnc_virt_menu,""diamond""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Diamantenhaendler"",life_fnc_virt_menu,""diamond""];";
 				};
 				class Item69
 				{
@@ -2622,7 +2622,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Salzhändler"",life_fnc_virt_menu,""salt""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Salzhaendler"",life_fnc_virt_menu,""salt""];";
 				};
 				class Item70
 				{
@@ -2729,7 +2729,7 @@ class Mission
 					vehicle="C_man_p_fugitive_F_asia";
 					skill=0.60000002;
 					text="carshop1_3_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Altis Ausrüstungsbedarf"",life_fnc_weaponShopMenu,""genstore""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Altis Ausruestungsbedarf"",life_fnc_weaponShopMenu,""genstore""];";
 				};
 				class Item79
 				{
@@ -2829,7 +2829,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Bootshändler"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_2"",""civ"",""Altis Bootshändler""]];  this addAction[""Anlegestelle"",  {   [[getPlayerUID player,playerSide,""Ship"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeug...""];   life_garage_sp = ""civ_ship_1""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Anlegen"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Bootshaendler"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_2"",""civ"",""Altis Bootshaendler""]];  this addAction[""Anlegestelle"",  {   [[getPlayerUID player,playerSide,""Ship"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeug...""];   life_garage_sp = ""civ_ship_1""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Anlegen"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item88
 				{
@@ -2863,7 +2863,7 @@ class Mission
 					vehicle="B_diver_F";
 					skill=0.60000002;
 					ammo=0;
-					init="this enableSimulation false; this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this; removeGoggles this; removeHeadgear this; removeAllContainers this; this addUniform ""U_B_Wetsuit""; this addAction[""Steve's Tauchzubehör"",life_fnc_clothingMenu,""dive"",0,false,false,'license_civ_dive'];   this addAction[format[""%1 ($%2)"",[""license_civ_dive""] call life_fnc_varToStr,[([""dive""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide == civilian '];  ";
+					init="this enableSimulation false; this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this; removeGoggles this; removeHeadgear this; removeAllContainers this; this addUniform ""U_B_Wetsuit""; this addAction[""Steve's Tauchzubehoer"",life_fnc_clothingMenu,""dive"",0,false,false,'license_civ_dive'];   this addAction[format[""%1 ($%2)"",[""license_civ_dive""] call life_fnc_varToStr,[([""dive""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide == civilian '];  ";
 				};
 				class Item91
 				{
@@ -2886,7 +2886,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Schildkröten Ankauf"",life_fnc_sellTurtle];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Schildkroeten Ankauf"",life_fnc_sellTurtle];";
 				};
 				class Item93
 				{
@@ -2898,7 +2898,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_shorts_1_F_afro";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; this addAction[""LKW Händler"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,[""civ_truck_2"",""civ_truck_2_1""],""civ"",""Altis LKW-Händler""]];; this addAction[""Tanklaster"",life_fnc_vehicleShopMenu,[""civ_fueltruck"",civilian,[""civ_truck_2"",""civ_truck_2_1""],""civ"",""Altis LKW-Händler""]];";
+					init="this enableSimulation false;  this allowDamage false; this addAction[""LKW-Haendler"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,[""civ_truck_2"",""civ_truck_2_1""],""civ"",""Altis LKW-Haendler""]];; this addAction[""Tanklaster"",life_fnc_vehicleShopMenu,[""civ_fueltruck"",civilian,[""civ_truck_2"",""civ_truck_2_1""],""civ"",""Altis LKW-Haendler""]];";
 				};
 				class Item94
 				{
@@ -2955,7 +2955,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_beggar_F_euro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Ausrüstungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Ausruestungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
 				};
 				class Item99
 				{
@@ -2967,7 +2967,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_beggar_F_euro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Ausrüstungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Ausruestungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
 				};
 				class Item100
 				{
@@ -3014,7 +3014,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_fugitive_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Ausrüstungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Ausruestungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
 				};
 				class Item104
 				{
@@ -3050,7 +3050,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_3_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Bootshändler"",life_fnc_vehicleShop,""civ_ship_2""]; this addAction[""Liegeplatz"",  {   [[getPlayerUID player,playerSide,""Ship"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge....""];   life_garage_sp = ""civ_ship_2"";  }]; this addAction[""Anlegen"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Bootshaendler"",life_fnc_vehicleShop,""civ_ship_2""]; this addAction[""Liegeplatz"",  {   [[getPlayerUID player,playerSide,""Ship"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge....""];   life_garage_sp = ""civ_ship_2"";  }]; this addAction[""Anlegen"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item107
 				{
@@ -3147,7 +3147,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Holz Händler"",life_fnc_virt_menu,""wood""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Holzhaendler"",life_fnc_virt_menu,""wood""];";
 				};
 				class Item115
 				{
@@ -3159,7 +3159,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false;  this enableSimulation false;    this addAction[""Tuning ($10'000)"",ZCT_fnc_AddBoost,"""",0,false,false,"""",' license_civ_driver && playerSide == civilian || playerSide == west '];  this addAction[""Farbe ändern"",ZCT_fnc_VehColor,"""",0,false,false,"""",' license_civ_driver && playerSide == civilian || playerSide == west '];";
+					init="this allowDamage false;  this enableSimulation false;    this addAction[""Tuning ($10'000)"",ZCT_fnc_AddBoost,"""",0,false,false,"""",' license_civ_driver && playerSide == civilian || playerSide == west '];  this addAction[""Farbe aendern"",ZCT_fnc_VehColor,"""",0,false,false,"""",' license_civ_driver && playerSide == civilian || playerSide == west '];";
 				};
 				class Item116
 				{
@@ -3182,7 +3182,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_shorts_1_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Ausrüstungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Ausruestungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
 				};
 				class Item118
 				{
@@ -3194,7 +3194,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Ausrüstungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Ausruestungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
 				};
 				class Item119
 				{
@@ -3336,7 +3336,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_fugitive_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Ausrüstungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Ausruestungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
 				};
 				class Item131
 				{
@@ -3577,7 +3577,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_fugitive_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Altis Ausrüstungsbedarf"",life_fnc_weaponShopMenu,""genstore""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Altis Ausruestungsbedarf"",life_fnc_weaponShopMenu,""genstore""];";
 				};
 				class Item6
 				{
@@ -3635,7 +3635,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Silber- und Goldhändler"",life_fnc_virt_menu,""gold""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Silber- und Goldhaendler"",life_fnc_virt_menu,""gold""];";
 				};
 				class Item11
 				{
@@ -3657,7 +3657,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Ausrüstungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Ausruestungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
 				};
 				class Item13
 				{
@@ -3668,7 +3668,7 @@ class Mission
 					vehicle="C_man_w_worker_F";
 					skill=0.60000002;
 					text="adacshop3";
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_C_WorkerCoveralls""; this setObjectTextureGlobal [0,""textures\clothing\adac\adacoverall.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""adac""]; this addAction[format[""%1 ($%2)"",[""license_adac_truck""] call life_fnc_varToStr,[([""adactruck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""adactruck"",0,false,false,"""",' !license_adac_truck && playerSide == east']; this addAction[""ATAC Ausrüstung"",life_fnc_weaponShopMenu,""adac_basic""];  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""adac_shop"",opfor,""adac_car_3"",""adac""]]; this addAction[""LKW-Haendler"",life_fnc_vehicleShopMenu,[""adac_truck"",opfor,""adac_car_3"",""adac""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""]; life_garage_sp = ""adac_car_3""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east']; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,' !_target distance _this < 5 && playerSide == east'];";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_C_WorkerCoveralls""; this setObjectTextureGlobal [0,""textures\clothing\adac\adacoverall.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""adac""]; this addAction[format[""%1 ($%2)"",[""license_adac_truck""] call life_fnc_varToStr,[([""adactruck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""adactruck"",0,false,false,"""",' !license_adac_truck && playerSide == east']; this addAction[""ATAC Ausruestung"",life_fnc_weaponShopMenu,""adac_basic""];  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""adac_shop"",opfor,""adac_car_3"",""adac""]]; this addAction[""LKW-Haendler"",life_fnc_vehicleShopMenu,[""adac_truck"",opfor,""adac_car_3"",""adac""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""]; life_garage_sp = ""adac_car_3""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east']; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,' !_target distance _this < 5 && playerSide == east'];";
 				};
 				class Item14
 				{
@@ -3680,7 +3680,7 @@ class Mission
 					vehicle="C_man_w_worker_F";
 					skill=0.60000002;
 					text="adacshop1";
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_C_WorkerCoveralls""; this setObjectTextureGlobal [0,""textures\clothing\adac\adacoverall.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""adac""]; this addAction[format[""%1 ($%2)"",[""license_adac_truck""] call life_fnc_varToStr,[([""adactruck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""adactruck"",0,false,false,"""",' !license_adac_truck && playerSide == east']; this addAction[""ATAC Ausrüstung"",life_fnc_weaponShopMenu,""adac_basic""];  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""adac_shop"",opfor,""adac_car_1"",""adac""]]; this addAction[""LKW-Haendler"",life_fnc_vehicleShopMenu,[""adac_truck"",opfor,""adac_car_1"",""adac""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""]; life_garage_sp = ""adac_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east']; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,' !_target distance _this < 5 && playerSide == east'];";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_C_WorkerCoveralls""; this setObjectTextureGlobal [0,""textures\clothing\adac\adacoverall.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""adac""]; this addAction[format[""%1 ($%2)"",[""license_adac_truck""] call life_fnc_varToStr,[([""adactruck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""adactruck"",0,false,false,"""",' !license_adac_truck && playerSide == east']; this addAction[""ATAC Ausruestung"",life_fnc_weaponShopMenu,""adac_basic""];  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""adac_shop"",opfor,""adac_car_1"",""adac""]]; this addAction[""LKW-Haendler"",life_fnc_vehicleShopMenu,[""adac_truck"",opfor,""adac_car_1"",""adac""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""]; life_garage_sp = ""adac_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east']; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,' !_target distance _this < 5 && playerSide == east'];";
 				};
 				class Item15
 				{
@@ -3692,7 +3692,7 @@ class Mission
 					vehicle="C_man_w_worker_F";
 					skill=0.60000002;
 					text="adacshop2";
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_C_WorkerCoveralls""; this setObjectTextureGlobal [0,""textures\clothing\adac\adacoverall.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""adac""]; this addAction[format[""%1 ($%2)"",[""license_adac_truck""] call life_fnc_varToStr,[([""adactruck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""adactruck"",0,false,false,"""",' !license_adac_truck && playerSide == east']; this addAction[""ATAC Ausrüstung"",life_fnc_weaponShopMenu,""adac_basic""];  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""adac_shop"",opfor,""adac_car_2"",""adac""]]; this addAction[""LKW-Haendler"",life_fnc_vehicleShopMenu,[""adac_truck"",opfor,""adac_car_2"",""adac""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""]; life_garage_sp = ""adac_car_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east']; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,' !_target distance _this < 5 && playerSide == east'];";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_C_WorkerCoveralls""; this setObjectTextureGlobal [0,""textures\clothing\adac\adacoverall.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""adac""]; this addAction[format[""%1 ($%2)"",[""license_adac_truck""] call life_fnc_varToStr,[([""adactruck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""adactruck"",0,false,false,"""",' !license_adac_truck && playerSide == east']; this addAction[""ATAC Ausruestung"",life_fnc_weaponShopMenu,""adac_basic""];  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""adac_shop"",opfor,""adac_car_2"",""adac""]]; this addAction[""LKW-Haendler"",life_fnc_vehicleShopMenu,[""adac_truck"",opfor,""adac_car_2"",""adac""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""]; life_garage_sp = ""adac_car_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east']; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,' !_target distance _this < 5 && playerSide == east'];";
 				};
 				class Item16
 				{
@@ -3776,7 +3776,7 @@ class Mission
 					vehicle="C_Marshal_F";
 					skill=0.60000002;
 					text="racing_manager";
-					init="this enableSimulation false; this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this; removeGoggles this; removeHeadgear this; removeAllContainers this; this addUniform ""U_Marshal""; this addAction[""Zum Rennen anmelden"",life_fnc_registerToRace]; this addAction[""PKW Händler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""car_g_Race"",""civ"",""Altis PKW-Händler""]]; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_Race""; life_garage_type = ""Car"";}];  this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""Rennen starten: 2 Runden"",life_fnc_initializeRace,2,0,false,false]; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu];";
+					init="this enableSimulation false; this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this; removeGoggles this; removeHeadgear this; removeAllContainers this; this addUniform ""U_Marshal""; this addAction[""Zum Rennen anmelden"",life_fnc_registerToRace]; this addAction[""PKW-Haendler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""car_g_Race"",""civ"",""Altis PKW-Haendler""]]; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_Race""; life_garage_type = ""Car"";}];  this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""Rennen starten: 2 Runden"",life_fnc_initializeRace,2,0,false,false]; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu];";
 				};
 				class Item23
 				{
@@ -3821,7 +3821,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="kaeselager";
-					init="this allowDamage false; this enableSimulation false; this addAction[""Käsereilager"",life_fnc_virt_menu,""cheesestash"",0,false,false,"""",' vehicle player == player && player distance _target < 2 && playerSide == civilian '];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Kaesereilager"",life_fnc_virt_menu,""cheesestash"",0,false,false,"""",' vehicle player == player && player distance _target < 2 && playerSide == civilian '];";
 				};
 				class Item27
 				{
@@ -3832,7 +3832,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Käserei"",life_fnc_virt_menu,""cheese""]; this addAction[""Käse herstellen"",life_fnc_processMultipleItems,""cheese""]; this addAction[""Butter herstellen"",life_fnc_processMultipleItems,""butter""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Kaeserei"",life_fnc_virt_menu,""cheese""]; this addAction[""Kaese herstellen"",life_fnc_processMultipleItems,""cheese""]; this addAction[""Butter herstellen"",life_fnc_processMultipleItems,""butter""];";
 				};
 				class Item28
 				{
@@ -3913,7 +3913,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Kuhhäute verarbeiten"",life_fnc_processMultipleItems,""leather""]; this addAction[format[""%1 ($%2)"",[""license_civ_leather""] call life_fnc_varToStr,[([""leather""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""leather"",0,false,false,"""",' !license_civ_leather && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Kuhhaeute verarbeiten"",life_fnc_processMultipleItems,""leather""]; this addAction[format[""%1 ($%2)"",[""license_civ_leather""] call life_fnc_varToStr,[([""leather""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""leather"",0,false,false,"""",' !license_civ_leather && playerSide == civilian '];";
 				};
 				class Item35
 				{
@@ -4096,7 +4096,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Bäckerlager"",life_fnc_virt_menu,""bakerstash"",0,false,false,"""",' vehicle player == player && player distance _target < 2 && playerSide == civilian '];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Baeckerlager"",life_fnc_virt_menu,""bakerstash"",0,false,false,"""",' vehicle player == player && player distance _target < 2 && playerSide == civilian '];";
 				};
 				class Item51
 				{
@@ -4120,7 +4120,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Bäcker"",life_fnc_virt_menu,""baker""]; this addAction[""Brötchen backen"",life_fnc_processMultipleItems,""buns""]; this addAction[""Käsestangen backen"",life_fnc_processMultipleItems,""cheesesticks""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Baecker"",life_fnc_virt_menu,""baker""]; this addAction[""Broetchen backen"",life_fnc_processMultipleItems,""buns""]; this addAction[""Kaesestangen backen"",life_fnc_processMultipleItems,""cheesesticks""];";
 				};
 				class Item53
 				{
@@ -4153,7 +4153,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_1_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Ausrüstungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Ausruestungsbedarf"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Supermarkt"",life_fnc_virt_menu,""market""]; this addAction[""Tankstelle ausrauben"",life_fnc_gasman,""gasman""];";
 				};
 				class Item56
 				{
@@ -4175,7 +4175,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_w_worker_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_C_WorkerCoveralls""; this setObjectTextureGlobal [0,""textures\clothing\adac\adacoverall.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""adac""]; this addAction[format[""%1 ($%2)"",[""license_adac_air""] call life_fnc_varToStr,[([""adacair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""adacair"",0,false,false,"""",' !license_adac_air && playerSide == east']; this addAction[""ATAC Ausrüstung"",life_fnc_weaponShopMenu,""adac_basic""];  this addAction[""Hubschrauberstaffel"",life_fnc_vehicleShopMenu,[""adac_air"",opfor,""adac_air_1"",""adac""]]; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""]; life_garage_sp = ""adac_air_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east']; this addAction[""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""adac_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == east'];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,' !_target distance _this < 5 && playerSide == east'];";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_C_WorkerCoveralls""; this setObjectTextureGlobal [0,""textures\clothing\adac\adacoverall.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""adac""]; this addAction[format[""%1 ($%2)"",[""license_adac_air""] call life_fnc_varToStr,[([""adacair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""adacair"",0,false,false,"""",' !license_adac_air && playerSide == east']; this addAction[""ATAC Ausruestung"",life_fnc_weaponShopMenu,""adac_basic""];  this addAction[""Hubschrauberstaffel"",life_fnc_vehicleShopMenu,[""adac_air"",opfor,""adac_air_1"",""adac""]]; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""]; life_garage_sp = ""adac_air_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east']; this addAction[""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""adac_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == east'];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,' !_target distance _this < 5 && playerSide == east'];";
 				};
 				class Item58
 				{
@@ -4275,7 +4275,7 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.60000002;
-					init="removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeVest this; removeAllContainers this; this addUniform ""U_IG_Guerilla2_3""; this enableSimulation false;  this allowDamage false; this addAction[""Verpflegung"",life_fnc_virt_menu,""arzt""]; this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];  this addAction[""Arztzubehoer"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_1"",""med"",""Kavala Hosptial""]];  this addAction[""Helikopter Haendler"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_1"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""];   life_garage_sp = ""med_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge....""];   life_garage_sp = ""medic_spawn_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,'(!_target distance _this < 5) && (playerSide == independent)'];  this setObjectTextureGlobal [0,""textures\clothing\med\notarzt.paa""];";
+					init="removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeVest this; removeAllContainers this; this addUniform ""U_IG_Guerilla2_3""; this enableSimulation false;  this allowDamage false; this addAction[""Verpflegung"",life_fnc_virt_menu,""arzt""]; this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];  this addAction[""Arztzubehoer"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_1"",""med"",""Kavala Hosptial""]];  this addAction[""Hubschrauberhaendler"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_1"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""];   life_garage_sp = ""med_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge....""];   life_garage_sp = ""medic_spawn_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,'(!_target distance _this < 5) && (playerSide == independent)'];  this setObjectTextureGlobal [0,""textures\clothing\med\notarzt.paa""];";
 				};
 				class Item3
 				{
@@ -4287,7 +4287,7 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.60000002;
-					init="removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeVest this; removeAllContainers this; this addUniform ""U_IG_Guerilla2_3""; this enableSimulation false;  this allowDamage false; this addAction[""Verpflegung"",life_fnc_virt_menu,""arzt""]; this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];  this addAction[""Arztzubehoer"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial""]];  this addAction[""Helikopter Haendler"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_3"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""];   life_garage_sp = ""med_car_3""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge....""];   life_garage_sp = ""medic_spawn_3""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,'(!_target distance _this < 5) && (playerSide == independent)']; this setObjectTextureGlobal [0,""textures\clothing\med\notarzt.paa""];";
+					init="removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeVest this; removeAllContainers this; this addUniform ""U_IG_Guerilla2_3""; this enableSimulation false;  this allowDamage false; this addAction[""Verpflegung"",life_fnc_virt_menu,""arzt""]; this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];  this addAction[""Arztzubehoer"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial""]];  this addAction[""Hubschrauberhaendler"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_3"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""];   life_garage_sp = ""med_car_3""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge....""];   life_garage_sp = ""medic_spawn_3""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,'(!_target distance _this < 5) && (playerSide == independent)']; this setObjectTextureGlobal [0,""textures\clothing\med\notarzt.paa""];";
 				};
 				class Item4
 				{
@@ -4299,7 +4299,7 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.60000002;
-					init="removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeVest this; removeAllContainers this; this addUniform ""U_IG_Guerilla2_3""; this enableSimulation false;  this allowDamage false; this addAction[""Verpflegung"",life_fnc_virt_menu,""arzt""]; this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];  this addAction[""Arztzubehoer"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_2"",""med"",""Kavala Hosptial""]];  this addAction[""Helikopter Haendler"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_2"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""];   life_garage_sp = ""med_car_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge....""];   life_garage_sp = ""medic_spawn_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,'(!_target distance _this < 5) && (playerSide == independent)']; this setObjectTextureGlobal [0,""textures\clothing\med\notarzt.paa""];  ";
+					init="removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeVest this; removeAllContainers this; this addUniform ""U_IG_Guerilla2_3""; this enableSimulation false;  this allowDamage false; this addAction[""Verpflegung"",life_fnc_virt_menu,""arzt""]; this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];  this addAction[""Arztzubehoer"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_2"",""med"",""Kavala Hosptial""]];  this addAction[""Hubschrauberhaendler"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_2"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge...""];   life_garage_sp = ""med_car_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Suche Fahrzeuge....""];   life_garage_sp = ""medic_spawn_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,'(!_target distance _this < 5) && (playerSide == independent)']; this setObjectTextureGlobal [0,""textures\clothing\med\notarzt.paa""];  ";
 				};
 				class Item5
 				{
@@ -4354,7 +4354,7 @@ class Mission
 					vehicle="C_man_polo_3_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; this addAction[""PKW Händler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_3"",""civ"",""Altis PKW-Händler""]];";
+					init="this enableSimulation false;  this allowDamage false; this addAction[""PKW-Haendler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_3"",""civ"",""Altis PKW-Haendler""]];";
 					syncId=1;
 					synchronizations[]={0};
 				};
@@ -4376,7 +4376,7 @@ class Mission
 					vehicle="C_man_polo_6_F";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Getränkemarkt"",life_fnc_virt_menu,""alcohol"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian'];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Getraenkemarkt"",life_fnc_virt_menu,""alcohol"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian'];";
 					syncId=2;
 					synchronizations[]={0};
 				};
@@ -34981,7 +34981,7 @@ class Mission
 			vehicle="Land_Laptop_unfolded_F";
 			skill=0.60000002;
 			text="hq_lt_1";
-			init="this enableSimulation false; this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,""jail""];";
+			init="this enableSimulation false;  this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelaende"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Suedgelaende"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefaengnis"",life_fnc_fedCamDisplay,""jail""];";
 		};
 		class Item2838
 		{
@@ -34993,7 +34993,7 @@ class Mission
 			vehicle="Land_TableDesk_F";
 			skill=0.60000002;
 			text="hq_desk_1";
-			init="this enableSimulation false;  this allowDamage false;    this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];";
+			init="this enableSimulation false;  this allowDamage false;    this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Nordgelaende"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Suedgelaende"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];  this addAction[""Gefaengnis"",life_fnc_fedCamDisplay,"""",0,false,false,"""",'playerSide == west'];";
 		};
 		class Item2839
 		{
@@ -35005,7 +35005,7 @@ class Mission
 			vehicle="Land_Laptop_unfolded_F";
 			skill=0.60000002;
 			text="hq_lt_1_1";
-			init="this enableSimulation false; this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,""jail""];";
+			init="this enableSimulation false;  this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelaende"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Suedgelaende"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefaengnis"",life_fnc_fedCamDisplay,""jail""];";
 		};
 		class Item2840
 		{
@@ -35029,7 +35029,7 @@ class Mission
 			vehicle="Land_Laptop_unfolded_F";
 			skill=0.60000002;
 			text="hq_lt_1_2";
-			init="this enableSimulation false; this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,""jail""];";
+			init="this enableSimulation false;  this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelaende"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Suedgelaende"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefaengnis"",life_fnc_fedCamDisplay,""jail""];";
 		};
 		class Item2842
 		{
@@ -35053,7 +35053,7 @@ class Mission
 			vehicle="Land_Laptop_unfolded_F";
 			skill=0.60000002;
 			text="hq_lt_1_3";
-			init="this enableSimulation false; this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,""jail""];";
+			init="this enableSimulation false;  this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelaende"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Suedgelaende"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefaengnis"",life_fnc_fedCamDisplay,""jail""];";
 		};
 		class Item2844
 		{
@@ -35065,7 +35065,7 @@ class Mission
 			vehicle="Land_TableDesk_F";
 			skill=0.60000002;
 			text="hq_desk_1_3";
-			init="this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,""side"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,""back"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,""jail"","""",0,false,false,"""",'playerSide == west'];";
+			init="this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Nordgelaende"",life_fnc_fedCamDisplay,""side"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Suedgelaende"",life_fnc_fedCamDisplay,""back"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market"","""",0,false,false,"""",'playerSide == west'];  this addAction[""Gefaengnis"",life_fnc_fedCamDisplay,""jail"","""",0,false,false,"""",'playerSide == west'];";
 		};
 		class Item2845
 		{
@@ -35077,7 +35077,7 @@ class Mission
 			vehicle="Land_Laptop_unfolded_F";
 			skill=0.60000002;
 			text="hq_lt_1_1_1";
-			init="this enableSimulation false; this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelände"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Südgelände"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefängnis"",life_fnc_fedCamDisplay,""jail""];";
+			init="this enableSimulation false;  this allowDamage false;  this addAction[""Bank Einfahrt"",life_fnc_fedCamDisplay,""front""];  this addAction[""Bank Nordgelaende"",life_fnc_fedCamDisplay,""side""];  this addAction[""Bank Suedgelaende"",life_fnc_fedCamDisplay,""back""];  this addAction[""Bank Tresor"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Marktplatz"",life_fnc_fedCamDisplay,""market""];  this addAction[""Gefaengnis"",life_fnc_fedCamDisplay,""jail""];";
 		};
 		class Item2846
 		{
@@ -35280,7 +35280,7 @@ class Mission
 		{
 			position[]={16990.332,16.389584,12866.398};
 			name="car1_2";
-			text="Auto Händler";
+			text="PKW-Händler";
 			type="c_car";
 			colorName="ColorWhite";
 		};
@@ -35355,7 +35355,7 @@ class Mission
 		{
 			position[]={14034.805,25.279812,18761.51};
 			name="car1_2_1_1";
-			text="Autohändler";
+			text="PKW-Händler";
 			type="c_car";
 			colorName="ColorWhite";
 		};
@@ -35363,7 +35363,7 @@ class Mission
 		{
 			position[]={3041.5544,2.0197022,12612.536};
 			name="boat_2";
-			text="Boothändler";
+			text="Bootshändler";
 			type="c_ship";
 			colorName="ColorWhite";
 		};
@@ -35644,7 +35644,7 @@ class Mission
 		{
 			position[]={25831.131,20.912157,21446.154};
 			name="car1_1";
-			text="Autohändler";
+			text="PKW-Händler";
 			type="c_car";
 			colorName="ColorWhite";
 		};
@@ -35888,7 +35888,7 @@ class Mission
 		{
 			position[]={16878.084,18.921236,12707.433};
 			name="Gen_2";
-			text="Gemischtwaren Händler";
+			text="Gemischtwarenhändler";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -35979,7 +35979,7 @@ class Mission
 		{
 			position[]={18157.584,26.48983,12840.548};
 			name="civ_truck_shop1_1";
-			text="LKW Händler";
+			text="LKW-Händler";
 			type="c_car";
 			colorName="ColorWhite";
 		};
@@ -36883,7 +36883,7 @@ class Mission
 		{
 			position[]={3398.7354,4.694931,13106.473};
 			name="civ_truck_shop1_1_1";
-			text="LKW Händler";
+			text="LKW-Händler";
 			type="c_car";
 			colorName="ColorWhite";
 		};
@@ -36891,7 +36891,7 @@ class Mission
 		{
 			position[]={3496.6367,7.6567578,13016.862};
 			name="car1_2_1_1_1";
-			text="Autohändler";
+			text="PKW-Händler";
 			type="c_car";
 			colorName="ColorWhite";
 			angle=359.19199;
@@ -37745,7 +37745,7 @@ class Mission
 		{
 			position[]={3033.4697,32.92028,18501.85};
 			name="gold_bar_dealer";
-			text="Heler";
+			text="Hehler";
 			type="b_unknown";
 			colorName="ColorRed";
 		};
