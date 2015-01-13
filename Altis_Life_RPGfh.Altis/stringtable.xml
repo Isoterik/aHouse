@@ -361,7 +361,7 @@
 	<Package name="Cell_Phone">
 		<Key ID="STR_CELL_Title">
 			<Original>Altis Mobile</Original>
- 			<German>Altis Mobilfunk</German>
+ 			<German>Freudenhaus Mobilfunk</German>
 			<French>Altis mobile</French>
 			<Italian>Cellulare Altis</Italian>
 			<Portuguese>Altis Mobile</Portuguese>
@@ -375,7 +375,7 @@
 		</Key>
 		<Key ID="STR_CELL_TextMSGBtn">
 			<Original>Text Message:</Original>
-			<German>Nachricht:</German>
+			<German>Nachricht senden:</German>
 			<French>Text Message:</French>
 			<Italian>Msg Giocatore:</Italian>
 			<Portuguese>Mensagem:</Portuguese>
@@ -410,13 +410,17 @@
 		</Key>
 		<Key ID="STR_CELL_EMSRequest">
 			<Original>Request EMS</Original>
-			<German>An die Sanitäter</German>
+			<German>Notarzt rufen</German>
 			<French>Requête Medecin</French>
 			<Italian>Msg medici</Italian>
 			<Portuguese>Chamar SAMU</Portuguese>
 		</Key>
 		<Key ID="STR_CELL_ADACRequest">
-			<Original>ATAC rufen</Original>
+			<Original>Request ATAC</Original>
+			<German>ATAC rufen</German>
+			<French>Requête ATAC</French>
+			<Italian>Msg ATAC</Italian>
+			<Portuguese>Chamar ATAC</Portuguese>
 		</Key>
 	</Package>
 	<Package name="Chop_Shop">
@@ -1027,7 +1031,7 @@
 		</Key>
 		<Key ID="STR_PM_CellPhone">
 			<Original>Cell Phone</Original>
-			<German>Telefon</German>
+			<German>Nokia 3310</German>
 			<French>Téléphone</French>
 			<Italian>Cellulare</Italian>
 			<Portuguese>Celular</Portuguese>
@@ -5148,7 +5152,7 @@
 		</Key>
 		<Key ID="STR_Shop_Veh_UI_RetrievalP">
 			<Original>Retrieval Price:</Original>
-			<German>Einstellpreis:</German>
+			<German>Parkkosten:</German>
 			<French>Prix de sortie:</French>
 			<Italian>Costo di ritiro:</Italian>
 			<Portuguese>Preço para Recuperar:</Portuguese>

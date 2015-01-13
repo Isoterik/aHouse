@@ -13,7 +13,7 @@ class playerSettings {
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
-			w = 0.8;
+			w = 0.925;
 			h = (1 / 25);
 		};
 		
@@ -22,7 +22,7 @@ class playerSettings {
 			idc = -1;
 			x = 0.1;
 			y = 0.2 + (11 / 250);
-			w = 0.8;
+			w = 0.925;
 			h = 0.6 - (22 / 250);
 		};
 		
@@ -32,7 +32,7 @@ class playerSettings {
 			text = "$STR_PM_Title";
 			x = 0.1;
 			y = 0.2;
-			w = 0.8;
+			w = 0.925;
 			h = (1 / 25);
 		};
 		
@@ -63,7 +63,7 @@ class playerSettings {
 			sizeEx = 0.04;
 			
 			x = 0.62; y = 0.26;
-			w = 0.275; h = 0.04;
+			w = 0.395; h = 0.04;
 		};
 		
 		class licenseHeader : Life_RscText
@@ -94,7 +94,7 @@ class playerSettings {
 			sizeEx = 0.030;
 			
 			x = 0.62; y = 0.30;
-			w = 0.275; h = 0.3;
+			w = 0.395; h = 0.3;
 		};
 		
 		class moneyEdit : Life_RscEdit 
@@ -133,7 +133,7 @@ class playerSettings {
 		text = "1";
 		sizeEx = 0.030;
 		x = 0.62; y = 0.61;
-		w = 0.275; h = 0.03;
+		w = 0.395; h = 0.03;
 		
 		};
 		class iNearPlayers : Life_RscCombo
@@ -141,7 +141,7 @@ class playerSettings {
 			idc = 2023;
 			
 			x = 0.62; y = 0.65;
-			w = 0.275; h = 0.03;
+			w = 0.395 h = 0.03;
 		};
 		/*
 		Disabled till it can be redone
@@ -161,9 +161,9 @@ class playerSettings {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[] call life_fnc_giveItem;";
 			
-			x = 0.765;
+			x = 0.91;
 			y = 0.70;
-			w = (5.25 / 40);
+			w = (4.25 / 40);
 			h = (1 / 25);
 			
 		};
@@ -174,9 +174,9 @@ class playerSettings {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[] call life_fnc_useItem;";
 			
-			x = 0.62;
+			x = 0.76;
 			y = 0.70;
-			w = (5.25 / 40);
+			w = (5.50 / 40);
 			h = (1 / 25);
 			
 		};
@@ -187,9 +187,9 @@ class playerSettings {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[] call life_fnc_removeItem;";
 			
-			x = 0.475;
+			x = 0.61;
 			y = 0.70;
-			w = (5.25 / 40);
+			w = (5.50 / 40);
 			h = (1 / 25);
 			
 		};
@@ -223,7 +223,7 @@ class playerSettings {
 			onButtonClick = "[] call life_fnc_settingsMenu;";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
-			w = (6.25 / 40);
+			w = (7.60 / 40);
 			h = (1 / 25);
 		};
 		
@@ -231,7 +231,7 @@ class playerSettings {
 			idc = 2011;
 			text = "$STR_PM_MyGang";
 			onButtonClick = "if(isNil ""life_action_gangInUse"") then {if(isNil {(group player) getVariable ""gang_owner""}) then {createDialog ""Life_Create_Gang_Diag"";} else {[] spawn life_fnc_gangMenu;};};";
-			x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			x = 0.132 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
@@ -263,9 +263,9 @@ class playerSettings {
 			idc = 2012;
 			text = "$STR_PM_WantedList";
 			onButtonClick = "[] call life_fnc_wantedMenu";
-			x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			x = 0.132 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
-			w = (6.25 / 40);
+			w = (8.25 / 40);
 			h = (1 / 25);
 		};
 	
@@ -273,9 +273,9 @@ class playerSettings {
 			idc = 2013;
 			text = "$STR_PM_KeyChain";
 			onButtonClick = "createDialog ""Life_key_management"";";
-			x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			x = 0.341 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
-			w = (6.25 / 40);
+			w = (8.25 / 40);
 			h = (1 / 25);
 		};
 		
@@ -283,9 +283,9 @@ class playerSettings {
 			idc = 2014;
 			text = "$STR_PM_CellPhone";
 			onButtonClick = "createDialog ""Life_cell_phone"";";
-			x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			x = 0.55 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
-			w = (6.25 / 40);
+			w = (6.23 / 40);
 			h = (1 / 25);
 		};
 		
@@ -293,7 +293,7 @@ class playerSettings {
 			idc = 2021;
 			text = "$STR_PM_AdminMenu";
 			onButtonClick = "createDialog ""life_admin_menu"";";
-			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			x = 0.2 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.805;
 			w = (6.25 / 40);
 			h = (1 / 25);
@@ -306,7 +306,7 @@ class playerSettings {
 			onButtonClick = "[] call SOCK_fnc_syncData;";
 			x = 0.1;
 			y = 0.805;
-			w = (6.25 / 40);
+			w = (9.25 / 40);
 			h = (1 / 25);
 		};
 	};

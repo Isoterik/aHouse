@@ -11,7 +11,7 @@ class Life_Clothing {
 			idc = -1;
 			x = (1 / 250 / (safezoneW / safezoneH));
 			y = 0;
-			w = 0.318;
+			w = 0.51;
 			h = (1 / 25);
 		};
 		
@@ -20,7 +20,7 @@ class Life_Clothing {
 			idc = -1;
 			x = (1 / 250 / (safezoneW / safezoneH));
 			y = 0 + (11 / 250);
-			w = 0.318;
+			w = 0.51;
 			h = 0.5 - (22 / 250);
 		};
 	};
@@ -34,7 +34,7 @@ class Life_Clothing {
 			text = "";
 			x = (1 / 250 / (safezoneW / safezoneH));
 			y = 0;
-			w = 0.6;
+			w = 0.51;
 			h = (1 / 25);
 		};
 		
@@ -47,7 +47,7 @@ class Life_Clothing {
 			
 			x = 0.01 + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.05;
-			w = 0.3;
+			w = 0.5;
 			h = 0.35;
 		};
 		
@@ -82,7 +82,7 @@ class Life_Clothing {
 			onLBSelChanged  = "_this call life_fnc_clothingFilter";
 			x = (1 / 250 / (safezoneW / safezoneH));
 			y = 0.5 - (1 / 25);
-			w = 0.318;
+			w = 0.51;
 			h = 0.035;
 		};
 		

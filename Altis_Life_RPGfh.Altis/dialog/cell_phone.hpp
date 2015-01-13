@@ -11,7 +11,7 @@ class Life_cell_phone {
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
-			w = 0.64;
+			w = 0.85;
 			h = (1 / 25);
 		};
 		
@@ -20,7 +20,7 @@ class Life_cell_phone {
 			idc = -1;
 			x = 0.1;
 			y = 0.2 + (11 / 250);
-			w = 0.64;
+			w = 0.85;
 			h = 0.3 - (5 / 250);
 		};
 	};
@@ -55,7 +55,7 @@ class Life_cell_phone {
 		text = "";
 		sizeEx = 0.030;
 		x = 0.11; y = 0.3;
-		w = 0.62; h = 0.03;
+		w = 0.83; h = 0.03;
 		
 		};
 		
@@ -68,7 +68,7 @@ class Life_cell_phone {
 			
 			x = 0.11;
 			y = 0.35;
-			w = 0.2;
+			w = 0.41;
 			h = (1 / 25);
 		};
 		
@@ -77,7 +77,7 @@ class Life_cell_phone {
 			idc = 3004;
 			
 			x = 0.11; y = 0.4;
-			w = 0.2; h = (1 / 25);
+			w = 0.41; h = (1 / 25);
 		};
 
 		class TextCopButton : life_RscButtonMenu 
@@ -87,8 +87,8 @@ class Life_cell_phone {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[] call TON_fnc_cell_textcop; [[position player, profileName],""life_fnc_markVictim"",west,FALSE] call life_fnc_MP;";
 			
-			x = 0.32;
-			y = 0.35;
+			x = 0.11;
+			y = 0.45;
 			w = 0.2;
 			h = (1 / 25);
 		};
@@ -100,8 +100,8 @@ class Life_cell_phone {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[] call TON_fnc_cell_textadmin";
 			
-			x = 0.53;
-			y = 0.35;
+			x = 0.74;
+			y = 0.45;
 			w = 0.2;
 			h = (1 / 25);
 		};
@@ -113,9 +113,9 @@ class Life_cell_phone {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[] call TON_fnc_cell_adminmsg";
 			
-			x = 0.32;
-			y = 0.4;
-			w = 0.2;
+			x = 0.53;
+			y = 0.35;
+			w = 0.41;
 			h = (1 / 25);
 		};
 		
@@ -128,7 +128,7 @@ class Life_cell_phone {
 			
 			x = 0.53;
 			y = 0.4;
-			w = 0.2;
+			w = 0.41;
 			h = (1 / 25);
 		};
 		
@@ -139,7 +139,7 @@ class Life_cell_phone {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[] call TON_fnc_cell_emsrequest; [[position player, profileName],""life_fnc_markVictim"",independent,FALSE] call life_fnc_MP;";
 			
-			x = 0.11;
+			x = 0.53;
 			y = 0.45;
 			w = 0.2;
 			h = (1 / 25);

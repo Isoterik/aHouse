@@ -1,6 +1,6 @@
 #define BGX 0.35
 #define BGY 0.2
-#define BGW 0.3
+#define BGW 0.44
 
 class pInteraction_Menu
 {
@@ -64,7 +64,7 @@ class pInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.07;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 		
@@ -76,7 +76,7 @@ class pInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.12;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 		
@@ -88,7 +88,7 @@ class pInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.17;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 		
@@ -100,7 +100,7 @@ class pInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.22;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 		
@@ -112,7 +112,7 @@ class pInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.27;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 		
@@ -124,7 +124,7 @@ class pInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.32;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 		
@@ -136,7 +136,7 @@ class pInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.37;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 	};
@@ -204,7 +204,7 @@ class vInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.07;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 		
@@ -216,7 +216,7 @@ class vInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.12;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 		
@@ -228,7 +228,7 @@ class vInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.17;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 		
@@ -240,7 +240,7 @@ class vInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.22;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 		
@@ -252,7 +252,7 @@ class vInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.27;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 		
@@ -264,7 +264,7 @@ class vInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.32;
-			w = 0.24;
+			w = 0.380;
 			h = 0.038;
 		};
 	};
