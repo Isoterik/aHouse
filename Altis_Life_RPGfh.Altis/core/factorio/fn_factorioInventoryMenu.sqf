@@ -29,6 +29,7 @@ lbClear _pInv;
 
 //Factorio Inventory Items
 {
+
 	_str = [_x] call life_fnc_varToStr;
 	_shrt = [_x,1] call life_fnc_varHandle;
 	_val = missionNameSpace getVariable _x;
