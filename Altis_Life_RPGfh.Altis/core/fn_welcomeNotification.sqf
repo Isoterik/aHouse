@@ -16,7 +16,7 @@ _text4 = parseText format["%1","<t color='#ff0000'>Wichtig</t><br /><t shadow='t
 
 _text5 = parseText format["%1","<t color='#ff0000'>Server</t><br /> <t color='#ff4444'>Bei Problemen, Bugs und Vorschlaege duerft ihr euch gerne im TS3 Melden.<br />IP: 88.198.23.143</t>"];
 
-_text6 = parseText format["%1","<t color='#ff0000'>ACHTUNG</t><br /><t shadow='true'>Die meisten Interaktionen finden mit der LINKEN Windowstaste statt.</t><br /> <t shadow='true'>Alternativ kann in der Tastenbelegung unter Individ. Steuerung AKTION 10 mit LINKS STRG belegt werden.</t><br />"];
+_text6 = parseText format["%1","<t color='#ff0000'>ACHTUNG</t><br /><t shadow='true'>Die meisten Interaktionen finden mit der LINKEN Windowstaste statt.</t><br /> <t shadow='true'>Alternativ kann in der Tastenbelegung unter Individ. Steuerung AKTION 10 frei belegt werden.</t><br />"];
 
 format["Willkommen %1",name player] hintC [_text1,_text2,_text3,_text4,_text5,_text6];
 	
