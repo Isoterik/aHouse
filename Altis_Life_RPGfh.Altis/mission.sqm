@@ -36462,9 +36462,9 @@ class Mission
 		};
 		class Item176
 		{
-			position[]={6366.0181,35.194149,14899.14};
+			position[]={6367.1704,35.173336,14899.977};
 			name="alcohol_p";
-			text="Schnappsbrennerei";
+			text="Apfel & Pfirsich Destillerie";
 			type="mil_box";
 			colorName="ColorBrown";
 		};
@@ -36472,7 +36472,7 @@ class Mission
 		{
 			position[]={23151.695,13.801215,19961.299};
 			name="alcohol_p_1";
-			text="Schnappsbrennerei";
+			text="Kartoffel & Apfel Destillerie";
 			type="mil_box";
 			colorName="ColorBrown";
 		};
@@ -36480,7 +36480,7 @@ class Mission
 		{
 			position[]={11723.123,54.521736,18297.33};
 			name="alcohol_p_2";
-			text="Schnappsbrennerei";
+			text="Birnen Destillerie";
 			type="mil_box";
 			colorName="ColorBrown";
 		};
