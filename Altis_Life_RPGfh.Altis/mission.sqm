@@ -4226,13 +4226,13 @@ class Mission
 				class Item62
 				{
 					position[]={3032.3213,32.929436,18501.791};
-					azimut=-178.07834;
+					azimut=-178.078;
 					special="NONE";
 					id=293;
 					side="CIV";
 					vehicle="C_man_polo_4_F_afro";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Gold Buyer"",life_fnc_virt_menu,""gold""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Ware vorzeigen"",life_fnc_virt_menu,""gold""];";
 				};
 			};
 		};
