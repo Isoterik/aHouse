@@ -152,7 +152,7 @@ private[""_msg"",""_to""];
 	_to = ""dem AtAC"";
 	if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";ctrlShow[3022,true];};
 		
-	[[_msg,name player,6],""clientMessage"",east,false] spawn life_fnc_MP;
+	[[_msg,name player,6],""TON_fnc_clientMessage"",east,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
 	hint format[""Du hast eine Nachricht an alle AtAC Bedienstete geschrieben."",_to,_msg];
 	ctrlShow[3022,true];
@@ -239,6 +239,8 @@ publicVariable "TON_fnc_cell_textadmin";
 publicVariable "TON_fnc_cell_adminmsg";
 publicVariable "TON_fnc_cell_adminmsgall";
 publicVariable "TON_fnc_cell_emsrequest";
+publicVariable "TON_fnc_cell_adacrequest";
+
 //Client Message
 /*
 	0 = private message
