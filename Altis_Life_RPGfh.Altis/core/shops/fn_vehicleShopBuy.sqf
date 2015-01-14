@@ -71,6 +71,10 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 switch(playerSide) do {
 	case west: {
 		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
+		[_vehicle,"cop_suv",true] spawn life_fnc_vehicleAnimate;
+		[_vehicle,"cop_hunter",true] spawn life_fnc_vehicleAnimate;
+		[_vehicle,"cop_hunterhmg",true] spawn life_fnc_vehicleAnimate;
+		[_vehicle,"cop_strider",true] spawn life_fnc_vehicleAnimate;
 	};
 	
 	case civilian: {

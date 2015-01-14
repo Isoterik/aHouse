@@ -200,6 +200,14 @@ switch (_vehicle) do
 			["textures\vehicles\cop\bund_hunter1.paa","cop","textures\vehicles\cop\bund_hunter2.paa"]
 		];
 	};
+
+	case "B_MRAP_01_hmg_F":
+	{
+		_ret = 
+		[
+			["textures\vehicles\cop\sek_hunter1.paa","cop","textures\vehicles\cop\sek_hunter2.paa"]
+		];
+	};
 	
 	case "I_Truck_02_covered_F":
 	{

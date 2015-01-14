@@ -189,6 +189,14 @@ switch (_vehicle) do
 			case 0: {_color = "Bundespolizei"};
 		};
 	};
+
+	case "B_MRAP_01_hmg_F": // Hunter
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "SEK"};
+		};
+	};
 	
 	case "I_Truck_02_covered_F":
 	{
