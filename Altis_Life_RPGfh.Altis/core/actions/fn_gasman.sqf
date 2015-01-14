@@ -43,21 +43,17 @@ if(currentWeapon player !="")then
 		{
 			if(currentWeapon player !="Binocular") then
 			{
-				[["Eine Tankstelle wird ausgeraubt!","Stilleralarm",1],"clientMessage",true,false] spawn life_fnc_MP;
 				_gasstation setVariable["robProgress",false,true];
+				[["Eine Tankstelle wird ausgeraubt!","Stilleralarm",1],"TON_fnc_clientMessage",true,false] spawn life_fnc_MP;
 				_Pos = position player;
-				
 				if(side player == west) then
 					{
-						createMarkerLocal [_markerName, _Pos];
-						_markerName setMarkerColorLocal "ColorRed";
-						_markerName setMarkerTextLocal "! Tankstelle wird ausgeraubt !";
-						_markerName setMarkerTypeLocal "mil_warning";
-
-						sleep 90;
-						deleteMarkerLocal _markerName;
+						_marker = createMarker ["Marker200", _Pos];
+						"Marker200" setMarkerColor "ColorRed";
+						"Marker200" setMarkerText "! Tankstelle wird ausgeraubt !";
+						"Marker200" setMarkerType "mil_warning";
 					};
-				
+
 				_number = floor(random 5);
 				if (_number == 0) then {robberyreward = 1000;};
 				if (_number == 1) then {robberyreward = 2000;};
@@ -140,7 +136,7 @@ switch(true) do
 _gasstation addAction["Laden",life_fnc_weaponShopMenu,"genstore"];      
 _gasstation addAction["Verpflegung",life_fnc_virt_menu,"market"];
 
-sleep 3600;
+sleep 7200;
 _gasstation addAction["Ausrauben",life_fnc_gasman,"gasman"];
 _gasstation setVariable["gaswait",true,true];
 life_action_inUse = false;
