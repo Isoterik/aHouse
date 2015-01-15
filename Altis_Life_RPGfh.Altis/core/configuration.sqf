@@ -549,12 +549,13 @@ buy_array =
 
 	//illegal
 	["turtlesoup",150],
-	["heroinp",80],
-	["cocainep",85],
-	["marijuana",75],
-	["froglsd",80],
-	["croco",100],
-	["methp",95],
+	["heroinp",111],
+	["cocainep",119],
+	["cocaineps",158],
+	["marijuana",103],
+	["froglsd",111],
+	["croco",134],
+	["methp",119],
 
 	//sonstiges
 	["fishing",150],
