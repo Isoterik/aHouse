@@ -2704,7 +2704,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_1";
-					init="removeallWeapons this;  this enableSimulation false; this addAction[""Rebellen Markt"",life_fnc_virt_menu,""rebel""]; this allowDamage false;  this addAction[""Mohammed Jihadi's Klamotten"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Mohammed Jihadi's Waffen Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Bank Versicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+					init="removeallWeapons this;  this enableSimulation false; this addAction[""Rebellen Markt"",life_fnc_virt_menu,""rebel""]; this allowDamage false;  this addAction[""Mohammed Jihadi's Klamotten"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Mohammed Jihadi's Waffen Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 				};
 				class Item77
 				{
@@ -2716,7 +2716,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_2";
-					init="removeallWeapons this;  this enableSimulation false; this addAction[""Rebellen Markt"",life_fnc_virt_menu,""rebel""]; this allowDamage false;  this addAction[""Mohammed Jihadi's Klamotten"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Mohammed Jihadi's Waffen Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Bank Versicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+					init="removeallWeapons this;  this enableSimulation false; this addAction[""Rebellen Markt"",life_fnc_virt_menu,""rebel""]; this allowDamage false;  this addAction[""Mohammed Jihadi's Klamotten"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Mohammed Jihadi's Waffen Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 				};
 				class Item78
 				{
@@ -3418,7 +3418,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_1"",""reb"",""Mohammed Jihadi's Fahrzeuge""],0,false,false,"""",'license_civ_rebel'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_1"",""reb"",""Mohammed Jihadi's Fahrzeuge""],0,false,false,"""",'license_civ_rebel'];";
 				};
 				class Item2
 				{
@@ -3430,7 +3430,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3_1";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_2"",""reb"",""Mohammed Jihadi's Fahrzeuge""],0,false,false,"""",'license_civ_rebel'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_2"",""reb"",""Mohammed Jihadi's Fahrzeuge""],0,false,false,"""",'license_civ_rebel'];";
 				};
 			};
 		};
@@ -3498,7 +3498,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Verpflegung"",life_fnc_virt_menu,""cop""]; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,""coplevel"",0,false,false,"""",' _target distance _this < 5 && !isNil ""life_coplevel"" && (call life_coplevel) > 0 && playerSide == west']; this addAction[""Bank Versicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance']; this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Polizeiausruestung"",life_fnc_weaponShopMenu,""cop_advanced""]; this addAction[""Bundespolizei"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""SEK"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Kevlarweste kaufen  ($2000)"",life_fnc_buyCevlar,"""",0,false,false,"""",'!life_cevlar AND playerside == west']; ";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Verpflegung"",life_fnc_virt_menu,""cop""]; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,""coplevel"",0,false,false,"""",' _target distance _this < 5 && !isNil ""life_coplevel"" && (call life_coplevel) > 0 && playerSide == west']; this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Polizeiausruestung"",life_fnc_weaponShopMenu,""cop_advanced""]; this addAction[""Bundespolizei"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""SEK"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Kevlarweste kaufen  ($2000)"",life_fnc_buyCevlar,"""",0,false,false,"""",'!life_cevlar AND playerside == west']; ";
 				};
 			};
 		};
