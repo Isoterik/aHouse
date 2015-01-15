@@ -1,3 +1,5 @@
+#include <macro.h>
+if(__GETC__(life_adminlevel) < 3) exitWith {closeDialog 0;};
 private["_unit","_coords"];
 _unit = lbData[2902,lbCurSel (2902)];
 _unit = call compile format["%1", _unit];
