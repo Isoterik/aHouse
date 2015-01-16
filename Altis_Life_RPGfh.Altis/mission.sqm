@@ -2392,7 +2392,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3";
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[""Uniformen"",life_fnc_clothingMenu,""cop""]; this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Polizeiausruestung"",life_fnc_weaponShopMenu,""cop_advanced""]; this addAction[""Bundespolizei"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""SEK"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this addAction[""Kevlarweste kaufen  ($200)"",life_fnc_buyCevlar,"""",0,false,false,"""",'!life_cevlar AND playerside == west']; ";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[""Uniformen"",life_fnc_clothingMenu,""cop""]; this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Polizeiausruestung"",life_fnc_weaponShopMenu,""cop_advanced""]; this addAction[""Bundespolizei"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""SEK"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this addAction[""Kevlarweste kaufen fuer 200"",life_fnc_buyCevlar,"""",0,false,false,"""",'!life_cevlar AND playerside == west']; ";
 				};
 				class Item50
 				{
@@ -2658,7 +2658,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_2";
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[""Uniformen"",life_fnc_clothingMenu,""cop""]; this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Polizeiausruestung"",life_fnc_weaponShopMenu,""cop_advanced""]; this addAction[""Bundespolizei"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""SEK"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this addAction[""Kevlarweste kaufen  ($200)"",life_fnc_buyCevlar,"""",0,false,false,"""",'!life_cevlar AND playerside == west']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,""coplevel"",0,false,false,"""",' _target distance _this < 5 && !isNil ""life_coplevel"" && (call life_coplevel) > 0 && playerSide == west']; ";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[""Uniformen"",life_fnc_clothingMenu,""cop""]; this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Polizeiausruestung"",life_fnc_weaponShopMenu,""cop_advanced""]; this addAction[""Bundespolizei"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""SEK"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this addAction[""Kevlarweste kaufen fuer 200"",life_fnc_buyCevlar,"""",0,false,false,"""",'!life_cevlar AND playerside == west']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,""coplevel"",0,false,false,"""",' _target distance _this < 5 && !isNil ""life_coplevel"" && (call life_coplevel) > 0 && playerSide == west']; ";
 				};
 				class Item73
 				{
@@ -2796,7 +2796,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_3";
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[""Uniformen"",life_fnc_clothingMenu,""cop""]; this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Polizeiausruestung"",life_fnc_weaponShopMenu,""cop_advanced""]; this addAction[""Bundespolizei"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""SEK"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this addAction[""Kevlarweste kaufen  ($200)"",life_fnc_buyCevlar,"""",0,false,false,"""",'!life_cevlar AND playerside == west']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,""coplevel"",0,false,false,"""",' _target distance _this < 5 && !isNil ""life_coplevel"" && (call life_coplevel) > 0 && playerSide == west'];";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[""Uniformen"",life_fnc_clothingMenu,""cop""]; this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Polizeiausruestung"",life_fnc_weaponShopMenu,""cop_advanced""]; this addAction[""Bundespolizei"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""SEK"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this addAction[""Kevlarweste kaufen fuer 200"",life_fnc_buyCevlar,"""",0,false,false,"""",'!life_cevlar AND playerside == west']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,""coplevel"",0,false,false,"""",' _target distance _this < 5 && !isNil ""life_coplevel"" && (call life_coplevel) > 0 && playerSide == west'];";
 				};
 				class Item85
 				{
@@ -3159,7 +3159,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false;  this enableSimulation false;    this addAction[""Tuning ($10'000)"",ZCT_fnc_AddBoost,"""",0,false,false,"""",' license_civ_driver && playerSide == civilian || playerSide == west '];  this addAction[""Farbe aendern"",ZCT_fnc_VehColor,"""",0,false,false,"""",' license_civ_driver && playerSide == civilian || playerSide == west '];";
+					init="this allowDamage false;  this enableSimulation false;    this addAction[""Tuning fuer 10k"",ZCT_fnc_AddBoost,"""",0,false,false,"""",' license_civ_driver && playerSide == civilian || playerSide == west '];  this addAction[""Farbe aendern"",ZCT_fnc_VehColor,"""",0,false,false,"""",' license_civ_driver && playerSide == civilian || playerSide == west '];";
 				};
 				class Item116
 				{
@@ -3464,7 +3464,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[""Uniformen"",life_fnc_clothingMenu,""cop""]; this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Polizeiausruestung"",life_fnc_weaponShopMenu,""cop_advanced""]; this addAction[""Bundespolizei"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""SEK"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[""Kevlarweste kaufen  ($200)"",life_fnc_buyCevlar,"""",0,false,false,"""",'!life_cevlar AND playerside == west']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,""coplevel"",0,false,false,"""",' _target distance _this < 5 && !isNil ""life_coplevel"" && (call life_coplevel) > 0 && playerSide == west'];";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction[""Verpflegung"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[""Uniformen"",life_fnc_clothingMenu,""cop""]; this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Polizeiausruestung"",life_fnc_weaponShopMenu,""cop_advanced""]; this addAction[""Bundespolizei"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""SEK"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[""Kevlarweste kaufen fuer 200"",life_fnc_buyCevlar,"""",0,false,false,"""",'!life_cevlar AND playerside == west']; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,""coplevel"",0,false,false,"""",' _target distance _this < 5 && !isNil ""life_coplevel"" && (call life_coplevel) > 0 && playerSide == west'];";
 				};
 				class Item2
 				{
@@ -3498,7 +3498,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Verpflegung"",life_fnc_virt_menu,""cop""]; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,""coplevel"",0,false,false,"""",' _target distance _this < 5 && !isNil ""life_coplevel"" && (call life_coplevel) > 0 && playerSide == west']; this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Polizeiausruestung"",life_fnc_weaponShopMenu,""cop_advanced""]; this addAction[""Bundespolizei"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""SEK"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Kevlarweste kaufen  ($2000)"",life_fnc_buyCevlar,"""",0,false,false,"""",'!life_cevlar AND playerside == west']; ";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Verpflegung"",life_fnc_virt_menu,""cop""]; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu,""coplevel"",0,false,false,"""",' _target distance _this < 5 && !isNil ""life_coplevel"" && (call life_coplevel) > 0 && playerSide == west']; this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Polizeiausruestung"",life_fnc_weaponShopMenu,""cop_advanced""]; this addAction[""Bundespolizei"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""SEK"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Kevlarweste kaufen fuer 200"",life_fnc_buyCevlar,"""",0,false,false,"""",'!life_cevlar AND playerside == west']; ";
 				};
 			};
 		};
@@ -4187,7 +4187,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="factorio";
-					init="this allowDamage false; this enableSimulation false; this addAction [""Factorio"",FHC_fnc_factorioShopMenu,[""factorio_spawn_1""]]; this addAction [""Factorio Inventar"",FHC_fnc_factorioOpenInventory,[]];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Factorio"",FHC_fnc_factorioShopMenu,[""factorio_spawn_1""]]; this addAction[""Factorio Inventar"",FHC_fnc_factorioOpenInventory,[]];";
 				};
 				class Item59
 				{
@@ -34105,7 +34105,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="gang_flag_3";
-			init="this allowDamage false; this addAction [""Capture Gang Area"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
+			init="this allowDamage false; this addAction[""Capture Gang Area"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
 		};
 		class Item2757
 		{
@@ -34436,7 +34436,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="gang_flag_1";
-			init="this allowDamage false; this addAction [""Capture Gang Area"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
+			init="this allowDamage false; this addAction[""Capture Gang Area"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
 		};
 		class Item2787
 		{
@@ -34768,7 +34768,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="gang_flag_2";
-			init="this allowDamage false; this addAction [""Capture Gang Area"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
+			init="this allowDamage false; this addAction[""Capture Gang Area"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
 		};
 		class Item2817
 		{
