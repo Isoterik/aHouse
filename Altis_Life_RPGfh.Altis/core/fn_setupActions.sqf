@@ -9,7 +9,7 @@ switch (playerSide) do
 	case west:
 	{
 		// nano EMP
-		life_actions = life_actions + [player addAction["<t color='#FF0000'>EMP Operator Konsole öffnen</t>",life_fnc_openEmpMenu,[],8,false,false,"",'[_this] call life_fnc_isEmpOperator']];
+		life_actions = life_actions + [player addAction["<t color='#FF0000'>EMP Operator Konsole oeffnen</t>",life_fnc_openEmpMenu,[],8,false,false,"",'[_this] call life_fnc_isEmpOperator']];
 	};
 	case civilian:
 	{
