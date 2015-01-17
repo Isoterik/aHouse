@@ -263,20 +263,6 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 			"
 		]
 	];
-
-	player createDiaryRecord ["policerules",
-		[
-			"Geschwindigkeitsbegrenzung", 
-				"
-				Foglende Geschwindigkeitsbegrenzungen gelten in ganz Altis:<br/><br/>
-				
-				Innerorts: 50km/h bei nicht Beschilderung<br/>
-				Außerorts: 100km/h bei nicht Beschilderung<br/>
-				Autobahn: 130km/h bei nicht Beschilderung<br/><br/>
-			"
-		]
-	];
-	
 	
 	player createDiaryRecord ["policerules",
 		[
@@ -287,7 +273,7 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				1. Es ist nicht erlaubt einen Verbrecher welcher ein Ticket bekam und dieses bezahlt hat zu verhaften, ausgenommen bei Mord.<br/>
 				2. Es muss dem zu Verhaftenden Verbrecher vor seiner Verhaftung der Grund für seine Verhaftung genannt werden.<br/>
 				3. Wenn ein Zivilist gesucht ist verhafte ihn. Toete den Zivilist nicht solange die Situation nicht unter 'Use of Lethal Force' faellt.<br/>
-				4. Das Verbrechen Mord wird mit 100.000 $ Strafe + Haftstrafe geahndet. Die Geldstrafe muss gezahlt werden. Ist die Strafe hoeher als das Vermögen, muss das gesamte Vermoegen gezahlt werden.<br/>
+				4. Das Verbrechen Mord wird mit 40000 $ Strafe + Haftstrafe geahndet. Die Geldstrafe muss gezahlt werden. Ist die Strafe hoeher als das Vermögen, muss das gesamte Vermoegen gezahlt werden.<br/>
 				5. Wird die Geldstrafe nicht freiwillig bezahlt, wird sie eingezogen.<br/>
 
 
