@@ -15,8 +15,10 @@ _customBounty = [_this,3,-1,[0]] call BIS_fnc_param;
 
 if(_uid == "" OR _crimeID == "" OR _name == "") exitWith {}; //Bad data passed.
 
-//next line added by preller. get crime type.
+//next line added by preller. get crime type and bounty
 _type = [_crimeID] call life_fnc_wantedListCfg;
+_bounty = _type select 1;
+
 if(count _type == 0) exitWith {}; //Not our information being passed...
 //Is there a custom bounty being sent? Set that as the pricing.
 if(_customBounty != -1) then {_type set[1,_customBounty];};
@@ -29,7 +31,9 @@ if(_index != -1) then
 	_crimes = _data select 2;
 	_crimes pushBack (_crimeID);
 	_val = _data select 3;
-	life_wanted_list set[_index,[_name,_uid,_crimes,(_type select 1) + _val]];
+
+	//next line edited by preller. add _crimeID instead of the crime name
+	life_wanted_list set[_index,[_name,_uid,_crimes,_bounty + _val]];
 
 	//next line added by preller: db update
 	_newBounty = _val + (_type select 1);
@@ -37,8 +41,8 @@ if(_index != -1) then
 }
 	else
 {
-	life_wanted_list pushBack [_name,_uid,[(_type select 0)],(_type select 1)];
-	diag_log format["CrimeID: %1",_crimeID];
+	//next line edited by preller. add _crimeID instead of the crime name
+	life_wanted_list pushBack [_name,_uid,_crimeID,_bounty];
 	
 	//next line added by preller: db insert
 	[_name,_uid,[_crimeID],(_type select 1)] spawn life_fnc_wantedListInsert;
