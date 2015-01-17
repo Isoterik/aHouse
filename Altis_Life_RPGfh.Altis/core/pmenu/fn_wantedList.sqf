@@ -28,6 +28,7 @@ _players = [];
 
 {
 	_entry = _x;
+	_player = nil;
 	//next line edited by preller: change _select 0 (name) to _select 1 (pid)
 	if((_entry select 1) in _units) then
 	{
