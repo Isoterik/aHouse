@@ -55,9 +55,14 @@ _units = _units - [player];
 					default {"Polizist"};
 					},_x getVariable ["realname",name _x]]};
 
-				case (playerSide == independent): {format["<t color='#FF0000'>Notarzt %1</t>",_x getVariable ["name","Unknown Player"]]};
+				case (!isNil {(_x getVariable "rankMedic")}): {format["<t color='#FF0000'>%1</t> %2",switch ((_x getVariable "rankMedic")) do {
+					default {"Notarzt"};
+					},_x getVariable ["realname",name _x]]};
 
-				case (playerSide == east): {format["<t color='#FFCC00'>ATAC %1</t>",_x getVariable ["name","Unknown Player"]]};
+				case (!isNil {(_x getVariable "rankAdac")}): {format["<t color='#FF0000'>%1</t> %2",switch ((_x getVariable "rankAdac")) do {
+					default {"ATAC"};
+					},_x getVariable ["realname",name _x]]};
+
 				default {
 					if(!isNil {(group _x) getVariable "gang_name"}) then {
 						format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x getVariable ["realname",name _x],(group _x) getVariable ["gang_name",""]];

@@ -23,6 +23,7 @@ if(!(str(player) in ["adac_1"])) then {
 	};
 };
 
+player setVariable["rankAdac",(__GETC__(life_adaclevel)),true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
