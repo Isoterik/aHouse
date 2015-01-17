@@ -25,10 +25,11 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			life_thirst = 30;
-			life_hunger = 30;
+			life_thirst = 40;
+			life_hunger = 40;
 			player setFatigue 0;
 		};
+		hint "Das Essen ist nicht nahrhaft, aber es haelt mich am leben";
 	};
 	
 	case (_item == "boltcutter"): {
@@ -80,7 +81,31 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			[] spawn fnc_drug_use;
+			[] spawn fnc_useHeroin;
+		};
+	};
+
+	case (_item == "cocainep" or _item == "cocaineps"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn fnc_usecoca;
+		};
+	};
+
+	case (_item == "marijuana" or _item == "medmarijuana"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn fnc_weed;
+		};
+	};
+
+	case (_item == "froglsd"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn fnc_useDrug_lsd;
 		};
 	};
 	
@@ -89,31 +114,22 @@ switch (true) do
 		if(vehicle player != player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
 		[] spawn life_fnc_jerryRefuel;
 	};
-	
-	case (_item == "marijuana" or _item == "froglsd" or _item == "heroinp" or _item == "cocainep"):
-	{
-		if(([false,_item,1] call life_fnc_handleInv)) then
-		{
-			[] spawn life_fnc_drug;  //[] spawn fnc_drugweed_use;
-		};
-	};
-	
+		
 	case (_item == "lockpick"):
 	{
 		[] spawn life_fnc_lockpick;
 	};
 	
-	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach"]):
+	case (_item in ["apple","peach","tbacon","rabbit","donuts","frogeat","ornate","salema","mullet","mackerel","tuna","catshark","turtle","turtlesoup","honeyp", "cheesep","bunp","cheesestickp","pear","sausage","grape"]):
 	{
 		[_item] call life_fnc_eatFood;
 	};
-	
-	/*
+
 	case (_item == "fishing"):
 	{
 		[] spawn life_fnc_fishingUse;
 	};
-	*/
+	
 	case (_item == "pickaxe"):
 	{
 		[] spawn life_fnc_pickAxeUse;
