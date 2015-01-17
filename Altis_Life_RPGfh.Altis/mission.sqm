@@ -2052,7 +2052,7 @@ class Mission
 				class Item21
 				{
 					position[]={14418.547,18.720829,16240.83};
-					azimut=33.829372;
+					azimut=33.829399;
 					special="NONE";
 					id=109;
 					side="CIV";
@@ -2367,7 +2367,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction [""Hubschrauberstaffel"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_1"",""cop"",""Hubschrauberstaffel""]];  this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction [""Hubschrauberstaffel"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_1"",""cop"",""Hubschrauberstaffel""]];  this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item48
 				{
@@ -2379,7 +2379,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction [""Polizeifuhrpark"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_1"",""cop"",""Polizeirevier Kavala""]];  this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction [""Polizeifuhrpark"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_1"",""cop"",""Polizeirevier Kavala""]];  this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item49
 				{
@@ -2438,7 +2438,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction [""Hubschrauberstaffel"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_2"",""cop"",""Hubschrauberstaffel""]];  this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_air_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west']; this addAction [""Polizeifuhrpark"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_air_2"",""cop"",""Polizeirevier Kavala""]];  this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_air_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction [""Hubschrauberstaffel"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_2"",""cop"",""Hubschrauberstaffel""]];  this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_air_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west']; this addAction [""Polizeifuhrpark"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_air_2"",""cop"",""Polizeirevier Kavala""]];  this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_air_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item54
 				{
@@ -2449,7 +2449,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction [""Polizeifuhrpark"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_2"",""cop"",""Bundespolizei""]];  this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_car_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction [""Polizeifuhrpark"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_2"",""cop"",""Bundespolizei""]];  this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_car_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item55
 				{
@@ -2460,7 +2460,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction [""Polizeifuhrpark"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""Sondereinsatzkommando""]];  this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_car_3""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction [""Polizeifuhrpark"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""Sondereinsatzkommando""]];  this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_car_3""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item56
 				{
@@ -2751,7 +2751,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_2"";  }];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_2"";  }];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item81
 				{
@@ -2762,7 +2762,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_3"";  }];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_3"";  }];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item82
 				{
@@ -2773,7 +2773,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_1"";  }];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_1"";  }];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item83
 				{
@@ -2784,7 +2784,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""air_g_1"";  }]; this addAction [""Fahrzeug Einparken"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""Es ist kein Fahrzeug in der Nähe des NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""Der Server versucht das Fahrzeug zu parken. Bitte warten...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""air_g_1"";  }]; this addAction [""Fahrzeug einparken"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""Es ist kein Fahrzeug in der Nähe des NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""Der Server versucht das Fahrzeug zu parken. Bitte warten...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item84
 				{
@@ -2807,7 +2807,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction [""Polizeifuhrpark"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_5"",""cop"",""Autobahnpolizei""]];  this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_car_5""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this;  removeGoggles this;  removeHeadgear this; removeAllContainers this; this addUniform ""U_Rangemaster""; this setObjectTextureGlobal [0,""textures\clothing\cop\polizeimeister.paa""]; this addAction [""Polizeifuhrpark"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_5"",""cop"",""Autobahnpolizei""]];  this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""cop_car_5""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item86
 				{
@@ -3254,12 +3254,12 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""air_g_2"";  }]; this addAction [""Fahrzeug Einparken"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""Es ist kein Fahrzeug in der Nähe des NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""Der Server versucht das Fahrzeug zu parken. Bitte warten...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""air_g_2"";  }]; this addAction [""Fahrzeug einparken"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""Es ist kein Fahrzeug in der Nähe des NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""Der Server versucht das Fahrzeug zu parken. Bitte warten...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item124
 				{
 					position[]={26877.35,21.578993,24684.07};
-					azimut=133.96127;
+					azimut=133.961;
 					special="NONE";
 					id=212;
 					side="CIV";
@@ -3287,7 +3287,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_5"";  }];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_5"";  }];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item127
 				{
@@ -3359,7 +3359,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.2;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_98"";  }];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_98"";  }];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item133
 				{
@@ -3383,7 +3383,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""air_g_AI"";  }]; this addAction [""Fahrzeug Einparken"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""Es ist kein Fahrzeug in der Nähe des NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""Der Server versucht das Fahrzeug zu parken. Bitte warten...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""air_g_AI"";  }]; this addAction [""Fahrzeug einparken"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""Es ist kein Fahrzeug in der Nähe des NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""Der Server versucht das Fahrzeug zu parken. Bitte warten...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -3543,7 +3543,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""air_g_don"";  }]; this addAction [""Fahrzeug Einparken"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""Es ist kein Fahrzeug in der Nähe des NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""Der Server versucht das Fahrzeug zu parken. Bitte warten...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""air_g_don"";  }]; this addAction [""Fahrzeug einparken"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""Es ist kein Fahrzeug in der Nähe des NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""Der Server versucht das Fahrzeug zu parken. Bitte warten...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item3
 				{
@@ -3599,7 +3599,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_don"";  }];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_don"";  }];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item8
 				{
@@ -3611,7 +3611,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_99"";  }];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_99"";  }];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item9
 				{
@@ -3776,7 +3776,7 @@ class Mission
 					vehicle="C_Marshal_F";
 					skill=0.60000002;
 					text="racing_manager";
-					init="this enableSimulation false; this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this; removeGoggles this; removeHeadgear this; removeAllContainers this; this addUniform ""U_Marshal""; this addAction [""Zum Rennen anmelden"",life_fnc_registerToRace]; this addAction [""PKW-Haendler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""car_g_Race"",""civ"",""Altis PKW-Haendler""]]; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_Race""; life_garage_type = ""Car"";}];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction [""Rennen starten: 2 Runden"",life_fnc_initializeRace,2,0,false,false]; this addAction [""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu];";
+					init="this enableSimulation false; this allowDamage false; removeAllAssignedItems this; removeBackpack this; removeallweapons this; removeGoggles this; removeHeadgear this; removeAllContainers this; this addUniform ""U_Marshal""; this addAction [""Zum Rennen anmelden"",life_fnc_registerToRace]; this addAction [""PKW-Haendler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""car_g_Race"",""civ"",""Altis PKW-Haendler""]]; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_Race""; life_garage_type = ""Car"";}];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction [""Rennen starten: 2 Runden"",life_fnc_initializeRace,2,0,false,false]; this addAction [""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu];";
 				};
 				class Item23
 				{
@@ -3787,7 +3787,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""air_g_BB"";  }]; this addAction [""Fahrzeug Einparken"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""Es ist kein Fahrzeug in der Nähe des NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""Der Server versucht das Fahrzeug zu parken. Bitte warten...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Hangar"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];   life_garage_sp = ""air_g_BB"";  }]; this addAction [""Fahrzeug einparken"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""Es ist kein Fahrzeug in der Nähe des NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""Der Server versucht das Fahrzeug zu parken. Bitte warten...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item24
 				{
@@ -3798,7 +3798,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_BB"";  }];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_g_BB"";  }];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item25
 				{
@@ -4264,7 +4264,7 @@ class Mission
 					side="GUER";
 					vehicle="I_Story_Colonel_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_ghost_1"";  }];  this addAction [""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Such deine Fahrzeuge....""];life_garage_sp = ""car_ghost_1"";  }];  this addAction [""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item2
 				{

@@ -146,7 +146,9 @@ class Life_Client_Core
 		class healHospital {};
 		class pushVehicle {};
 		class repairTruck {};
-		class serviceChopper {};
+		class serviceChopperOne {};
+		class serviceChopperTwo {};
+		class serviceChopperCop {};
 		class catchFish {};
 		class catchTurtle {};
 		class dpFinish {};
