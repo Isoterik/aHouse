@@ -15,11 +15,9 @@ if([false,_food,1] call life_fnc_handleInv) then {
 	{
 		case "apple": {_val = 20};
 		case "peach": {_val = 20};
-		case "tbacon": {_val = 50};
+		case "tbacon": {_val = 35};
 		case "rabbit":{ _val = 30};
 		case "donuts": {_val = 50};
-		case "goldendonat": {_val = 100};
-		case "proteinshake": {_val = 100};
 		case "frogeat": {_val = 20};
 		case "ornate": {_val = 20};
 		case "salema": {_val = 30};
@@ -29,12 +27,12 @@ if([false,_food,1] call life_fnc_handleInv) then {
 		case "catshark": {_val = 100};
 		case "turtle": {_val = 100};
 		case "turtlesoup": {_val = 80};		
-		case "honeyp": {_val = 50};
+		case "honeyp": {_val = 25};
 		case "cheesep": {_val = 35};
-		case "bunp": {_val = 25};
-		case "cheesestickp": {_val = 35};
+		case "bunp": {_val = 35};
+		case "cheesestickp": {_val = 40};
 		case "pear": {_val = 20};
-		case "sausage": {_val = 70};
+		case "sausage": {_val = 45};
 		case "grape": {_val = 20};
 	};
 
