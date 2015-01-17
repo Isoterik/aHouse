@@ -63,19 +63,24 @@ if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _ki
 	if(vehicle _killer isKindOf "LandVehicle") then
 	{
 		// Hit & Run a Cop
-		if(side _unit == west)then
-		{[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"102"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;}
-		else
-		{[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"100"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;};
+		if(playerSide == west) then {
+		[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"102"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+
+		} else {
+
+		[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"100"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;};
 
 		if(!local _killer) then {
 			[[2],"life_fnc_removeLicenses",_killer,FALSE] spawn life_fnc_MP;
 		};
 	} else {
-		if(side _unit == west)then
-		{[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"110"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;}
-		else
-		{[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"105"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;};
+		if(playerSide == west) then {
+		[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"110"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+
+		} else {
+
+		[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"105"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		};
 		
 		if(!local _killer) then {
 			[[3],"life_fnc_removeLicenses",_killer,FALSE] spawn life_fnc_MP;
