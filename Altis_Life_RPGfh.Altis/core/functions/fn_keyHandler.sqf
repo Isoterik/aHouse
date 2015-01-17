@@ -48,7 +48,7 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 	true;
 };
 
-// ka für was genau atm
+// cop cams
 cam_on = false;
 
 
@@ -116,7 +116,7 @@ switch (_code) do
 		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 		{
 			[] call life_fnc_restrainAction;
-			[[cursorTarget,"handcluffs"], "life_fnc_say3D",nil,true] spawn life_fnc_MP;
+			[[cursorTarget,"handcuffs"], "life_fnc_say3D",nil,true] spawn life_fnc_MP;
 		};
 	};
 	
