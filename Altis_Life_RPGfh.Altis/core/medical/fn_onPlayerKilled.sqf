@@ -95,6 +95,10 @@ if(side _killer == west && playerSide != west) then {
 
 if(!isNull _killer && {_killer != _unit}) then {
 	life_removeWanted = true;
+} else {
+	if(!isNull && {!= _unit}) then {
+	life_removeWanted = false;
+	};
 };
 
 _handle = [_unit] spawn life_fnc_dropItems;
