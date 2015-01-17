@@ -10,7 +10,7 @@ player createDiarySubject ["safezones","Safe Zones (No Killing)"];
 player createDiarySubject ["illegalitems","Illegales"];
 //player createDiarySubject ["gangrules","Gang Rules"];
 //player createDiarySubject ["terrorrules","Terrorism Rules"];
-player createDiarySubject ["controls","Controls"];
+player createDiarySubject ["controls","Tastenbelegung"];
 player createDiarySubject ["asgb1","Strafgesetzbuch"];
 //player createDiarySubject ["asgb2","Strafgesetzbuch 2"];
 player createDiarySubject ["Fahrzeugwerke","Fahrzeugwerke"];
@@ -40,58 +40,23 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 			"Custom Change Log",
 				"
 					- NEU<br/>
+					- Neue Wantedliste by Preller
 					- Update auf v3.1.4.8 <br/>
 					- Bekannter Bug: Factorio geht atm nicht <br/>
 					
 					- ALT<br/>
-					- Version 3.1.4 ist aktuell. <br/>
-					- fixed bug: illegale waffen werden nicht mehr im rucksack gespeichert<br/>
-					- crocodile fix<br/>
+					- Factorio by Preller
+					- Version 3.1.4 ist aktuell.
+					- Viele neue Aktivtaeten sowie stationaere Jobs.<br/>
+					- ATAC und Notaertze eingefuert.<br/>
 					- Wantedliste überarbeitet.<br/>
 					- Stationäre Blizer ;) by Preller und Merlin. danke!<br/>
-					- Map update<br/>
-					- Balancing<br/>
 					- Neue Jobs. Illegal: Meth,Crocodile. Legal: Gold und Silber<br/>	
-					- added Map update by XiB3<br/>
-					- Hubschrauberwartungsplätze Funktionieren wieder<br/>
-					- added scripts - credits by Zero thx to F4D<br/>
-					- added Werbetafeln<br/>
-					- added Neuer Kautions Preis<br/>
-					- added Gefängnis Zeit erhöt<br/>
-					- added Lizensen zur Herstellung von Drogen werden bei Inhaftierung entfernt, sowie der Waffenschein und die Rebellen-Ausbildung<br/>
-					- added mehr Bling Bling an den Polizeifahrzeugen ;)<br/>
-					- reworked Polizei SUV skin<br/>
+					- Map update by XiB3<br/>
+					- Tuningshop - credits by Zero thx to F4D<br/>
+					- mehr Bling Bling an den Polizeifahrzeugen (das war schlimmer als mit CSS arbeiten)<br/>
 					- added cop uniforms - credits by Isoterik & XiB3<br/>
 					- added car Skins - credits by Isoterik & XiB3<br/>
-					- addet Map update (Bank|Grenze zur Rebellen Insel) by XiB3<br/>
-					- addet Neue Werbetafeln<br/><br/><br/>
-					- rebalanced cop stores to fit chain of command<br/>
-					- balanced weapon shops for cops and rebels<br/>
-					- removed various objects in kavalla to prevent lag<br/>
-					- added barries on kavalla market place<br/>
-					- slightly reduced garage price for orca<br/><br/>
-					- performance tweaks<br/><br/>
-					- HOTFIX: removed service truck skins from offroader<br/>
-					- HOTFIX: increased HEMMT loading space<br/><br/>
-					- kavala HQ rework with automated barriers<br/>
-					- ambulance and breakdown service added<br/>
-					- service truck added<br/>
-					- highway patrol station rework<br/>
-					- checkpoint improved<br/>
-					- changed diamond mining route<br/>
-					- improved altis correction to prevent break out<br/>
-					- disabled radio messages<br/>
-					- added more anti-cheat procedures<br/>
-					- reduced heli storage<br/>
-					- slightly reduced selling prices for heroin and cocain<br/>
-					- various bugfixes<br/><br/>
-					- BRAND new Altis Corrections Facility - credits to Mr.Blue<br/>
-					- changed jail release spot<br/>
-					- reduced trunk space for various helicopter<br/>
-					- added custom cop vehicle skins<br/>
-					- removed cop spawn from rebel area<br/>
-					- changed selling price for various ressources to fit new map layout<br/>
-					- reduced cost for creating a gang<br/><br/>
 			"
 		]
 	];
@@ -100,14 +65,17 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 		[
 			"Exploits", 
 				"
-				Hiermit sind Exploits gemeint, für welche man nicht nur gekickt wird, sondern gebannt.<br/><br/>
+				Cheaten, Glitchen sowie bewusstes Ausnuetzen von Bugs wird geahndet!<br/>
+			"
+		]
+	];
 
-				1. Das Entkommen aus dem Knast mit anderen Methoden als die Kaution zu zahlen oder per Helikopter zu fliehen.<br/>
-				2. Sich selbst umzubringen um aus schwierigen Situationen, wie zum Beispiel einer Festnahme, dem Knast ect. zu entkommen.<br/>
-				3. Das Veruntreuen von grossen Geldsummen. Sollte dir jemand direkt am Anfang des Spiels grosse Summen Geld schicken, melde dies sofort einem Admin, andernfalls kannst du gebannt werden.<br/>
-				4. Die Benutzung von gehackten Items. Sollte ein Hacker den Server betreten und Items spawnen, nutze diese nicht, sondern melde es sofort einem Admin.<br/>
-				5. Der Missbrauch von Bugs. Sollte man dich beim Ausnutzen von Bugs erwischen, ist dies ein Banngrund.<br/>
-				6. Dauerhaftes RDM. Wenn du dauerhaft Random Deathmatch betreibst, ist dies ein Banngrund.<br/><br/>
+	player createDiaryRecord ["serverrules",
+		[
+			"Umgang", 
+				"
+				Wir pflegen einen angemessenen Umgang miteinander.<br/>
+				Persoenliche Gewaltandrohungen sowie Beleidgungen gegen einen Mitspieler haben einen Serverausschluss zur Folge!<br/>
 			"
 		]
 	];
@@ -116,55 +84,21 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 		[
 			"Safe Zones",
 				"
-				Das absichtliche Sprengen von Fahrzeugen, Raub oder das Toeten anderer Spieler in oder um die folgenden Gebiete wird mit einem Bann bestraft.<br/><br/>
+				Jegliche kriminellen Aktivitaet an den folgenden Orten wird geahndet.<br/><br/>
 				
-				Jeder Fahrzeug Shop (Garage und Verkaeufer) Umkreis 100 Meter<br/>
-				Jeder Waffenladen Umkreis 100 Meter<br/>
-				Alle Polizei Hauptquartiere Umkreis 100 Meter<br/>
-				Rebellenstützpunkte Umkreis 100 Meter<br/>
-				Donator Shops Umkreis 100 Meter<br/>
-				Jeder Bankautomat im Umkreis von 100 Meter<br/><br/>
+				Laeden (Fahrzeughaendler, Klamottenlaeden usw.)<br/>
+				Polizei Hauptquartiere<br/>
+				Bankautomaten<br/><br/>
 			"
 		]
 	];
-					
-	
-	player createDiaryRecord ["serverrules",
-		[
-			"Bannbare Aktionen", 
-				"
-				Betrachtet dies als eure einzige Warnung für folgende Faelle.<br/><br/>
-				
-				1. Hacking<br/>
-				2. Cheating<br/>
-				3. Exploiting (unter 'Exploits')<br/>
-				4. Drei Kicks führen auch zu einem Ban.<br/><br/>			"
-		]
-	];
-	
-	player createDiaryRecord ["serverrules",
-		[
-			"Cop Interaktion", 
-				"
-				Die Folgenden Taten koennen zu einem Bann führen, im Ermessen der Admins.<br/><br/>
-				
-				1. Zivilisten koennen verhaftet werden wenn sie Cops im Spiel folgen um ihre Position an andere Spieler zu verraten.<br/>
-				2. Das Folgen und Belaestigen von Cops über einen beliebingen Zeitraum wird durch einen Bann geahndet.<br/>
-				3. Das aktive Blockieren von Cops kann zur Verhaftung führen. Bei wiederholtem Blockieren kann es zu einem Bann führen<br/><br/>
-			"
-		]
-	];
-	
+		
 	player createDiaryRecord ["serverrules",
 		[
 			"Luftverkehr", 
 				"
-				Die Folgenden Taten koennen zu einem Bann führen, abhaengig von der Sicht der Admins.<br/><br/>
-				
-				1. Das absichtliche Rammen von Helikoptern. (In andere HeliKopter, Vehikel, Gebaeude usw.).<br/>
-				2. Das dauerhafte Überfliegen von Staedten unterhalb von 150m. Einmalig ist es illegal und wird von Cops geahndet.<br/>
-				3. In Staedten gilt ein absolutes Landeverbot, ausser auf unten genannten Stellen.<br/>
-				4. Das Klauen von Helikoptern ohne dem Fahrzeugeigentümer mi. 30 sec Zeit zu geben das Fahrzeug abzuschliessen. Wenn jemand landet und weggeht, okay, aber wenn sie gerade erst aussteigen und du einsteigst bevor sie das Fahrzeug abschliessen können ist dies ein Banngrund.<br/><br/>
+				1. In Staedten gilt ein absolutes Landeverbot, ausser auf privaten Grundstuecken die gross genug sind oder Sportplaetzen.<br/>
+				2. Ueber Staedten und Orte gilt eine Mindestflughoehe von 300m.
 			"
 		]
 	];
@@ -173,14 +107,11 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 		[
 			"Fahrzeuge", 
 				"
-				Die folgenden Taten koennen zu einem Bann führen, abhaengig von der Sicht der Admins.<br/><br/>
-				
-				1. Das Absichtliche überfahren von anderen Spielern ohne RP-Hintergrund.<br/>
-				2. Sich absichtlich in den Fahrtweg von Fahrzeugen zu werfen um verletzt/getötet zu werden.<br/>
-				3. In andere Fahrzeuge zu rammen mit der Absicht eine Explotion zu erzeugen.<br/>
-				4. Das anhaltende Versuchen in Fahzeuge welche dir nicht gehoeren einzusteigen um den Fahrzeughalter zu ärgern ohne jeglichen RP aspekt.<br/>
-				5. Ein Fahrzeug zu klauen, nur um es zu zerstoeren (indem man gegen etwas faehrt, ins Meer faehrt usw). Das Klauen und Beschaedigen von Fahrzeugen mit Waffen UND! Roleplay Aspekt ist okay.<br/>
-				
+				1. Wir fahren auf der rechten Seite.<br/>
+				2. Geschwindigkeitsbegrenzungen:<br/>
+				Innerorts: 50km/h bei nicht Beschilderung<br/>
+				Außerorts: 100km/h bei nicht Beschilderung<br/>
+				Autobahn: 130km/h bei nicht Beschilderung<br/><br/>
 			"
 		]
 	];
@@ -192,9 +123,8 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				Die Folgenden Taten koennen zu einem Bann führen, abhaengig von der Sicht der Admins.<br/><br/>
 				
 				1. Das Toeten eines Mitspielers ohne Roleplay Grund.<br/>
-				2. Cops und Zivilisten dürfen nur in Verbindung mit einem begangenen Verbrechen auf einander Schiessen.<br/>
-				3. Wenn du im Kreuzfeuer eines Gefechts erschossen wirst zaehlt dies nicht als RDM.<br/>
-				4. Einen Spieler zu erschiessen ohne ihm genügend Zeit zu geben deinen Anweisungen zu folgen zaehlt als RDM.<br/><br/>
+				2. Wenn du im Kreuzfeuer eines Gefechts erschossen wirst zaehlt dies nicht als RDM.<br/>
+				3. Einen Spieler zu erschiessen ohne ihm genuegend Zeit zu geben deinen Anweisungen zu folgen zaehlt als RDM.<br/><br/>
 				
 				Jeder Fall wird von einem oder mehreren Admins beurteilt.<br/><br/>
 			"
@@ -205,15 +135,11 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 		[
 			"Respawnregeln", 
 				"
-				An die Respawnregeln müssen sich ALLE halten.<br/><br/>
-				
-				Die Folgenden Taten koennen zu einem Bann führen, abhaengig von der Sicht der Admins.<br/><br/>
+				An die Respawnregeln muessen sich ALLE halten.<br/><br/>
 
-				1. Wenn du getoetet wirst, musst du 15 Minuten warten bevor du an deinen Todesort zurükkehren darfst.<br/>
-				2. Wenn du Opfer von RDM wurdest zaehlen die Respawnregeln nicht.<br/>
-				3. Wenn du dich absichtlich selbst toetest.<br/>
-				4. Wenn du um Wege zu sparen aus- und wieder einloggst, um schnell von einem Ort zum anderen zu Reisen, ist dies ein Grund für einen Bann.<br/>
-				5. Wenn du ausloggst, um dem Role Play zu entgehen, ist dies ein Banngrund.<br/>
+				1. Wenn du getoetet wirst, musst du 15 Minuten warten bevor du an deinen Todesort zurueckkehren darfst.<br/>
+				2. Aus- und Einloggen um Wege zu sparen ist nicht erlaubt.<br/>
+				3. Wenn du Opfer von RDM wurdest zaehlen die Respawnregeln nicht.<br/>
 			"
 		]
 	];
@@ -222,8 +148,8 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 		[
 			"Dies ist ein ROLEPLAY Server!", 
 				"
-				Benimm dich und halte dich an die grundlegenden Regeln von Rollenspielen.<br/>
-				Trolling, Belaestigung, das Unterbrechen von Roleplay usw. wird strengstens bestraft!<br/>
+				Halte dich an die grundlegenden Regeln von Rollenspielen.<br/>
+				Trollen, Belaestigung, das Unterbrechen von Roleplay usw. wird strengstens bestraft!<br/>
 			"
 		]
 	];
@@ -234,10 +160,13 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 
 	player createDiaryRecord ["Freudenhaus",
 		[
-			"Teamspeak",
+			"Kontakt",
 				"
 				Unser Teamspeak findest du unter:<br/>
-				88.198.23.143<br/><br/>
+				88.198.23.143<br/>
+				Unsere Homepage unter:<br/>
+				www.freudenhaus.li<br/>
+
 			"
 		]
 	];
@@ -254,9 +183,10 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				4.  Die eingeteilten Polizisten sollten sich sofort zur Zentralbank begeben, kleine Verbrechen koennen in diesem Fall ignoriert werden.<br/>
 				5.  Waffeneinsatz ist gestattet, allerdings sollte jede Moeglichkeit sie lebend gefangen zu nehmen zuerst versucht werden.<br/>
 				6.  Die Polizei darf nicht blind in die Bank feuern.<br/>
-				7.  Jeder Zivilist, der sich in unmittelbarer Umgebung des Bankgelaendes aufhaellt, gilt wahrend eins Banküberfalls als potentieller Komplize der Bankraeuber.<br/>
-				8.  Im Rahmen eines Banküberfalls gilt die Respawnregel nicht für die Polizei.<br/>
-				9. Cops dürfen, sollten sie bei einem Banküberfall sterben, EIN MAL respawnen und erneut am Banküberfall teilnehmen.<br/><br/>
+				7.  Die Polizei sollte Zivilisten in der Bank evakuieren.<br/>
+				8.  Jeder Zivilist, der sich in unmittelbarer Umgebung des Bankgelaendes aufhaellt, gilt wahrend eins Banküberfalls als potentieller Komplize der Bankraeuber.<br/>
+				9.  Im Rahmen eines Banküberfalls gilt die Respawnregel nicht für die Polizei.<br/>
+				10. Cops dürfen, sollten sie bei einem Banküberfall sterben, EIN MAL respawnen und erneut am Banküberfall teilnehmen.<br/><br/>
 			"
 		]
 	];
@@ -285,9 +215,8 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 			"Illegale Gebiete", 
 				"
 				1. Das Rebellengebiet wird nicht als Illegales Gebiet angesehen, sondern als ausserhalb der Zustaendigkeit der Polizei. Diese kann dort nach eigenem Ermessen eingreifen.<br/>
-				2. Cops dürfen illegale Gebiete nicht ohne einen Raid betreten. (Abschnitt Raiding/Camping) und nur mit Genehmigung des diensthabenden Einsatzleiters patroullieren.<br/>
-				3. Einem Polizist ist es unter keinen Umstaenden erlaubt ein illegales Gebiet zu becampen. (Ausnahme Grenzposten am Rebellengebiet)<br/>
-				4. Polizisten duerfen mobile Checkpoints nicht naeher als 1200 Meter an einem illegalen Ort (z.B. Kokainfeld / Verarbeiter) aufbauen.<br/><br/>
+				2. Einem Polizist ist es unter keinen Umstaenden erlaubt ein illegales Gebiet zu becampen.
+				3. Polizisten duerfen mobile Checkpoints nicht naeher als 1200 Meter an einem illegalen Ort (z.B. Kokainfeld / Verarbeiter) aufbauen.<br/><br/>
 			"
 		]
 	];
@@ -382,7 +311,7 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				"
 				Einem Polizisten ist es niemals erlaubt Zivilisten mit Waffen zu versorgen. Dies wird mit einer Suspendierung geahndet.<br/><br/>
 
-				Legale Waffen für Zivilisten sind ohne Aufsatz:<br/>
+				Legale Waffen für Zivilisten sind:<br/>
 				1. P07<br/>
 				2. Rook<br/>
 				3. ACP-C2<br/>
@@ -467,7 +396,7 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 		[
 			"Teamspeak Regel",
 				"
-				1. Alles Cops müssen im Teamspeak in einem Cop Kanal anwesend sein.<br/>
+				1. Alles Polizisten müssen im Teamspeak anwesend sein.<br/>
 				2. Joine dem Teamspeak bitte bevor du spawnst.<br/><br/>
 			"
 		]
@@ -483,22 +412,9 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 				Rebellen bezeichnet eine Gruppierung von Zivilisten, welche sich gegen die Polizei auflehnen wollen.<br/>
 				1. Rebellen koennen in ihrem Terrain jederzeit das Feuer auf Polizisten eroeffnen.<br/>
 				2. Rebellen gelten grundsaetzlich als verdaechtig und dürfen von der Polizei durchsucht werden.<br/>
-				3. Cops koennen im Falle eines Angriffs jederzeit das Feuer mit scharfer Munition auf Rebellen erwiedern.<br/>
-				4. Rebellen sind Feinde der Cops, nicht der Zivilisten. Rebellen dürfen niemals ohne RP Hintergrund das Feuer auf Zivilisten eroeffnen, auch nicht in ihrem Gebiet.<br/>
-				5. Rebellen müssen sich, um als offizielle Rebellenorganisation anerkannt zu werden, mit einem ausführlichen Post im entsprechenden Forum vorstellen und dort ihre Mitglieder sowie Gründe ihrer Rebellion vortragen.<br/>
-				6. Eine Rebellenbande muss, um als diese erkannt zu werden, ihren Namens-Tag vor dem Ingame Namen tragen.<br/>
-				7. Der Ifrit und bewaffnete Fahrzeuge (Offroader) sind illegale Rebellenfahrzeuge. Ifrits und bewaffnete Fahrzeuge, welche ausserhalb vom Rebellengebiet von der Polizei gestoppt werden, dürfen von Der Polizei für den aktuellen Restart-Zyklus beschlagnahmt und genutzt werden.<br/>
-				8. Illegale Waffen sind verboten. Wenn Rebellen mit ihnen erwischt werden, darf die Polizei die illegalen Waffen, zusätzlich zu dem Bussgeld beschlagnahmen<br/><br/>
-			"
-		]
-	];
-	
-	player createDiaryRecord ["illegalitems",
-		[
-			"Gang Regeln",
-				"
-				1. Es ist nicht illegal, in einer Gang zu sein.<br/>
-				2. Es ist nicht illegal, sich in einem Gang Gebiet aufzuhalten, nur, wenn man an illegalen Aktivitäten beteiligt ist.<br/><br/>
+				3. Die Polizei kann im Falle eines Angriffs jederzeit das Feuer mit scharfer Munition auf Rebellen erwiedern.<br/>
+				4. Rebellen müssen sich, um als offizielle Rebellenorganisation anerkannt zu werden, mit einem ausführlichen Post im entsprechenden Forum vorstellen und dort ihre Mitglieder sowie Gründe ihrer Rebellion vortragen.<br/>
+				5. Eine Rebellenbande muss, um als diese erkannt zu werden, ihren Namens-Tag vor dem Ingame Namen tragen.<br/>
 			"
 		]
 	];
@@ -508,13 +424,12 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 			"Gang Kriege",
 				"
 				Gangs koennen unter einander Kriege beginnen.<br/>
-				1. Zvilisten dürfen im Rahmen dieser Kriege nicht getoetet werden.<br/>
-				2. Voraussetzung für einen Gang Krieg ist, dass die beteiligten Gangs im Forum nach allgemein gültigen Regeln angemeldet sind.<br/>
-				3. Voraussetzung ist eine offizielle Kriegserklaerung im Forum mit Benennung des Grundes für den Krieg und des Austragungsortes.<br/>
+				1. Zvilisten duerfen im Rahmen dieser Kriege nicht getoetet werden.<br/>
+				2. Voraussetzung für einen Gang Krieg ist, dass die beteiligten Gangs im Forum nach allgemein gueltigen Regeln angemeldet sind.<br/>
+				3. Voraussetzung ist eine offizielle Kriegserklaerung im Forum mit Benennung des Grundes fuer den Krieg.<br/>
 				4. Die Polizei greift in den Gang Krieg nicht ein, ausser sie wird von Zivilisten zu Hilfe gerufen oder Zivilisten sind gefaehrdet.<br/>
-				5. Alle Beteiligten haben sich waehrend des Krieges an die Respawnregel (New Life Regel) in verschaefter Form zu halten. D. h. wenn jemand stirbt, darf er sich die naechsten 30 Minuten im Radius von 2 km nicht in den Kampf einmischen.<br/>
-				6. Ein Gang Krieg gilt als beendet, wenn das Oberhaupt einer der Gangs Waffenstillstand fordert, sich ergibt oder eine der Gangs binnen eines Gefechts komplett ausgeloescht wurde.<br/>
-				7. Im Falle eines Krieges müssen alle Beteiligten des Krieges für die Dauer des Krieges im Freudenhaus Teamspeak online sein.<br/>
+				5. Alle Beteiligten haben sich waehrend des Krieges an die Respawnregel (New Life Regel) in verschaefter Form zu halten. Wenn jemand geoetet wird, darf dieser sicht nicht mehr einmischen und muss dem Konfliktbereich fern bleiben.<br/>
+				6. Ein Gang Krieg gilt als beendet, wenn das Oberhaupt einer der Gangs Waffenstillstand fordert.<br/>
 			"
 		]
 	];
@@ -523,32 +438,31 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 		[
 			"Ortsbesetzung",
 				"
-				Gangs koennen alle Orte ausgenommen der Spawn-Orte der Cops besetzen.<br/>
-				1.  Wird ein Ort laengerfristig von einer Gang besetzt, muss dies im besetzte Orte Forum angegeben werden.<br/>
+				Gangs koennen alle Orte ausgenommen der Spawn-Staedte besetzen.<br/><br/>
+				1.  Wird ein Ort laengerfristig von einer Gang besetzt und kontrolliert, muss dies im Forum unter besetzte Orte angegeben werden.<br/>
 				2.  Voraussetzung für die Besetzung eines Ortes durch eine Gang ist, dass die Gang offiziell unter o. g. Regeln im Forum angemeldet ist.<br/>
-				3.  Gangs dürfen in von ihnen besetzten Orten Maut in angemessener Hoehe von durchreisenden Zivilisten verlangen, jedoch nur einmal pro Durchreise.<br/>
+				3.  Gangs duerfen in von ihnen besetzten Orten Maut in angemessener Hoehe von durchreisenden Zivilisten verlangen, jedoch nur einmal pro Durchreise.<br/>
 				4.  Auch wenn ein Gebiet besetzt ist, muss das Roleplay eingehalten werden und es gilt weiterhin RDM Verbot.<br/>
-				5.  Wenn ein Ort durch eine Gang besetzt ist, kann die Polizei versuchen, Das Gebiet zu befreien, muss es aber nicht. Wichtigster Faktor hierbei ist die Sicherheit der Zivilisten.<br/>
-				6.  Rebellen dürfen sich mit Waffengewalt gegen die Polizei wehren, sollte diese versuchen, das Gebiet zu befreien.<br/>
+				5.  Wenn ein Ort durch eine Gang besetzt ist, kann die Polizei versuchen das Gebiet zu befreien, muss sie aber nicht.<br/>
+				6.  Rebellen dürfen sich mit Waffengewalt gegen die Polizei wehren, sollte diese versuchen, dass Gebiet zu befreien.<br/>
 				7.  Die Polizei darf sich in besetzten Orten aufhalten, muss sich aber an die Regeln für das Rebellengebiet halten. Trotzdem gilt RDM VERBOT!<br/>
-				8.  Ein besetzter Ort gilt als Rebellengebiet. Somit sind hier Rebellenwaffen sowie Rebellenfahrzeuge legal und dürfen von der Polizei nicht beschlagnahmt werden.<br/>
-				9.  Ein durch eine Gang besetzter Ort darf von einer anderen Gang übernommen werden. Die Polizei hat sich hierbei nicht einzumischen, es sei denn, Zivilisten werden angegriffen und erstatten Anzeige.<br/>
-				10. Ein besetzter Ort gilt als befreit, wenn saemtliche Gangmitglieder aus dem Ort durch die Polizei vertrieben oder getoetet worden sind.<br/>
-				11. Sollte ein Ort befreit worden sein, muss die Anzeige des besetzten Ortes im Forum gekennzeichnet sein.<br/>
-				12. Wurde ein besetzter Ort befreit, darf die vertriebene/ausgeloeschte Gang den Ort für die Dauer des aktuell laufenden Server Restart Zyklus nicht erneut besetzen.<br/><br/>
+				8.  Ein durch eine Gang besetzter Ort darf von einer anderen Gang übernommen werden. Die Polizei hat sich hierbei nicht einzumischen, es sei denn, Zivilisten werden angegriffen und erstatten Anzeige.<br/>
+				9. Ein besetzter Ort gilt als befreit, wenn saemtliche Gangmitglieder aus dem Ort durch die Polizei vertrieben oder getoetet wurden.<br/>
+				10. Sollte ein Ort befreit worden sein, muss die Anzeige des besetzten Ortes im Forum gekennzeichnet sein.<br/>
 			"
 		]
 	];
 	
 	player createDiaryRecord ["illegalitems",
 		[
-			"Illegale Fahrzeuge",
+			"Illegale Fahrzeuge und Waffen",
 				"
-				Es ist für Zivilisten illegal diese Fahrzeuge zu besitzen.<br/><br/>
+				Es ist illegal diese Fahrzeuge und Waffen zu besitzen.<br/><br/>
 
 				1. Ifrit<br/>
-				2. bewaffneter Offroad<br/>
-				3. Polizei Fahrzeuge<br/><br/>
+				2. Bewaffneter Offroad<br/>
+				3. Polizei Fahrzeuge<br/>
+				4. Das Waffenarsenal der Rebellen sowie Gang-Gebieten<br/>
 			"
 		]
 	];
@@ -557,19 +471,19 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 
 	player createDiaryRecord ["controls",
 		[
-			"Controls",
+			"Tastenbelegung",
 				"
-				Interaktion ist Aktion Key 10 standart linke Windows taste<br/>
-				änderung über Steuerung>individuell<br/>
-				Z: Öffnet Player Menu<br/>
-				U: Öffnen/Schließen der Fahrzeuge<br/>
-				F: Polizei Sirene (wen Polizei)<br/>
-				X: Handbremse 
-				T: Fahrzeug Kofferaum<br/>
-				Left Shift + R: Festnehmen (Polizei)<br/>
-				Left Shift + G: Knock out(Civ Only, zum ausrauben benötigt)<br/>
-				Left Shift + H: Holster Waffe (Pistole only)<br/>
-				Left Shift: Nitro (Nur im Auto wenn aufgemotzt)<br/>
+				Die meisten Interaktionen finden mit der LINKEN Windowstaste statt.<br/>
+				Alternativ kann in der Tastenbelegung unter Individ. Steuerung AKTION 10 frei belegt werden.<br/><br/>
+				Z: Oeffnet das Spielerinventar<br/>
+				U: Oeffnen/Schließen von Tueren an Fahrzeugen und Haeusern<br/>
+				F: Polizei Sirene (fuer die Polizei)<br/>
+				X: Handbremse<br/>
+				T: Fahrzeug Kofferaum sowie das Hausinventar<br/>
+				Left Shift + R: Festnehmen (Polizei) / Fesseln als Zivlist<br/>
+				Left Shift + G: Personen zum ausrauben niederstrecken<br/>
+				Left Shift + H: Handfeuerwaffen holstern<br/>
+				Left Shift: Nitro (Nur fuer Fahrzeuge die bei PKM waren)<br/>
 			"
 		]
 	];
@@ -596,8 +510,8 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 		[
 			"Luftverkehr", 
 				"
-				1. Das Fliegen ohne einen gültigen Flugschein wird mit 5000 Altis Dollar geahndet.<br/>
-				2. Bei Landung auf einem dafür nicht vorgesehenem Platz ohne Genehmigung der Polizei wird ein Bußgeld von 2500 Altis Dollar fällig. Private Grundstücke sind davon ausgenommen.<br/>
+				1. Das Fliegen ohne einen gueltigen Flugschein wird mit 5000 Altis Dollar geahndet.<br/>
+				2. Bei Landung auf einem dafür nicht vorgesehenem Platz ohne Genehmigung der Polizei wird ein Bußgeld von 2500 Altis Dollar fällig. Private Grundstuecke sind davon ausgenommen.<br/>
 				3. Bei nicht einhalten der Mindestflughöhe wird eine Bußgeld von 10000 Altis Dollar fällig, da dies eine Gefährdung der Öffentlichkeit darstellt.<br/>
 			"
 		]
@@ -605,7 +519,7 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 
 	player createDiaryRecord ["asgb1",
 		[
-			"Führen von Schusswaffen", 
+			"Fuehren von Schusswaffen", 
 				"
 				1. Bei Besitz einer legalen Schusswaffe(n) ohne gültigen Waffenschein wird ein Bußgeld in Höhe von 1000 Altis Dollar ausgestellt und die Schusswaffe beschlagnahmt..<br/>
 				2. Bei Besitz einer illegalen Schusswaffe(n) wird diese beschlagnahmt und automatisch ein Bußgeld von 6000 Altis Dollar ausgestellt.<br/>
@@ -645,70 +559,53 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 
 	player createDiaryRecord ["Fahrzeugwerke",
 		[
-			"CH-49 Mohawk",
-				"
-				Reifen: 6<br/>
-				Karosserieteile: 400<br/>
-				Innenausstattung: 400<br/>
-				Elektronikkabel: 420<br/>
-				Glas: 200<br/>
-				Öl: 150<br/>
+			"Bauplaene",
 			"
-		]
-	];
 
-	player createDiaryRecord ["Fahrzeugwerke",
-		[
-			"Strider",
-				"
-				Reifen: 4<br/>
-				Karosserieteile: 500<br/>
-				Innenausstattung: 600<br/>
-				Elektronikkabel: 450<br/>
-				Glas: 300<br/>
-				Öl: 200<br/>
-			"
-		]
-	];
+			CH-49 Mohawk<br/><br/>
+				
+			Reifen: 6<br/>
+			Karosserieteile: 400<br/>
+			Innenausstattung: 400<br/>
+			Elektronikkabel: 420<br/>
+			Glas: 200<br/>
+			Öl: 150<br/><br/>
 
-	player createDiaryRecord ["Fahrzeugwerke",
-		[
-			"HEMTT Box",
-				"
-				Reifen: 8<br/>
-				Karosserieteile: 650<br/>
-				Innenausstattung: 600<br/>
-				Elektronikkabel: 480<br/>
-				Glas: 150<br/>
-				Öl: 180<br/>
-			"
-		]
-	];
+			Strider<br/><br/>
+				
+			Reifen: 4<br/>
+			Karosserieteile: 500<br/>
+			Innenausstattung: 600<br/>
+			Elektronikkabel: 450<br/>
+			Glas: 300<br/>
+			Öl: 200<br/><br/>
+			
+			HEMTT Box<br/><br/>
 
-	player createDiaryRecord ["Fahrzeugwerke",
-		[
-			"HEMTT Fuel",
-				"
-				Reifen: 8<br/>
-				Karosserieteile: 700<br/>
-				Innenausstattung: 700<br/>
-				Elektronikkabel: 500<br/>
-				Glas: 180<br/>
-				Öl: 400<br/>
-			"
-		]
-	];
+			Reifen: 8<br/>
+			Karosserieteile: 650<br/>
+			Innenausstattung: 600<br/>
+			Elektronikkabel: 480<br/>
+			Glas: 150<br/>
+			Öl: 180<br/><br/><br/>
+			
+			HEMTT Fuel<br/><br/>
+				
+			Reifen: 8<br/>
+			Karosserieteile: 700<br/>
+			Innenausstattung: 700<br/>
+			Elektronikkabel: 500<br/>
+			Glas: 180<br/>
+			Öl: 400<br/><br/>
 
-	player createDiaryRecord ["Fahrzeugwerke",
-		[
-			"Tempest Device",
-				"
-				Reifen: 6<br/>
-				Karosserieteile: 350<br/>
-				Innenausstattung: 360<br/>
-				Elektronikkabel: 220<br/>
-				Glas: 100<br/>
-				Öl: 100<br/>
+			Tempest Device<br/><br/>
+				
+			Reifen: 6<br/>
+			Karosserieteile: 350<br/>
+			Innenausstattung: 360<br/>
+			Elektronikkabel: 220<br/>
+			Glas: 100<br/>
+			Öl: 100<br/>
 			"
 		]
 	];
