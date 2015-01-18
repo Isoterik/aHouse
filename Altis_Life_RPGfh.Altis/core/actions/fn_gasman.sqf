@@ -47,11 +47,14 @@ if(currentWeapon player !="")then
 				[["Eine Tankstelle wird ausgeraubt!","Stilleralarm",1],"TON_fnc_clientMessage",true,false] spawn life_fnc_MP;
 				
 				_Pos = position player;
-				_marker = switch (playerSide == west) do {
-					createMarkerLocal ["Marker200", _Pos];
-					"Marker200" setMarkerColorLocal "ColorBlack";
-					"Marker200" setMarkerTextLocal "! Tankstelle wird ausgeraubt !";
-					"Marker200" setMarkerTypeLocal "mil_warning";	
+				_marker = switch (playerSide) do {
+					case west: {
+					createMarker ["Marker200", _Pos];
+					"Marker200" setMarkerColor "ColorBlack";
+					"Marker200" setMarkerText "! Tankstelle wird ausgeraubt !";
+					"Marker200" setMarkerType "mil_warning";
+					};
+					default {};
 				};
 
 				_number = floor(random 5);
@@ -96,7 +99,7 @@ switch(true) do
 	case (_toFar):
 	{
 		hint "Du hast dich zu weit entfernt!";
-		deleteMarkerLocal "Marker200";
+		deleteMarker "Marker200";
 		_denied1 = false;
 		_gasstation setVariable["robProgress",true,true];
 		life_action_inUse = false;
@@ -105,7 +108,7 @@ switch(true) do
 	case (!alive player):
 	{
 		hint "Wer gibt denn einem Toten seine Beute? Niemand. Du hast versagt.";
-		deleteMarkerLocal "Marker200";
+		deleteMarker "Marker200";
 		_denied1 = false;
 		_gasstation setVariable["robProgress",true,true];
 		life_action_inUse = false;
@@ -114,7 +117,7 @@ switch(true) do
 	case (life_istazed):
 	{
 		hint "Du wurdest getasert und dein kleiner Raub ist fehlgeschlagen!";
-		deleteMarkerLocal "Marker200";
+		deleteMarker "Marker200";
 		_denied1 = false;
 		_gasstation setVariable["robProgress",true,true];
 		life_action_inUse = false;
@@ -127,7 +130,7 @@ switch(true) do
 		[[getPlayerUID player,profileName,"205"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		_gasstation setVariable["robProgress",true,true];
 		_gasstation setVariable["gaswait",true,true];
-		deleteMarkerLocal "Marker200";
+		deleteMarker "Marker200";
 		_denied1 = false;
 		life_action_inUse = false;
 	};	
