@@ -47,13 +47,11 @@ if(currentWeapon player !="")then
 				[["Eine Tankstelle wird ausgeraubt!","Stilleralarm",1],"TON_fnc_clientMessage",true,false] spawn life_fnc_MP;
 				
 				_Pos = position player;
-				_marker = switch (playerSide) do {
-					case west: {
+				_marker = switch (playerSide == west) do {
 					createMarkerLocal ["Marker200", _Pos];
 					"Marker200" setMarkerColorLocal "ColorBlack";
 					"Marker200" setMarkerTextLocal "! Tankstelle wird ausgeraubt !";
-					"Marker200" setMarkerTypeLocal "mil_warning";
-					};
+					"Marker200" setMarkerTypeLocal "mil_warning";	
 				};
 
 				_number = floor(random 5);
