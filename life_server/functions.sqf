@@ -342,7 +342,7 @@ compileFinal "
 		{
 			_check = life_cash + life_atmcash;
 			
-			sleep 5;
+			uiSleep 5;
 
 			_dif = (life_cash + life_atmcash) - _check;
 
