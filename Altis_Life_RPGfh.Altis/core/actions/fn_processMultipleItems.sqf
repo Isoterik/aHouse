@@ -72,9 +72,9 @@ _productionInfo = switch (_type) do
 	case "cheese": {[["milks"],[1],"cheesep",1,"cheese",0];};
 	case "butter": {[["milks"],[1],"butterp",1,"butter",0];};
 	case "cigar": {[["tabaccos"],[1],"cigar",1,"cigar",0];};
-	case "beef": {[["beef","herps"],[2,1],"sausage",5,"butcher",0];};
-	case "buns": {[["milks","eggs","flours"],[2,3,2],"buns",3,"baker",0];};
-	case "cheesesticks": {[["milks","eggs","flours","cheeses"],[3,3,3,1],"cheesesticks",4,"baker",0];};
+	case "beef": {[["beef","herps"],[1,1],"sausage",2,"butcher",0];};
+	case "buns": {[["milks","eggs","flours"],[1,1,1],"buns",3,"baker",0];};
+	case "cheesesticks": {[["milks","eggs","flours","cheeses"],[1,1,1,1],"cheesesticks",4,"baker",0];};
 	
 	default {[]};
 };
