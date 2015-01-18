@@ -59,7 +59,7 @@ _units = _units - [player];
 					default {"Notarzt"};
 					},_x getVariable ["realname",name _x]]};
 
-				case (!isNil {(_x getVariable "rankAdac")}): {format["<t color='#FF0000'>%1</t> %2",switch ((_x getVariable "rankAdac")) do {
+				case (!isNil {(_x getVariable "rankAdac")}): {format["<t color='#FFFF00'>%1</t> %2",switch ((_x getVariable "rankAdac")) do {
 					default {"ATAC"};
 					},_x getVariable ["realname",name _x]]};
 
