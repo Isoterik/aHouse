@@ -36,7 +36,7 @@ _bounty = _data select 3;
 
 	if(!(_crime in _mylist)) then
 	{
-		_mylist set[count _mylist,_crime];
+		_mylist pushBack _crime;
 
 		//next line edited by preller: changed _crime to _crimeName
 		_list lbAdd format["%1 mal %2",{_x == _crime} count _crimes,_crimeName];
