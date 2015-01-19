@@ -30,6 +30,7 @@ if (side player != west) then {
 	["life_fnc_MP_packet",[[getPlayerUID player,profileName,"910"],"life_fnc_wantedAdd",false,false]] spawn life_fnc_MP;
 };
 //Broadcast!
+_unit say3D "handcuffs";
 _unit setVariable["restrained",true,true];
 [[player], "life_fnc_restrain", _unit, false] spawn life_fnc_MP;
 
