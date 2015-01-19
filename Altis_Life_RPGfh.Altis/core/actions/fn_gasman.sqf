@@ -53,7 +53,7 @@ if(currentWeapon player !="")then
 						[[_playerPosition],"life_fnc_gasmanCopMarker",_x,false] spawn life_fnc_MP;
 
 					}
-				} each playableUnits;
+				} forEach playableUnits;
 
 				_number = floor(random 5);
 				if (_number == 0) then {robberyreward = 1000;};
