@@ -46,12 +46,13 @@ if(currentWeapon player !="")then
 				_gasstation setVariable["robProgress",false,true];
 				[["Eine Tankstelle wird ausgeraubt!","Stilleralarm",1],"TON_fnc_clientMessage",true,false] spawn life_fnc_MP;
 				
-				_Pos = position player;
+				//next lines added by preller. place marker only for cops.
+				{
+					if (side _x == west) {
+						[[],"life_fnc_gasmanCopMarker",_x,false] spawn life_fnc_MP;
 
-				createMarker ["Marker200", _Pos];
-				"Marker200" setMarkerColor "ColorBlack";
-				"Marker200" setMarkerText "! Tankstelle wird ausgeraubt !";
-				"Marker200" setMarkerType "mil_warning";
+					}
+				} each playableUnits;
 
 				_number = floor(random 5);
 				if (_number == 0) then {robberyreward = 1000;};
