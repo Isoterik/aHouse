@@ -300,7 +300,6 @@ class Life_Client_Core
 		class loadGear {};
 		class stripDownPlayer {};
 		class updateTexture {};
-		class bankTrigger {};
 		class prioritySelect {};
 	};
 	
@@ -382,6 +381,9 @@ class Life_Client_Core
 		class ticketPaid {};
 		class buyCevlar {};
 		class markVictim {};
+		class bankTrigger {};
+		class removeWeapons {};
+		class gasmanCopMarker {};
 	};
 
 	class Emp
