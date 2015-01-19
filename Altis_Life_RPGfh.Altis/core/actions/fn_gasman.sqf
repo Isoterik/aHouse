@@ -45,11 +45,12 @@ if(currentWeapon player !="")then
 			{
 				_gasstation setVariable["robProgress",false,true];
 				[["Eine Tankstelle wird ausgeraubt!","Stilleralarm",1],"TON_fnc_clientMessage",true,false] spawn life_fnc_MP;
+				_playerPosition = position player;
 				
 				//next lines added by preller. place marker only for cops.
 				{
 					if (side _x == west) {
-						[[],"life_fnc_gasmanCopMarker",_x,false] spawn life_fnc_MP;
+						[[_playerPosition],"life_fnc_gasmanCopMarker",_x,false] spawn life_fnc_MP;
 
 					}
 				} each playableUnits;
