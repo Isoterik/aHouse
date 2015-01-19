@@ -49,7 +49,7 @@ if(currentWeapon player !="")then
 				
 				//next lines added by preller. place marker only for cops.
 				{
-					if (side _x == west) {
+					if (side _x == west) then {
 						[[_playerPosition],"life_fnc_gasmanCopMarker",_x,false] spawn life_fnc_MP;
 
 					}
