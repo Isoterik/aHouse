@@ -1,14 +1,12 @@
-private["_Pos","_marker"]
+private["_Pos"]
 
-[["Eine Tankstelle wird ausgeraubt!","Stilleralarm",1],"TON_fnc_clientMessage",true,false] spawn life_fnc_MP;
 
-_Pos = position player;
-_marker = switch (playerSide) do {
-	case west: {
-	createMarker ["Marker200", _Pos];
-	"Marker200" setMarkerColor "ColorBlack";
-	"Marker200" setMarkerText "! Tankstelle wird ausgeraubt !";
-	"Marker200" setMarkerType "mil_warning";
+ if (playerSide != west) exitWith {};
+	_Pos = _this select 0;
+	createMarkerlocal ["Marker200", _Pos];
+	"Marker200" setMarkerColorlocal "ColorBlack";
+	"Marker200" setMarkerTextlocal "! Tankstelle wird ausgeraubt !";
+	"Marker200" setMarkerTypelocal "mil_warning";
 	};
 	default {};
 };
