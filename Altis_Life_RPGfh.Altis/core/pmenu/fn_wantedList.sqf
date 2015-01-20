@@ -7,43 +7,26 @@
 	Description:
 	Displays wanted list information sent from the server.
 */
-private["_info","_display","_list","_units","_entry","_players","_player","_playerName"];
+private["_info","_display","_list","_units","_entry"];
 disableSerialization;
 _info = [_this,0,[],[[]]] call BIS_fnc_param;
 _display = findDisplay 2400;
 _list = _display displayctrl 2401;
 _units = [];
 
-//next line added by preller. 
-_players = [];
-
 {
-	//next line edited by preller. filter civs and add the pid to the _units array instead of the player name
+	//next line edited by preller. filter civs
 	if (side _x == civilian) then {
-		_units pushBack [getPlayerUID _x];
-		_players pushBack [_x];
+	_units pushBack (_x getVariable["realname",name _x]);
 	};
-
 } foreach playableUnits;
 
 {
 	_entry = _x;
-	_player = nil;
-	//next line edited by preller: change _select 0 (name) to _select 1 (pid)
-	if((_entry select 1) in _units) then
+	if((_entry select 0) in _units) then
 	{
-		//next lines added by preller. search for the player object to display the players name
-		{
-			if (getPlayerUID _x == (_entry select 1)) exitWith {
-				_player = _x;
-			};
-		} forEach playableUnits;
-
-		//next line added by preller: error checking
-		if (!(isNil "_player")) then {
-			_list lbAdd format["%1",(name _player)];
-			_list lbSetData [(lbSize _list)-1,str(_entry)];
-		};
+		_list lbAdd format["%1", _entry select 0];
+		_list lbSetData [(lbSize _list)-1,str(_entry)];
 	};
 } foreach _info;
 
