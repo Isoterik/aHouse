@@ -26,7 +26,7 @@ if(!isNil {_val}) then
 	//Stop people picking up huge values of money which should stop spreading dirty money.
 	switch (true) do
 	{
-		case (_val > 999999) : {_val = 99999;}; //VAL>20mil->100k
+		case (_val > 1000000) : {_val = 100000;}; //VAL>20mil->100k
 		case (_val > 500000) : {_val = 50000;}; //VAL>5mil->250k
 		default {};
 	};

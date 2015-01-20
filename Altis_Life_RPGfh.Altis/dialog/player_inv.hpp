@@ -120,7 +120,7 @@ class playerSettings {
 			idc = 2001;
 			text = "$STR_Global_Give";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "[] call life_fnc_giveMoney";
+			onButtonClick = "[] call life_fnc_giveMoneyDelay";
 			sizeEx = 0.025;
 			x = 0.135; y = 0.50;
 			w = 0.13; h = 0.036;

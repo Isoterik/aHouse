@@ -255,6 +255,7 @@ class Life_Client_Core
 		class updateViewDistance {};
 		class settingsMenu {};
 		class settingsInit {};
+		class giveMoneyDelay {};
 	};
 	
 	class Functions
@@ -485,5 +486,6 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
+		class bankTransferDelay {};
 	};
 };
