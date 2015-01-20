@@ -346,7 +346,7 @@ compileFinal "
 
 			_dif = (life_cash + life_atmcash) - _check;
 
-			if(_dif > 1000001)then
+			if(_dif > 1000000)then
 			{
 				_msg = format[""%1 hat plötzlich über 1 Million $ mehr!"",name player,_check];
 				[[_msg,""NSA & BND"",2],""clientMessage"",true,false] spawn life_fnc_MP;

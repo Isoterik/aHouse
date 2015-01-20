@@ -19,6 +19,7 @@ if(isNull _unit) exitWith {ctrlShow[2001,true];};
 if(!life_use_atm) exitWith {hint "Du hast vor kurzem die Zentralbank ausgeraubt! Du kannst jetzt noch kein Geld weitergeben.";ctrlShow[2001,true];};
 if(!([_amount] call TON_fnc_isnumber)) exitWith {hint "Du hast keine tatsächliche Zahl eingegben.";ctrlShow[2001,true];};
 if(parseNumber(_amount) <= 0) exitWith {hint "Du musst eine Summe eingeben, die du weiter geben möchtest.";ctrlShow[2001,true];};
+if(parseNumber(_amount) > 999999) exitWith {hint "Du kannst nicht mehr als 999999 weiter geben";ctrlShow[2001,true];};
 if(parseNumber(_amount) > life_cash) exitWith {hint "Du hast nicht soviel Geld!";ctrlShow[2001,true];};
 if(isNull _unit) exitWith {ctrlShow[2001,true];};
 if(isNil "_unit") exitWith {ctrlShow[2001,true]; hint "Der ausgewählte Spieler befindet sich nicht in Reichweite";};

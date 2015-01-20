@@ -11,7 +11,7 @@ _unit = call compile format["%1",(lbData[2703,(lbCurSel 2703)])];
 if(isNull _unit) exitWith {};
 if((lbCurSel 2703) == -1) exitWith {hint localize "STR_ATM_NoneSelected"};
 if(isNil "_unit") exitWith {hint localize "STR_ATM_DoesntExist"};
-if(_val > 1000000) exitWith {hint localize "STR_ATM_TransferMax";};
+if(_val > 999999) exitWith {hint localize "STR_ATM_TransferMax";};
 if(_val < 0) exitwith {};
 if(!([str(_val)] call life_fnc_isnumeric)) exitWith {hint localize "STR_ATM_notnumeric"};
 if(_val > life_atmcash) exitWith {hint localize "STR_ATM_NotEnough"};
