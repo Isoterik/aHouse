@@ -507,8 +507,8 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 		[
 			"Fuehren von Schusswaffen", 
 				"
-				1. Bei Besitz einer legalen Schusswaffe(n) ohne gültigen Waffenschein wird ein Bußgeld in Höhe von 1000 Altis Dollar ausgestellt und die Schusswaffe beschlagnahmt..<br/>
-				2. Bei Besitz einer illegalen Schusswaffe(n) wird diese beschlagnahmt und automatisch ein Bußgeld von 6000 Altis Dollar ausgestellt.<br/>
+				1. Bei Besitz einer legalen Schusswaffe(n) ohne gültigen Waffenschein wird ein Bußgeld in Höhe von 5000 Altis Dollar ausgestellt und die Schusswaffe beschlagnahmt.<br/>
+				2. Bei Besitz einer illegalen Schusswaffe(n) wird diese beschlagnahmt und automatisch ein Bußgeld von 5000 Altis Dollar ausgestellt.<br/>
 			"
 		]
 	];
