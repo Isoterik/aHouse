@@ -15,7 +15,7 @@
 #define Btn8 37457
 #define Title 37401
 
-private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","Btn8"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
 if(!dialog) then {
 	createDialog "pInteraction_Menu";
 };
@@ -78,7 +78,7 @@ _Btn3 ctrlSetText localize "STR_pInAct_SearchPlayer";
 _Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_searchAction; closeDialog 0;";
 
 _Btn4 ctrlSetText localize "STR_pInAct_checkWeapons";
-_Btn4 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_removeWeapons; closeDialog 0;";
+_Btn4 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_removeWeaponAction; closeDialog 0;";
 
 //Set Escort Button
 if((_curTarget getVariable["Escorting",false])) then {
