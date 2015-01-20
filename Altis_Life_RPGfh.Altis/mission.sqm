@@ -6057,7 +6057,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\werbung\Werbung2.paa""];";
+			init="this enableSimulation false; this allowDamage false; this SetObjectTextureGlobal [0,""textures\werbung\Werbung2.paa""];";
 		};
 		class Item148
 		{
@@ -13878,7 +13878,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\werbung\Werbung3.paa""];";
+			init="this enableSimulation false; this allowDamage false; this SetObjectTextureGlobal [0,""textures\werbung\Werbung3.paa""];";
 		};
 		class Item912
 		{
@@ -13937,7 +13937,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\werbung\Werbung2.paa""];";
+			init="this enableSimulation false; this allowDamage false; this SetObjectTextureGlobal [0,""textures\werbung\Werbung2.paa""];";
 		};
 		class Item917
 		{
@@ -13948,7 +13948,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\werbung\Werbung2.paa""];";
+			init="this enableSimulation false; this allowDamage false; this SetObjectTextureGlobal [0,""textures\werbung\Werbung2.paa""];";
 		};
 		class Item918
 		{
@@ -13959,7 +13959,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\werbung\Werbung2.paa""];";
+			init="this enableSimulation false; this allowDamage false; this SetObjectTextureGlobal [0,""textures\werbung\Werbung2.paa""];";
 		};
 		class Item919
 		{
@@ -29158,7 +29158,7 @@ class Mission
 			vehicle="Land_Billboard_F";
 			leader=1;
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\werbung\Werbung2.paa""];";
+			init="this enableSimulation false; this allowDamage false; this SetObjectTextureGlobal [0,""textures\werbung\Werbung2.paa""];";
 		};
 		class Item2305
 		{
@@ -30289,7 +30289,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\werbung\Werbung1.paa""];";
+			init="this enableSimulation false; this allowDamage false; this SetObjectTextureGlobal [0,""textures\werbung\Werbung1.paa""];";
 		};
 		class Item2409
 		{
