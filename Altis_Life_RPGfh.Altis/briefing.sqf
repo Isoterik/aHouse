@@ -5,7 +5,7 @@ player createDiarySubject ["Freudenhaus","Freudenhaus"];
 player createDiarySubject ["changelog","Change Log"];
 player createDiarySubject ["serverrules","Generelle Regeln"];
 player createDiarySubject ["policerules","Polizeiregeln"];
-player createDiarySubject ["safezones","Safe Zones (No Killing)"];
+player createDiarySubject ["safezones","Sichere Orte"];
 //player createDiarySubject ["civrules","Civilian Rules"];
 player createDiarySubject ["illegalitems","Illegales"];
 //player createDiarySubject ["gangrules","Gang Rules"];
@@ -80,9 +80,9 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 		]
 	];
 	
-	player createDiaryRecord ["safe zones",
+	player createDiaryRecord ["safezones",
 		[
-			"Safe Zones",
+			"Sichere Orte",
 				"
 				Jegliche kriminellen Aktivitaet an den folgenden Orten wird geahndet.<br/><br/>
 				
