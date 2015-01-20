@@ -4637,6 +4637,13 @@
 			<Italian>Controlla Licenze</Italian>
 			<Portuguese>Verificar Licenças</Portuguese>
 		</Key>
+		<Key ID="STR_pInAct_checkWeapons">
+			<Original>Check for illegal weapons</Original>
+			<German>Auf illegale Waffen überprüfen</German>
+			<French>Check for illegal weapons</French>
+			<Italian>Check for illegal weapons</Italian>
+			<Portuguese>Check for illegal weapons</Portuguese>
+		</Key>
 		<Key ID="STR_pInAct_SearchPlayer">
 			<Original>Search Player</Original>
 			<German>Spieler durchsuchen</German>

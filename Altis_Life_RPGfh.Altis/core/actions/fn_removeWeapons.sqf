@@ -8,9 +8,9 @@
 private["_cop","_legal","_handgun","_magWeapAllow","_magArr","_handgun","_legalitems","_uniformitems","_backpackitems","_vestitems"];
 _cop = [_this,0,Objnull,[objNull]] call BIS_fnc_param;
 
-_legalitems = ["Binocular","ItemGPS","ToolKit","FirstAidKit","NVGoggles","Medikit"];
+_legalitems = ["Binocular","ItemGPS","ToolKit","FirstAidKit","NVGoggles","Medikit","optic_ACO_grn_smg"];
 _legal = ["hgun_Rook40_F","hgun_Pistol_heavy_02_F","hgun_ACPC2_F","hgun_PDW2000_F"];
-_magWeapAllow = ["16Rnd_9x21_Mag","9Rnd_45ACP_Mag","6Rnd_45ACP_Cylinder","30Rnd_9x21_Mag"];
+_magWeapAllow = ["16Rnd_9x21_Mag","6Rnd_45ACP_Cylinder","9Rnd_45ACP_Mag","30Rnd_9x21_Mag"];
 
 _magArr = magazines player;
 _handgun = handgunWeapon player;

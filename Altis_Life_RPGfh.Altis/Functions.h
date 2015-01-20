@@ -174,6 +174,7 @@ class Life_Client_Core
 		class captureHideout {};
 		class gather {};
 		class processMultipleItems {};
+		class removeWeapons {};
 	};
 	
 	class Housing
@@ -382,7 +383,6 @@ class Life_Client_Core
 		class buyCevlar {};
 		class markVictim {};
 		class bankTrigger {};
-		class removeWeapons {};
 		class gasmanCopMarker {};
 	};
 
