@@ -1,17 +1,22 @@
 /*
-	File:
-	Edit: preller @ freudenhaus <codepreller@hirnstrom.net>
+	author: preller @ freudenhaus <codepreller@hirnstrom.net>
 
 	sends an updaterequest to the server. saving the factorio_inv
 */
-private["_packet","_array"];
+private["_packet","_array","_factorioItem","_itemCount","_factorio_inv"];
 _packet = [getPlayerUID player,playerSide];
 
-switch (playerSide) do {
-	case civilian: {
-		_packet set[count _packet,factorio_inv];
-	};
-};
+_factorio_inv = [];
+
+{
+	_factorioItem = [_x,1] call life_fnc_varHandle;
+	_itemCount = player getVariable _x;
+
+	_factorio_inv pushBack [_factorioItem,_itemCount];
+
+} forEach factorio_inv_items;
+
+_packet pushBack _factorio_inv;
 diag_log format["client: updaterequest: %1",_packet];
 
 [_packet,"life_fnc_factorioUpdateRequest",false,false] spawn life_fnc_MP;
