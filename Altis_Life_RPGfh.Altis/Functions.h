@@ -49,6 +49,7 @@ class Freudenhaus
 		file = "core\factorio\db";
 		class factorioDataQuery {};
 		class factorioUpdateRequest {};				
+		class factorioRequestReceived {};		
 	};	
 
 	class Functions
@@ -77,12 +78,6 @@ class Life_Client_Core
 		class initADAC {};
 		class welcomeNotification {};
 	};
-
-	class DB
-	{
-		file = "core\factorio\db";	
-		class factorioRequestReceived {};		
-	};	
 
 	class FAER
 	{
