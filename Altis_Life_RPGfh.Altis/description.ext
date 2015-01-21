@@ -86,7 +86,7 @@ class CfgSounds
 	class handcluffs
 	{
 		name = "handcluffs";
-		sound[] = {"\sounds\cop_hundcuffs.ogg", 0.25, 1};
+		sound[] = {"\sounds\cop_handcuffs.ogg", 0.25, 1};
 		titles[] = {};
 	};
 	
