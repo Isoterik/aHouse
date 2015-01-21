@@ -86,6 +86,12 @@ class Life_Client_Core
 		class deleteSpeedingPoints {};
 		class manageSpeedingPoints {};
 	};
+
+	class FactorioDB
+	{
+		file = "core\factorio\db";			
+		class factorioRequestReceived {};		
+	};	
 	
 	class Racing
 	{
