@@ -72,6 +72,50 @@ if(_drink == "wodka")then
 	};
 };
 
+if(_drink == "peachbooze")then
+{
+	_addalc = _addalc + 1.2;
+	if(life_thirst < 95)then
+	{
+		life_thirst = life_thirst + 5;
+	}
+	else
+	{
+		life_thirst = 100;
+	};
+
+	if(life_hunger > 20)then
+	{
+		life_hunger = life_hunger - 10;
+	}
+	else
+	{
+		life_hunger = 10;
+	};
+};
+
+if(_drink == "pearbooze")then
+{
+	_addalc = _addalc + 1.2;
+	if(life_thirst < 95)then
+	{
+		life_thirst = life_thirst + 5;
+	}
+	else
+	{
+		life_thirst = 100;
+	};
+
+	if(life_hunger > 20)then
+	{
+		life_hunger = life_hunger - 10;
+	}
+	else
+	{
+		life_hunger = 10;
+	};
+};
+
 player setVariable["alcohol",_addalc,true];
 
 if(_addalc > 3.5)then
