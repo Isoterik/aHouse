@@ -10,7 +10,7 @@ _factorio_inv = [];
 
 {
 	_factorioItem = [_x,1] call life_fnc_varHandle;
-	_itemCount = player getVariable _x;
+	_itemCount = missionNamespace getVariable _x;
 	diag_log format["client: updaterequest item count: %1",_itemCount];
 
 	_factorio_inv pushBack [_factorioItem,_itemCount];
