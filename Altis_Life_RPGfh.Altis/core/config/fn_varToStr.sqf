@@ -216,7 +216,7 @@ switch (_var) do
 	//Factorio
 	case "factorio_inv_tyre": {(localize "STR_Item_Tyre")};
 	case "factorio_inv_body": {(localize "STR_Item_BodyPart")};
-	case "factorio_inv_seats": {(localize "STR_Item_BodyPart")};
+	case "factorio_inv_seats": {(localize "STR_Item_InteriorDecoration")};
 	case "factorio_inv_cable": {(localize "STR_Item_ElectronicCables")};
 	case "factorio_inv_glass": {(localize "STR_Item_Glass")};
 	case "factorio_inv_oilp": {(localize "STR_Item_OilP")};		
