@@ -4232,7 +4232,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_4_F_afro";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction [""Ware vorzeigen"",life_fnc_virt_menu,""gold""];";
+					init="this allowDamage false; this enableSimulation false; this addAction [""Ware vorzeigen"",life_fnc_virt_menu,""golddealer""];";
 				};
 			};
 		};
