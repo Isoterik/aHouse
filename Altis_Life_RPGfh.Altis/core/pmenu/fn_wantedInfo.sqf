@@ -22,6 +22,7 @@ _crimes = _data select 2;
 _bounty = _data select 3;
 	
 {
+	diag_log format["wantedInfo: %1",_info];
 	_crime = _x;
 	diag_log _crime;
 
