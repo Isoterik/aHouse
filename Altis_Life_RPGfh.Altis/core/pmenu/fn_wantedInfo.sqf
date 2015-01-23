@@ -23,14 +23,22 @@ _bounty = _data select 3;
 	
 {
 	_crime = _x;
+	diag_log _crime;
 
 	//next lines added by preller. get crime name
 	_type = [_crime] call life_fnc_wantedListCfg;
+
+	diag_log format["type: %1",_type];
+
 	_crimeName = _type select 0;
+
+	diag_log format["wantedInfo crimename: %1",_crimeName];
 
 	if(!(_crime in _mylist)) then
 	{
 		_mylist pushBack _crime;
+
+		//next line edited by preller: changed _crime to _crimeName
 		_list lbAdd format["%1 mal %2",{_x == _crime} count _crimes,_crimeName];
 	};
 } foreach _crimes;
