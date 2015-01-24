@@ -93,7 +93,7 @@ class FactorioItemDialog {
 			text = "";
 			sizeEx = 0.04;
 			colorBackground[] = {0.1,0.1,0.1,0.9};
-			onLBSelChanged = "[] call life_fnc_vehicleShopLBChange";
+			onLBSelChanged = "_this call FHC_fnc_factorioMenuLBChange";
 			
 			//Position & height
 			x = 0.11; y = 0.302;
