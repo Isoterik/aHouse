@@ -117,6 +117,7 @@ switch (_code) do
 		{
 
 			[] call life_fnc_restrainAction;
+			[[cursorTarget,"handcuffs"], "life_fnc_say3D",nil,true] spawn life_fnc_MP;
 
 		} else {
 			if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [west,independent,east]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
@@ -136,6 +137,7 @@ switch (_code) do
 			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
 			{
 				[cursorTarget] spawn life_fnc_knockoutAction;
+				[[cursorTarget,"punch"], "life_fnc_say3D",nil,true] spawn life_fnc_MP;
 			};
 		};
 	};
