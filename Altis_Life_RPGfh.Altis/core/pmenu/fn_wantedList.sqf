@@ -10,6 +10,9 @@
 private["_info","_display","_list","_units","_entry"];
 disableSerialization;
 _info = [_this,0,[],[[]]] call BIS_fnc_param;
+
+diag_log ["wantedList - _info: %1",_info];
+
 _display = findDisplay 2400;
 _list = _display displayctrl 2401;
 _units = [];
