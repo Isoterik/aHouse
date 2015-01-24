@@ -42,7 +42,7 @@ if(_index != -1) then
 	else
 {
 	//next line edited by preller. add _crimeID instead of the crime name
-	life_wanted_list pushBack [_name,_uid,_crimeID,_bounty];
+	life_wanted_list pushBack [_name,_uid,[_crimeID],_bounty];
 	
 	//next line added by preller: db insert
 	[_name,_uid,[_crimeID],(_type select 1)] spawn life_fnc_wantedListInsert;

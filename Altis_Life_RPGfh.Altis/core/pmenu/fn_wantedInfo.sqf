@@ -27,9 +27,7 @@ diag_log ["wantedInfo - _crimes: %1",_crimes];
 diag_log ["wantedInfo - _bounty: %1",_bounty];
 	
 {
-	diag_log format["wantedInfo: %1",_info];
 	_crime = _x;
-	diag_log _crime;
 
 	//next lines added by preller. get crime name
 	_type = [_crime] call life_fnc_wantedListCfg;
