@@ -201,6 +201,17 @@ switch (_shop) do
 			_return pushBack ["B_SDV_01_F",12187];
 		};
 	};
+
+	case "factorio":
+	{
+		_return = [
+			["I_Heli_Transport_02_F",0],
+			["I_MRAP_03_F",0],
+			["B_Truck_01_box_F",0],
+			["B_Truck_01_fuel_F",0],
+			["O_Truck_03_device_F",0]
+		];
+	};
 };
 
 _return;
