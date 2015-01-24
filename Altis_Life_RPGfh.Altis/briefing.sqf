@@ -42,7 +42,7 @@ player createDiarySubject ["Fahrzeuginfo","Fahrzeuginfo"];
 					- NEU<br/>
 					- Neue Wantedliste by Preller
 					- Update auf v3.1.4.8 <br/>
-					- Bekannter Bug: Factorio geht atm nicht <br/>
+					- Bekannter Bug: Tuning geht atm nicht <br/>
 					
 					- ALT<br/>
 					- Factorio by Preller
