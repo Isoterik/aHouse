@@ -10,7 +10,7 @@
 
 private ["_inputItems", "_inputItemsNeeded", "_itemsInv", "_itemsNeeded", "_inputItemsDeleted", "_ui", "_progress", "_pgText", "_cP", "_processor","_formatedProcessingInfo","_processingCost","_carType","_productionInfo","_processingSpeed","_colorIndex"];
 
-if (isServer) exitWith {};
+diag_log "factorioProduce";
 
 //Error check. taken from tonic.
 if(vehicle player != player) exitwith {hint format["Du darfst nicht im Fahrzeug sitzen"];};
@@ -25,6 +25,8 @@ _processingSpeed = 0.2; //second per procent example: speed = 1 means 100sec
 if (life_is_processing) exitWith {hint "Der Kollege ist beschäftigt. Bitte nicht stressen!";};	
 
 life_is_processing = true;
+
+diag_log "factorioProduce 1";
 
 if((lbCurSel 2302) == -1) exitWith {hint "Du hast keinen Gegenstand ausgewaehlt!"};
 _className = lbData[2302,(lbCurSel 2302)];
@@ -98,9 +100,6 @@ while{true} do
 	if(_cP >= 1) exitWith {};
 };
 
-5 cutText ["","PLAIN"];
-titleText["Test","PLAIN"];
-
 _isProduced = [_className,_colorIndex] call FHC_fnc_factorioProduceVehicle;
 
 if (_isProduced) then {
@@ -111,6 +110,9 @@ if (_isProduced) then {
 			_inputItemsDeleted = false;
 		}
 	};
+
+	5 cutText ["","PLAIN"];
+	titleText["Dein Fahrzeug wurde erfolgreich hergestellt","PLAIN"];
 
 	//save to the db, no relogging/cheating at this point
 	[] call FHC_fnc_factorioUpdateRequest;

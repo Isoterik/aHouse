@@ -42,6 +42,7 @@ class Freudenhaus
 		class factorioProduce {};
 		class factorioInventoryMenu {};
 		class factorioOpenInventory {};
+		class factorioMenuLBChange {};
 	};
 
 	class DB
