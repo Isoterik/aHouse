@@ -23,4 +23,5 @@ _list = [];
 		};
 	};
 } foreach life_wanted_list;
+diag_log format["wantedFetch: %1",_list];
 [[_list],"life_fnc_wantedList",_ret,false] spawn life_fnc_MP;
