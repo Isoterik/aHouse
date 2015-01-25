@@ -12,7 +12,7 @@ if(isNull _robber) exitWith {}; //No one to return it to?
 if(life_cash > 0) then
 {
 	//added
-	if (life_cash > 1000000) then {life_cash = 1000000};
+	if (life_cash > 999999) then {life_cash = 999999};
 
 	[[life_cash],"life_fnc_robReceive",_robber,false] spawn life_fnc_MP;
 	[[getPlayerUID _robber,_robber getVariable["realname",name _robber],"200"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
