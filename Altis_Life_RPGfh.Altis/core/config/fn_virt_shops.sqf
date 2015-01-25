@@ -26,7 +26,7 @@ switch (_shop) do
 	case "cop": {["Polizei Verpflegung",["donuts","coffee","spikeStrip","defusekit","water","rabbit","apple","proteinshake","redgull","fuelF","goldendonat"]]};
 	case "cement": {["Zementhaendler",["cement"]]};
 	case "gold": {["Altis Silber- und Goldhandel",["goldbar","silverbar"]]};
-	case "wood": {["Holzhaendler",["woodu","woodp"]]};
+	case "wood": {["Schreiner",["woodp"]]};
 	case "frogeat": {["Froschhaendler",["frogeat"]]};
 	case "alcohol": {["Kiosk Elmar Trunkenbolz",["water","beer","applewine","wodka","peachbooze","pearbooze","wine","cigar","tabaccop","bunp","cheesestickp","sausage","donuts"]]};
 	case "drugs": {["Aphotheke Rosenbluete",["eyedrops","pseudo","medmarijuana"]]};
