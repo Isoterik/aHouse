@@ -49,7 +49,7 @@ _productionInfo = switch (_type) do
 	case "tabacco": {[["tabaccou"],[1],"tabaccop",1,"tabacco",20];};
 	case "tyre": {[["rubber"],[1],"tyre",1,"tyre",27];};
 	case "rubber": {[["caoutchouc"],[1],"rubber",1,"rubber",15];};
-	case "leather": {[["cowskin"],[1],"leather",1,"rubber",24];};
+	case "leather": {[["cowskin"],[1],"leather",1,"leather",24];};
 	case "seats": {[["leather"],[1],"seats",1,"seats",40];};
 	case "metalparts": {[["iron_r"],[1],"metalparts",1,"metalparts",25];};
 	case "body": {[["metalparts"],[1],"body",1,"body",54];};
