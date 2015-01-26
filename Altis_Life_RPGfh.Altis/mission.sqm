@@ -2742,8 +2742,8 @@ class Mission
 				};
 				class Item80
 				{
-					position[]={14032.745,25.566628,18754.051};
-					azimut=-228.24484;
+					position[]={14034.32,25.581741,18753.232};
+					azimut=-605.9245;
 					special="NONE";
 					id=168;
 					side="CIV";
@@ -3105,8 +3105,8 @@ class Mission
 				};
 				class Item111
 				{
-					position[]={14193.741,29.49362,18713.85};
-					azimut=-150.633;
+					position[]={14102.186,25.538656,18602.223};
+					azimut=55.527157;
 					special="NONE";
 					id=199;
 					side="CIV";
@@ -4373,8 +4373,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14034.263,25.358372,18760.078};
-					azimut=122.73;
+					position[]={14237.292,18.475744,18315.627};
+					azimut=230.4324;
 					id=304;
 					side="CIV";
 					vehicle="C_man_polo_3_F_euro";
@@ -5107,8 +5107,8 @@ class Mission
 		};
 		class Item51
 		{
-			position[]={14034.949,25.365133,18759.547};
-			azimut=-417.53299;
+			position[]={14236.59,18.481232,18315.125};
+			azimut=-309.83054;
 			id=368;
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
@@ -35362,10 +35362,10 @@ class Mission
 		};
 		class Item29
 		{
-			position[]={14041.693,25.525948,18753.086};
+			position[]={14225.426,18.423458,18309.691};
 			name="civ_car_3";
 			type="Empty";
-			angle=126.40627;
+			angle=-40.918083;
 		};
 		class Item30
 		{
@@ -35400,7 +35400,7 @@ class Mission
 		};
 		class Item34
 		{
-			position[]={14034.805,25.279812,18761.51};
+			position[]={14235.149,18.471512,18314.174};
 			name="car1_2_1_1";
 			text="PKW-Händler";
 			type="c_car";
@@ -35440,7 +35440,7 @@ class Mission
 		};
 		class Item39
 		{
-			position[]={14193.35,29.500216,18714.625};
+			position[]={14102.207,25.528425,18602.063};
 			name="dp_1_2";
 			text="LP 7";
 			type="mil_box";
@@ -36120,14 +36120,14 @@ class Mission
 		};
 		class Item126
 		{
-			position[]={14038.482,25.663353,18749.291};
+			position[]={14043.594,25.824114,18745.857};
 			name="car_g_3";
 			type="Empty";
-			angle=511.55499;
+			angle=395.94125;
 		};
 		class Item127
 		{
-			position[]={14030.707,25.593077,18753.453};
+			position[]={14033.664,25.585289,18752.836};
 			name="civ_gar_1_3";
 			text="Garage";
 			type="o_service";
