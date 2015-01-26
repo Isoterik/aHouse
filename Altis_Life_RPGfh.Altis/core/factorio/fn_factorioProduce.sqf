@@ -37,11 +37,11 @@ _productionInfo = switch (_className) do
 {
 	//Cars
 	//case "B_Truck_01_box_F": {[["ftyre","fbody"],[1,100],5000];};
-	case "I_Heli_Transport_02_F": {[["ftyre","fbody","fseats","fcable","fglass","foilp"],[6,400,400,420,200,150],5000];};
-	case "I_MRAP_03_F": {[["ftyre","fbody","fseats","fcable","fglass","foilp"],[4,500,600,450,300,200],5000];};
-	case "B_Truck_01_box_F": {[["ftyre","fbody","fseats","fcable","fglass","foilp"],[8,650,600,480,150,180],5000];};
-	case "B_Truck_01_fuel_F": {[["ftyre","fbody","fseats","fcable","fglass","foilp"],[8,700,700,500,180,400],5000];};
-	case "O_Truck_03_device_F": {[["ftyre","fbody","fseats","fcable","fglass","foilp"],[6,350,360,220,100,100],5000];};
+	case "I_Heli_Transport_02_F": {[["ftyre","fbody","fseats","fcable","fglass","foilp"],[6,400,400,420,200,150],0];};
+	case "I_MRAP_03_F": {[["ftyre","fbody","fseats","fcable","fglass","foilp"],[4,500,600,450,300,200],0];};
+	case "B_Truck_01_box_F": {[["ftyre","fbody","fseats","fcable","fglass","foilp"],[8,650,600,480,150,180],0];};
+	case "B_Truck_01_fuel_F": {[["ftyre","fbody","fseats","fcable","fglass","foilp"],[8,700,700,500,180,400],0];};
+	case "O_Truck_03_device_F": {[["ftyre","fbody","fseats","fcable","fglass","foilp"],[6,350,360,220,100,100],0];};
 	default {[]};
 };
 
