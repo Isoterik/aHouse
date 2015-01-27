@@ -3326,7 +3326,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction [""Froschschenkel Herstellen"",life_fnc_processMultipleItems,""frogeat""]; this addAction [format[""%1 ($%2)"",[""license_civ_frogeat""] call life_fnc_varToStr,[([""frogeat""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""frogeat"",0,false,false,"""",' !license_civ_frogeat && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction [""Froschschenkel herstellen"",life_fnc_processMultipleItems,""frogeat""]; this addAction [format[""%1 ($%2)"",[""license_civ_frogeat""] call life_fnc_varToStr,[([""frogeat""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""frogeat"",0,false,false,"""",' !license_civ_frogeat && playerSide == civilian '];";
 				};
 				class Item130
 				{
