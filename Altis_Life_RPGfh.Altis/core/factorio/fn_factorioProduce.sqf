@@ -15,6 +15,9 @@ diag_log "factorioProduce";
 //Error check. taken from tonic.
 if(vehicle player != player) exitwith {hint format["Du darfst nicht im Fahrzeug sitzen"];};
 
+if(vehicle player != civilian) exitwith {hint format["Es koennen nur Zivilisten Fahrzeuge produzieren"];};
+
+
 //initialize
 _inputItemsDeleted = true;
 _hasItems = true;
