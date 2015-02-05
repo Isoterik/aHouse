@@ -14,6 +14,7 @@ _pInv = (findDisplay 3500) displayCtrl 3503;
 lbClear _tInv;
 lbClear _pInv;
 
+
 //Player Inventory Items
 {
 	_str = [_x] call life_fnc_varToStr;

@@ -8,6 +8,8 @@
 */
 private["_spawnPoints","_itemList"];
 
+if(playerSide != civilian) exitwith {hint format["Es koennen nur Zivilisten Fahrzeuge produzieren"];};
+
 //this addAction[""Factorio"",life_fnc_factorioShopMenu,[""example_spawn_point""]];";
 
 //parameter
