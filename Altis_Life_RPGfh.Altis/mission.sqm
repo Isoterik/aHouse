@@ -4612,7 +4612,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=2907;
+		items=2910;
 		class Item0
 		{
 			position[]={8456.1416,49.214363,12762.685};
@@ -35808,6 +35808,39 @@ class Mission
 			vehicle="Land_Sun_chair_F";
 			skill=0.40000001;
 			init="this allowDamage false; ; this setpos [3718.5183, 13390.935, 17.534468];";
+		};
+		class Item2907
+		{
+			position[]={3647.4063,10.237359,13094.521};
+			azimut=-537.35699;
+			special="NONE";
+			id=3226;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this SetObjectTextureGlobal [0,""textures\werbung\fahrzeugwerke.paa""];";
+		};
+		class Item2908
+		{
+			position[]={3639.854,10.118627,13127.393};
+			azimut=-718.34003;
+			special="NONE";
+			id=3227;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this SetObjectTextureGlobal [0,""textures\werbung\truckboxer.paa""];";
+		};
+		class Item2909
+		{
+			position[]={3647.5493,10.209783,13127.102};
+			azimut=-357.44901;
+			special="NONE";
+			id=3228;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this SetObjectTextureGlobal [0,""textures\werbung\tempest.paa""];";
 		};
 	};
 	class Markers
